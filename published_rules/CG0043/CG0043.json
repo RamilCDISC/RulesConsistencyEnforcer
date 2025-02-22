@@ -1,0 +1,127 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "When a description of Other Medically Important Serious Adverse Events category is collected on a CRF, sponsors should place the description in the SUPPAE dataset using the standard supplemental qualifier name code AESOSP.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Asumtpion 6c",
+                                    "Section": "6.2.1"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0043",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.4"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "When a description of Other Medically Important Serious Adverse Events category is collected on a CRF, sponsors should place the description in the SUPPAE dataset using the standard supplemental qualifier name code AESOSP.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Assumption 6c",
+                                    "Section": "6.2"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0043",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.2"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "When a description of Other Medically Important Serious Adverse Events category is collected on a CRF, sponsors should place the description in the SUPPAE dataset using the standard supplemental qualifier name code AESOSP.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 6c",
+                                    "Section": "6.2.1"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0043",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.3"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "QNAM",
+                "operator": "equal_to",
+                "value": "AESOSP",
+                "value_is_literal": true
+            },
+            {
+                "name": "AESMIE",
+                "operator": "not_equal_to",
+                "value": "Y"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000597",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When SUPPAE.QNAM=AESOSP is present, a record with AESMIE=Y should be present",
+    "Executability": "Fully Executable",
+    "Match_Datasets": [
+        {
+            "Is Relationship": true,
+            "Keys": [
+                "USUBJID"
+            ],
+            "Name": "SUPPAE"
+        }
+    ],
+    "Outcome": {
+        "Message": "Missing AESMIE=Y where SUPPAE.QNAM=AESOSP",
+        "Output_Variables": [
+            "QNAM",
+            "AESMIE"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "AE"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

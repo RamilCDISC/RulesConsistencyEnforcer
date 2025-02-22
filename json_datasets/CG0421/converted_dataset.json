@@ -1,0 +1,181 @@
+{
+    "datasets": [
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEOCCUR",
+                    "label": "Occurrence Indicator",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEENRF",
+                    "label": "End Relative to Reference Period",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "AE",
+                    "AE",
+                    "AE"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "AESEQ": [
+                    2,
+                    2,
+                    1
+                ],
+                "AETERM": [
+                    "Test",
+                    "Test",
+                    "test"
+                ],
+                "AEOCCUR": [
+                    "Y",
+                    "N",
+                    "Y"
+                ],
+                "AEENRF": [
+                    "ONGOING",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "ce.xpt",
+            "label": "Clinical Events",
+            "domain": "CE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "CETERM",
+                    "label": "Reported Term for the Clinical Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CEOCCUR",
+                    "label": "Occurrence Indicator",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CEENRF",
+                    "label": "End Relative to Reference Period",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "CE",
+                    "CE",
+                    "CE"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "CESEQ": [
+                    2,
+                    2,
+                    1
+                ],
+                "CETERM": [
+                    "Event",
+                    "Event",
+                    "Event"
+                ],
+                "CEOCCUR": [
+                    "Y",
+                    "N",
+                    "Y"
+                ],
+                "CEENRF": [
+                    "ONGOING",
+                    "",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

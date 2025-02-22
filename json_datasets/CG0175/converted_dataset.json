@@ -1,0 +1,126 @@
+{
+    "datasets": [
+        {
+            "filename": "ie.xpt",
+            "label": "Inclusion/Exclusion Criteria Not Met",
+            "domain": "IE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "IESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "IETESTCD",
+                    "label": "Inclusion/Exclusion Criterion Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "IETEST",
+                    "label": "Inclusion/Exclusion Criterion",
+                    "type": "Char",
+                    "length": 196
+                },
+                {
+                    "name": "IECAT",
+                    "label": "Inclusion/Exclusion Category",
+                    "type": "Char",
+                    "length": 9
+                },
+                {
+                    "name": "IEORRES",
+                    "label": "I/E Criterion Original Result",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "IESTRESC",
+                    "label": "I/E Criterion Result in Std Format",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 9
+                },
+                {
+                    "name": "IEDTC",
+                    "label": "Date/Time of Collection",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "IEDY",
+                    "label": "Study Day of Collection",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "IE"
+                ],
+                "USUBJID": [
+                    "CDISC015"
+                ],
+                "IESEQ": [
+                    1
+                ],
+                "IETESTCD": [
+                    "EXCL03"
+                ],
+                "IETEST": [
+                    "Is pregnant or nursing."
+                ],
+                "IECAT": [
+                    "EXCLUSION"
+                ],
+                "IEORRES": [
+                    "Y"
+                ],
+                "IESTRESC": [
+                    "Y"
+                ],
+                "EPOCH": [
+                    "SCREENING"
+                ],
+                "IEDTC": [
+                    "2014-03-17"
+                ],
+                "IEDY": [
+                    null
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

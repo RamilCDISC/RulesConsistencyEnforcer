@@ -1,0 +1,138 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0031",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "For planned visits, values of VISIT, VISITNUM, and VISITDY must be those  defined in the Trial Visits (TV) dataset (Section 7.3.1, Trial Visits).",
+                                    "Document": "IG v3.4",
+                                    "Item": "",
+                                    "Section": "4.4.5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0031",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "For planned visits, values of VISIT, VISITNUM, and VISITDY must be those defined in    the Trial Visits dataset,",
+                                    "Document": "IG v3.3",
+                                    "Item": "",
+                                    "Section": "4.4.5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0031",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "For planned visits, values of VISIT, VISITNUM, and VISITDY must be those defined in the Trial Visits dataset,",
+                                    "Document": "IG v3.2",
+                                    "Item": "",
+                                    "Section": "4.1.4.5"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "VISIT",
+                "operator": "non_empty"
+            },
+            {
+                "name": "SVPRESP",
+                "operator": "equal_to",
+                "value": "Y"
+            },
+            {
+                "name": "VISIT",
+                "operator": "is_not_contained_by",
+                "value": "$tv_visit"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000269",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Verify when VISIT is not null in any given domain and VISIT is planned (SVPRESP = 'Y'), then VISIT should be among TV.VISIT.",
+    "Executability": "Fully Executable",
+    "Match_Datasets": [
+        {
+            "Name": "SV",
+            "Keys": [
+                "USUBJID",
+                "VISIT"
+            ]
+        }
+    ],
+    "Operations": [
+        {
+            "domain": "TV",
+            "id": "$tv_visit",
+            "name": "VISIT",
+            "operator": "distinct"
+        }
+    ],
+    "Outcome": {
+        "Message": "For a planned visit (SVPRESP = 'Y'), non-missing VISIT value must be among those present in TV.VISIT.",
+        "Output_Variables": [
+            "VISIT",
+            "VISITNUM"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Exclude": [
+                "TV"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,168 @@
+{
+    "datasets": [
+        {
+            "filename": "fa.xpt",
+            "label": "Findings About Events or Interventions",
+            "domain": "FA",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FASEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "FAGRPID",
+                    "label": "Group ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FATESTCD",
+                    "label": "Findings About Test Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FATEST",
+                    "label": "Findings About Test Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FAOBJ",
+                    "label": "Object of the Observation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FACAT",
+                    "label": "Category for Findings About",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FAORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FASTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FALOC",
+                    "label": "Location of the Finding About",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FADTC",
+                    "label": "Date/Time of Collection",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "FADY",
+                    "label": "Study Day of Collection",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "FA",
+                    "FA"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "FASEQ": [
+                    1,
+                    1
+                ],
+                "FAGRPID": [
+                    "1",
+                    "1"
+                ],
+                "FATESTCD": [
+                    "OCCUR",
+                    "OTHEROCC"
+                ],
+                "FATEST": [
+                    "Occurrence Indicator",
+                    "Occurrence Indicator"
+                ],
+                "FAOBJ": [
+                    "ERYTHEMA",
+                    "ERYTHEMA"
+                ],
+                "FACAT": [
+                    "INJECTION SITE REACTION",
+                    "INJECTION SITE REACTION"
+                ],
+                "FAORRES": [
+                    "Y",
+                    "Y"
+                ],
+                "FASTRESC": [
+                    "Y",
+                    "Y"
+                ],
+                "FALOC": [
+                    "ARM",
+                    "ARM"
+                ],
+                "EPOCH": [
+                    "TREATMENT",
+                    "TREATMENT"
+                ],
+                "FADTC": [
+                    "2012-12-02",
+                    "2012-12-02"
+                ],
+                "FADY": [
+                    3,
+                    3
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

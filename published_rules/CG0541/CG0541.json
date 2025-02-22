@@ -1,0 +1,96 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0541",
+                                "Version": "1.0"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The value should be \"Y\" or null.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "Various Findings Domains"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0541",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The value should be \"Y\" or null.",
+                                    "Document": "IG v3.3",
+                                    "Item": "CDISC Notes",
+                                    "Section": "Various Findings Domains"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--LOBXFL",
+                "operator": "not_equal_to",
+                "value": "Y"
+            },
+            {
+                "name": "--LOBXFL",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000170",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --LOBXFL is not 'Y' or null",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Value of --LOBXFL must be 'Y' or null",
+        "Output_Variables": [
+            "--CAT",
+            "--TEST",
+            "--TESTCD",
+            "--LOBXFL"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

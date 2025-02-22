@@ -1,0 +1,93 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0513",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "With the exception of studies which use multi-stage Arm assignments, must be a value of ARMCD in the Trial Arms Dataset. If the subject was not assigned to an Arm or followed a course not described by any planned Arm, ACTARMCD is null and ARMNRS is populated.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0513",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "With the exception of studies which use multi-stage arm assignments, must be a value of ARMCD in the Trial Arms Dataset. If the subject was not assigned to an arm or followed a course not described by any planned arm, ACTARMCD is null and ARMNRS is populated.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Specification",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "ACTARMCD",
+                "operator": "empty"
+            },
+            {
+                "name": "ARMNRS",
+                "operator": "empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000223",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when ACTARMCD is empty and ARMNRS is not completed.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "ACTARMCD is empty, but ARMNRS is not completed.",
+        "Output_Variables": [
+            "ACTARMCD",
+            "ARMNRS"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

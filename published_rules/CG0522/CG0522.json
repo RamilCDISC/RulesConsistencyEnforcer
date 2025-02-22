@@ -1,0 +1,93 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0522",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "\"If ACTARMCD is null, then ACTARM must be null and ARMNRS must  be populated with the reason ACTARMCD is null.\n Both ARMCD and ACTARMCD will be null for subjects who were not assigned to treatment. \n The same reason  will provide the reason that both are null.\"",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 4",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0522",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If ACTARMCD is null, then ACTARM must be null and ARMNRS must be populated with the reason ACTARMCD is null.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 4",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "ACTARMCD",
+                "operator": "empty"
+            },
+            {
+                "name": "ACTARM",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000120",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when ACTARM is not empty, but ACTARMCD is empty",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "ACTARM is populated, when ACTARMCD is NULL",
+        "Output_Variables": [
+            "ACTARMCD",
+            "ACTARM"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

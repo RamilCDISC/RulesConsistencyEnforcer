@@ -1,0 +1,188 @@
+{
+    "datasets": [
+        {
+            "filename": "lb.xpt",
+            "label": "Laboratory Test Results",
+            "domain": "LB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Lab Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Lab Test or Examination Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBCAT",
+                    "label": "Category for Lab Test",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTRESN",
+                    "label": "Numeric Result/Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBSTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSPEC",
+                    "label": "Specimen Type",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBDTC",
+                    "label": "Date/Time of Specimen Collection",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTPT",
+                    "label": "Planned Time Point Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTPTNUM",
+                    "label": "Planned Time Point Number",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "LB",
+                    "LB"
+                ],
+                "LBSEQ": [
+                    1,
+                    1
+                ],
+                "LBTESTCD": [
+                    "POOLSTUFF",
+                    "POOLSTUFF"
+                ],
+                "LBTEST": [
+                    "Stuff Tested on a Pool",
+                    "Stuff Tested on a Pool"
+                ],
+                "LBCAT": [
+                    "HEMATOLOGY",
+                    "HEMATOLOGY"
+                ],
+                "LBORRES": [
+                    "2.5",
+                    "5.9"
+                ],
+                "LBORRESU": [
+                    "mg/L",
+                    "mg/L"
+                ],
+                "LBSTRESC": [
+                    "2.5",
+                    "5.9"
+                ],
+                "LBSTRESN": [
+                    2.5,
+                    5.9
+                ],
+                "LBSTRESU": [
+                    "mg/L",
+                    "mg/L"
+                ],
+                "LBSPEC": [
+                    "BLOOD",
+                    "BLOOD"
+                ],
+                "VISITNUM": [
+                    1,
+                    1
+                ],
+                "VISIT": [
+                    "Week 1",
+                    "Week 1"
+                ],
+                "LBDTC": [
+                    "2013-05-15",
+                    "2013-05-15"
+                ],
+                "LBTPT": [
+                    "A",
+                    "A"
+                ],
+                "LBTPTNUM": [
+                    1,
+                    1
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

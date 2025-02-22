@@ -1,0 +1,203 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per tumor per specimen per subject",
+                                    "Document": "SENDIG v3.0",
+                                    "Section": "6.3.14"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND200",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per tumor per specimen per subject",
+                                    "Document": "SENDIG v3.1",
+                                    "Section": "6.3.14"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND200",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per tumor per specimen per subject",
+                                    "Document": "SENDIG v3.1.1",
+                                    "Section": "6.3.14"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND200",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per tumor per specimen per subject",
+                                    "Document": "SENDIG v3.1",
+                                    "Section": "6.3.14"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND200",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per tumor per specimen per subject",
+                                    "Document": "SENDIG v3.1.1",
+                                    "Section": "6.3.14"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND200",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per tumor per specimen per subject",
+                                    "Document": "SENDIG v3.1.1",
+                                    "Section": "6.3.14"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND200",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "TFANTREG",
+                        "operator": "exists"
+                    },
+                    {
+                        "name": "TFORRES",
+                        "operator": "is_not_unique_set",
+                        "value": [
+                            "USUBJID",
+                            "TFSPEC",
+                            "TFANTREG"
+                        ]
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "TFANTREG",
+                        "operator": "not_exists"
+                    },
+                    {
+                        "name": "TFORRES",
+                        "operator": "is_not_unique_set",
+                        "value": [
+                            "USUBJID",
+                            "TFSPEC"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000561",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when there is more than one record present for any particular tumor test result for a subject and specimen.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "The Tumor Findings test result is not unique for this subject and specimen.",
+        "Output_Variables": [
+            "USUBJID",
+            "TFTESTCD",
+            "TFORRES",
+            "TFSPEC",
+            "TFANTREG"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "TF"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

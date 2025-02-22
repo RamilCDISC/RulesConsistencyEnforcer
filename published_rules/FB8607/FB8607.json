@@ -1,0 +1,208 @@
+{
+    "Authorities": [
+        {
+            "Organization": "FDA",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8607",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8607",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8607",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8607",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8607",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8607",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-AR",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8607",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "AGE",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "AGETXT",
+                        "operator": "non_empty"
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "AGE",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "AGETXT",
+                        "operator": "empty"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Status": "Published",
+        "Version": "1",
+        "Id": "CORE-000648"
+    },
+    "Description": "Either AGE or AGETXT is populated, not both",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Either AGE or AGETXT must be populated, not both"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,117 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0029",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The unique subject identifier (USUBJID) is required in all datasets containing subject-level data. USUBJID values must be unique for each trial participant (subject) across all trials in the submission.",
+                                    "Document": "IG v3.4",
+                                    "Section": "4.2.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0029",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The unique subject identifier (USUBJID) is required in all datasets containing subject-level data. USUBJID values must be unique for each trial participant (subject) across all trials in the submission.",
+                                    "Document": "IG v3.3",
+                                    "Section": "4.2.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0029",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "... a unique identifier (USUBJID) should be assigned and included in all datasets. The unique subject identifier (USUBJID) is required in all datasets containing subject-level data.",
+                                    "Document": "IG v3.2",
+                                    "Section": "4.1.2.3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "USUBJID",
+                "operator": "non_empty"
+            },
+            {
+                "name": "USUBJID",
+                "operator": "is_not_contained_by",
+                "value": "$dm_usubjid"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000201",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Trigger error when domain is not an AP-- domain and USUBJID is not present in DM.USUBJID",
+    "Executability": "Fully Executable",
+    "Operations": [
+        {
+            "domain": "DM",
+            "id": "$dm_usubjid",
+            "name": "USUBJID",
+            "operator": "distinct"
+        }
+    ],
+    "Outcome": {
+        "Message": "USUBJID is not found in DM.USUBJID"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Exclude": [
+                "AP"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

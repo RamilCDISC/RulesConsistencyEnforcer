@@ -1,0 +1,663 @@
+{
+    "datasets": [
+        {
+            "filename": "dd.xpt",
+            "label": "Death Details",
+            "domain": "DD",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DDSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DDTESTCD",
+                    "label": "Death Detail Assessment Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DDTEST",
+                    "label": "Death Detail Assessment Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DDORRES",
+                    "label": "Result or Finding as Collected",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DDSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DDRESCAT",
+                    "label": "Result Category",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "1234",
+                    "1234"
+                ],
+                "DOMAIN": [
+                    "DD",
+                    "DD"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "DDSEQ": [
+                    1,
+                    2
+                ],
+                "DDTESTCD": [
+                    "PRCDTH",
+                    "LOCDTH"
+                ],
+                "DDTEST": [
+                    "Primary Cause of Death",
+                    "Location of Death"
+                ],
+                "DDORRES": [
+                    "SUDDEN CARDIAC DEATH",
+                    "HOME"
+                ],
+                "DDSTRESC": [
+                    "SUDDEN CARDIAC DEATH",
+                    "HOME"
+                ],
+                "DDRESCAT": [
+                    "RELATED",
+                    "UNDERTERMINED"
+                ]
+            }
+        },
+        {
+            "filename": "mb.xpt",
+            "label": "Microbiology Specimen",
+            "domain": "MB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MBREFID",
+                    "label": "Reference ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBTESTCD",
+                    "label": "Microbiology Test or Finding Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBTEST",
+                    "label": "Microbiology Test or Finding Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBSTRESC",
+                    "label": "Result or Finding in Standard Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBRESCAT",
+                    "label": "Result Category",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "1234",
+                    "1234"
+                ],
+                "DOMAIN": [
+                    "MB",
+                    "MB"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123102"
+                ],
+                "MBSEQ": [
+                    1,
+                    1
+                ],
+                "MBREFID": [
+                    "INFLU0101",
+                    "INFLU0101"
+                ],
+                "MBTESTCD": [
+                    "MCORGIDN",
+                    "MCORGIDN"
+                ],
+                "MBTEST": [
+                    "Microbial Organism Idenitifcation",
+                    "Microbial Organism Idenitifcation"
+                ],
+                "MBORRES": [
+                    "INFLUENZA A VIRUS SUBTYPE H3N2",
+                    "INFLUENZA A VIRUS SUBTYPE H3N2"
+                ],
+                "MBSTRESC": [
+                    "INFLUENZA A VIRUS SUBTYPE H3N2",
+                    "INFLUENZA A VIRUS SUBTYPE H3N2"
+                ],
+                "MBRESCAT": [
+                    "DJSKAJFDKLS",
+                    "DAFDSFDS"
+                ]
+            }
+        },
+        {
+            "filename": "mi.xpt",
+            "label": "Microscopic Findings",
+            "domain": "MI",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MISEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MITESTCD",
+                    "label": "Microscopic Examination Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MITEST",
+                    "label": "Microscopic Examination Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MIORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MIORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MISTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MISTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MIRESCAT",
+                    "label": "Result Category",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MISTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC",
+                    "ABC"
+                ],
+                "DOMAIN": [
+                    "MI",
+                    "MI"
+                ],
+                "USUBJID": [
+                    "ABC-1001",
+                    "ABC-1002"
+                ],
+                "MISEQ": [
+                    1,
+                    1
+                ],
+                "MITESTCD": [
+                    "HER2",
+                    "HER2"
+                ],
+                "MITEST": [
+                    "Human Epidermal Growth Factor Receptor 2",
+                    "Human Epidermal Growth Factor Receptor 2"
+                ],
+                "MIORRES": [
+                    "0",
+                    "2+"
+                ],
+                "MIORRESU": [
+                    "",
+                    ""
+                ],
+                "MISTRESC": [
+                    "0",
+                    "2+"
+                ],
+                "MISTRESU": [
+                    "",
+                    ""
+                ],
+                "MIRESCAT": [
+                    "NEGATIVE",
+                    "POSITIVE"
+                ],
+                "MISTAT": [
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "ms.xpt",
+            "label": "Microbiology Susceptibility",
+            "domain": "MS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MSTESTCD",
+                    "label": "Short Name of Assessment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSTEST",
+                    "label": "Name of Assessment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSSTRESC",
+                    "label": "Result or Finding in Standard Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSSTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSRESCAT",
+                    "label": "Result Category",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "1234",
+                    "1234"
+                ],
+                "DOMAIN": [
+                    "MS",
+                    "MS"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "MSSEQ": [
+                    1,
+                    1
+                ],
+                "MSTESTCD": [
+                    "MIC",
+                    "MIC"
+                ],
+                "MSTEST": [
+                    "Minimum Inhibitory Concentration",
+                    "Minimum Inhibitory Concentration"
+                ],
+                "MSORRES": [
+                    "0.25",
+                    "0.25"
+                ],
+                "MSORRESU": [
+                    "ug/dL",
+                    "ug/dL"
+                ],
+                "MSSTRESC": [
+                    "0.25",
+                    "0.25"
+                ],
+                "MSSTRESU": [
+                    "ug/dL",
+                    "ug/dL"
+                ],
+                "MSRESCAT": [
+                    "JDKSAJJDSAKF",
+                    "JDKSAJJDSAKF"
+                ]
+            }
+        },
+        {
+            "filename": "oe.xpt",
+            "label": "Ophthalmic Examinations",
+            "domain": "OE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "OETESTCD",
+                    "label": "Short Name of Ophthalmic Test or Exam",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OETEST",
+                    "label": "Name of Ophthalmic Test or Exam",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OEORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OESTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OERESCAT",
+                    "label": "Result Category",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "1234",
+                    "1234"
+                ],
+                "DOMAIN": [
+                    "OE",
+                    "OE"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123102"
+                ],
+                "OESEQ": [
+                    1,
+                    1
+                ],
+                "OETESTCD": [
+                    "INTP",
+                    "INTP"
+                ],
+                "OETEST": [
+                    "Interpretation",
+                    "Interpretation"
+                ],
+                "OEORRES": [
+                    "NORMAL",
+                    "ABNORMAL"
+                ],
+                "OESTRESC": [
+                    "NORMAL",
+                    "ABNORMAL"
+                ],
+                "OERESCAT": [
+                    "POSITIVE",
+                    "NEGATIVE"
+                ]
+            }
+        },
+        {
+            "filename": "ur.xpt",
+            "label": "Urinary System Findings",
+            "domain": "UR",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "URSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "URTESTCD",
+                    "label": "Short Name of Urinary Test",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "URTEST",
+                    "label": "Name of Urinary Test",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "URORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "URSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "URRESCAT",
+                    "label": "Result Category",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "1234",
+                    "1234"
+                ],
+                "DOMAIN": [
+                    "UR",
+                    "UR"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "URSEQ": [
+                    1,
+                    2
+                ],
+                "URTESTCD": [
+                    "RNLANUM",
+                    "HEMAIND"
+                ],
+                "URTEST": [
+                    "Number of Renal Arteries",
+                    "Hematoma Indicator"
+                ],
+                "URORRES": [
+                    "2",
+                    "N"
+                ],
+                "URSTRESC": [
+                    "2",
+                    "N"
+                ],
+                "URRESCAT": [
+                    "",
+                    "JDFJAFDJSFKA"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

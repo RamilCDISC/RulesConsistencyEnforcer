@@ -1,0 +1,181 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Either TEENRL or TEDUR must be present for each Element; both may be present.",
+                                    "Document": "IG v3.0",
+                                    "Item": "Specification",
+                                    "Section": "7.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND214",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Either TEENRL or TEDUR must be present for each Element; both may be present.",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "7.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND214",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Either TEENRL or TEDUR must be present for each Element; both may be present.",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "7.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND214",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Either TEENRL or TEDUR must be present for each Element; both may be present.",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "7.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND214",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Either TEENRL or TEDUR must be present for each Element; both may be present.",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "7.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND214",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Either TEENRL or TEDUR must be present for each Element; both may be present.",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "7.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND214",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "TEENRL",
+                "operator": "empty"
+            },
+            {
+                "name": "TEDUR",
+                "operator": "empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000574",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error if TEDUR is null when TEENRL is null",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "TEDUR cannot be null when TEENRL is null",
+        "Output_Variables": [
+            "TEENRL",
+            "TEDUR"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "TRIAL DESIGN"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "TE"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

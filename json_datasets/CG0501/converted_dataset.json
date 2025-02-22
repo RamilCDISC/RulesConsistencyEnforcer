@@ -1,0 +1,167 @@
+{
+    "datasets": [
+        {
+            "filename": "mh.xpt",
+            "label": "Medical History",
+            "domain": "MH",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "MHSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MHTERM",
+                    "label": "Reported Term for the Medical History",
+                    "type": "Char",
+                    "length": 19
+                },
+                {
+                    "name": "MHEVDTYP",
+                    "label": "Medical History Event Date Type",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "MHSTDTC",
+                    "label": "Start Date/Time of Medical History Event",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "MHSTDY",
+                    "label": "Study Day of Start of Observation",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MIDS",
+                    "label": "Disease Milestone\nInstance Name",
+                    "type": "Char",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "MH",
+                    "MH"
+                ],
+                "USUBJID": [
+                    "CDISC010",
+                    "CDISC011"
+                ],
+                "MHSEQ": [
+                    1,
+                    1
+                ],
+                "MHTERM": [
+                    "TYPE 2 DIABETES",
+                    "TYPE 2 DIABETES"
+                ],
+                "MHEVDTYP": [
+                    "DIAGNOSIS",
+                    "DIAGNOSIS"
+                ],
+                "MHSTDTC": [
+                    "2005-10",
+                    "2010-05-15"
+                ],
+                "MHSTDY": [
+                    1,
+                    1
+                ],
+                "MIDS": [
+                    "DIAG",
+                    "DIAG"
+                ]
+            }
+        },
+        {
+            "filename": "tm.xpt",
+            "label": "Trial Disease Milestones",
+            "domain": "TM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "MIDSTYPE",
+                    "label": "Disease Milestone\nType",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "TMDEF",
+                    "label": "Disease Milestone\nDefinition",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "TMRPT",
+                    "label": "Disease Milestone\nRepetition Indicator",
+                    "type": "Char",
+                    "length": 19
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "TM",
+                    "TM"
+                ],
+                "MIDSTYPE": [
+                    "DIAGNOSIS",
+                    "HYPOGLYCEMIC\nEVENT"
+                ],
+                "TMDEF": [
+                    "Initial diagnosis of diabetes, the first time a physician told the subject they had diabetes",
+                    "Hypoglycemic Event, the occurrence of a glucose level below (threshold level)"
+                ],
+                "TMRPT": [
+                    "N",
+                    "Y"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

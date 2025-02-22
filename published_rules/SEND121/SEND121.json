@@ -1,0 +1,182 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "CDISC Notes for IDVAR and IDVARVAL: 'Identifiying variable of the parent record(s)to which the comment applies.' and 'Value of identifying variable of the parent record(s).', respectively.",
+                                    "Document": "IG v.3.0",
+                                    "Item": "Specification",
+                                    "Section": "5.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND121",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Related to a specific parent record or group of parent records, in which case the value of the variable RDOMAIN is set to the DOMAIN code of the parent record(s), and the variables IDVAR and IDVARVAL are populated with the key variable name and value of the parent record(s). Assumptions for populating IDVAR and IDVARVAL are further described in Section 8.2.",
+                                    "Document": "IG v.3.1",
+                                    "Item": "Specification",
+                                    "Section": "5.2.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND121",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Related to a specific parent record or group of parent records, in which case the value of the variable RDOMAIN is set to the DOMAIN code of the parent record(s), and the variables IDVAR and IDVARVAL are populated with the key variable name and value of the parent record(s). Assumptions for populating IDVAR and IDVARVAL are further described in Section 8.2.",
+                                    "Document": "IG v.3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "5.2.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND121",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Related to a specific parent record or group of parent records, in which case the value of the variable RDOMAIN is set to the DOMAIN code of the parent record(s), and the variables IDVAR and IDVARVAL are populated with the key variable name and value of the parent record(s). Assumptions for populating IDVAR and IDVARVAL are further described in Section 8.2.",
+                                    "Document": "IG v.3.1",
+                                    "Item": "Specification",
+                                    "Section": "5.2.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND121",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Related to a specific parent record or group of parent records, in which case the value of the variable RDOMAIN is set to the DOMAIN code of the parent record(s), and the variables IDVAR and IDVARVAL are populated with the key variable name and value of the parent record(s). Assumptions for populating IDVAR and IDVARVAL are further described in Section 8.2.",
+                                    "Document": "IG v.3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "5.2.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND121",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Related to a specific parent record or group of parent records, in which case the value of the variable RDOMAIN is set to the DOMAIN code of the parent record(s), and the variables IDVAR and IDVARVAL are populated with the key variable name and value of the parent record(s). Assumptions for populating IDVAR and IDVARVAL are further described in Section 8.2.",
+                                    "Document": "IG v.3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "5.2.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND121",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "context": "RDOMAIN",
+                "name": "IDVAR",
+                "operator": "is_not_valid_relationship",
+                "value": "IDVARVAL"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000565",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When IDVAR and IDVARVAL are populated those referenced values must exist in the parent domain identified in RDOMAIN.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "IDVAR does not represent a variable present in the dataset identified in RDOMAIN",
+        "Output_Variables": [
+            "RDOMAIN",
+            "USUBJID",
+            "IDVAR",
+            "IDVARVAL"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "CO",
+                "RELREC"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

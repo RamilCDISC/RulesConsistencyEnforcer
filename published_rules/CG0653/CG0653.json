@@ -1,0 +1,67 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0653",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Values should be \"Y\" or null.",
+                                    "Document": "SDTM v2.0",
+                                    "Section": "Subject Visits"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "SVPRESP",
+                "operator": "not_equal_to",
+                "value": "Y"
+            },
+            {
+                "name": "SVPRESP",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000037",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when SVPRESP not \"Y\" or null.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "SVPRESP is not null and not equal to \"Y\". Values should be \"Y\" or null."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "SV"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,90 @@
+{
+    "datasets": [
+        {
+            "filename": "te.xpt",
+            "label": "Trial Elements",
+            "domain": "TE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "ETCD",
+                    "label": "Element Code",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "ELEMENT",
+                    "label": "Description of Element",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "TESTRL",
+                    "label": "Rule for Start of Element",
+                    "type": "Char",
+                    "length": 51
+                },
+                {
+                    "name": "TEDUR",
+                    "label": "Planned Duration of Element",
+                    "type": "Char",
+                    "length": 4
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "TE",
+                    "TE",
+                    "TE",
+                    "TE"
+                ],
+                "ETCD": [
+                    "E000",
+                    "E001",
+                    "E002",
+                    "E003"
+                ],
+                "ELEMENT": [
+                    "SCREENING",
+                    "HUMAN INSULIN",
+                    "METFORMIN",
+                    "FOLLOW-UP"
+                ],
+                "TESTRL": [
+                    "INFORMED CONSENT SIGNED",
+                    "FIRST DOSE OF HUMAN INSULIN",
+                    "FIRST DOSE OF METFORMIN",
+                    "ATTEND FOLLOW-UP VISIT 0 TO 30 DAYS AFTER LAST DOSE"
+                ],
+                "TEDUR": [
+                    "P2W",
+                    "P26W",
+                    "P26W",
+                    "P4W"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

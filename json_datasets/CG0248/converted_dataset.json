@@ -1,0 +1,158 @@
+{
+    "datasets": [
+        {
+            "filename": "ta.xpt",
+            "label": "Trial Arms",
+            "domain": "TA",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "ARMCD",
+                    "label": "Planned Arm Code",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ARM",
+                    "label": "Description of Planned Arm",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "TAETORD",
+                    "label": "Planned Order of Element within Arm",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ETCD",
+                    "label": "Element Code",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "ELEMENT",
+                    "label": "Description of Element",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "TABRANCH",
+                    "label": "Branch",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "TATRANS",
+                    "label": "Transition Rule",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 9
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "TA",
+                    "TA",
+                    "TA",
+                    "TA",
+                    "TA",
+                    "TA"
+                ],
+                "ARMCD": [
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "C",
+                    "C"
+                ],
+                "ARM": [
+                    "DRUG A",
+                    "DRUG A",
+                    "DRUG B",
+                    "DRUG B",
+                    "DRUG C",
+                    "DRUG C"
+                ],
+                "TAETORD": [
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    "-1"
+                ],
+                "ETCD": [
+                    "SCR",
+                    "DRUGA",
+                    "SCR",
+                    "DRUGB",
+                    "SCR",
+                    "DRUGB"
+                ],
+                "ELEMENT": [
+                    "SCREENING",
+                    "DRUG A",
+                    "SCREENING",
+                    "DRUG B",
+                    "SCREENING",
+                    "DRUG C"
+                ],
+                "TABRANCH": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "TATRANS": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "EPOCH": [
+                    "SCREENING",
+                    "TREATMENT",
+                    "SCREENING",
+                    "TREATMENT",
+                    "SCREENING",
+                    "TREATMENT"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

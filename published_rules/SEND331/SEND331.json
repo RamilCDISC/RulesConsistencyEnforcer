@@ -1,0 +1,120 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If the test result in PCORRES is below the Lower Limit of Quantitation as indicated in PCSTRESC, then the PCLLOQ must be populated and the PCSTRESU populated with the appropriate unit",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Assumption 7.c",
+                                    "Section": "6.3.11.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND331",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If the test result in PCORRES is below the Lower Limit of Quantitation as indicated in PCSTRESC, then the PCLLOQ must be populated and the PCSTRESU populated with the appropriate unit",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Assumption 7.c",
+                                    "Section": "6.3.11.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND331",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If the test result in PCORRES is below the Lower Limit of Quantitation as indicated in PCSTRESC, then the PCLLOQ must be populated and the PCSTRESU populated with the appropriate unit",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Assumption 7.c",
+                                    "Section": "6.3.11.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND331",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "PCSTRESC",
+                "operator": "equal_to",
+                "value": "BLQ"
+            },
+            {
+                "any": [
+                    {
+                        "name": "PCLLOQ",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "PCSTRESU",
+                        "operator": "empty"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000578",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "If the test result in PCORRES is below the Lower Limit of Quantitation as indicated in PCSTRESC, then the PCLLOQ must be populated and the PCSTRESU populated with the appropriate unit",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "PCSTRESC has value 'BLQ' (Below level of quantitation), so both PCLLOQ and PCSTRESU must be populated"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "PC"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,188 @@
+{
+    "Authorities": [
+        {
+            "Organization": "FDA",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variables intended only for human studies should not be included in nonclinical data.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB051"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB5113",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variables intended only for human studies should not be included in nonclinical data.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB051"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB5113",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variables intended only for human studies should not be included in nonclinical data.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB051"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB5113",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variables intended only for human studies should not be included in nonclinical data.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB051"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB5113",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variables intended only for human studies should not be included in nonclinical data.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB051"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB5113",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variables intended only for human studies should not be included in nonclinical data.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB051"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB5113",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-AR",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variables intended only for human studies should not be included in nonclinical data.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB051"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB5113",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--HLT",
+                "operator": "exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000661",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "--HLT (High Level Term) must not be present in SEND dataset",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--HLT (High Level Term) must not be present in SEND dataset"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

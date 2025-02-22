@@ -1,0 +1,101 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "TIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "At least one of the two permissible variables CASNO or UNII should also be provided if available.",
+                                    "Document": "TIG 1.0",
+                                    "Item": "assumption 3.d.ii",
+                                    "Section": "2.8.8.5"
+                                }
+                            ],
+                            "Origin": "TIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "TIG0010",
+                                "Version": "1"
+                            },
+                            "Version": "1.0"
+                        }
+                    ],
+                    "Substandard": "SDTM",
+                    "Version": "1.0"
+                }
+            ]
+        },
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "TIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "At least one of the two permissible variables CASNO or UNII should also be provided if available.",
+                                    "Document": "TIG 1.0",
+                                    "Item": "assumption 3.d.ii",
+                                    "Section": "2.8.8.5"
+                                }
+                            ],
+                            "Origin": "TIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "TIG0011",
+                                "Version": "1"
+                            },
+                            "Version": "1.0"
+                        }
+                    ],
+                    "Substandard": "SDTM",
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "UNII",
+                "operator": "empty"
+            },
+            {
+                "name": "CASNO",
+                "operator": "empty"
+            }
+        ]
+    },
+    "Core": {
+        "Status": "Published",
+        "Version": "1",
+        "Id": "CORE-000595"
+    },
+    "Description": "Raise an error when UNII and CASNO are both not populated.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "At least one of UNII and CASNO variables should be populated for each ingredient.",
+        "Output_Variables": [
+            "UNII",
+            "CASNO"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "IN"
+            ]
+        },
+        "Use Case": "PROD"
+    },
+    "Sensitivity": "Record"
+}

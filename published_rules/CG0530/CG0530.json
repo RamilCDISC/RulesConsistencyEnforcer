@@ -1,0 +1,93 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0530",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Required for all randomized subjects; null for screen failures or unassigned subjects.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0530",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Required for all randomized subjects; null for screen failures or unassigned subjects.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Specification",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "ARMNRS",
+                "operator": "non_empty"
+            },
+            {
+                "name": "RFENDTC",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000192",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when ARMNRS is not blank and RFENDTC is provided.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "RFENDTC is not blank when ARMNRS is provided.",
+        "Output_Variables": [
+            "ARMNRS",
+            "RFENDTC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

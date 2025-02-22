@@ -1,0 +1,419 @@
+{
+    "datasets": [
+        {
+            "filename": "ec.xpt",
+            "label": "Exposure as Collected",
+            "domain": "EC",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ECLNKID",
+                    "label": "Link ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECTRT",
+                    "label": "Name of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECPRESP",
+                    "label": "Pre-Specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECOCCUR",
+                    "label": "Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECREASOC",
+                    "label": "Reason for Occur Value",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECDOSE",
+                    "label": "Dose",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ECDOSTXT",
+                    "label": "Dose Description",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECDOSU",
+                    "label": "Dose Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECDOSFRM",
+                    "label": "Dose Form",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EcROUTE",
+                    "label": "Route of Administration",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECSTDTC",
+                    "label": "Start Date/Time of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECENDTC",
+                    "label": "End Date/Time of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECSTDY",
+                    "label": "Study Day of Start of Treatment",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ECENDY",
+                    "label": "Study Day of End of Treatment",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC"
+                ],
+                "DOMAIN": [
+                    "EC",
+                    "EC",
+                    "EC",
+                    "EC"
+                ],
+                "USUBJID": [
+                    "ABC1001",
+                    "ABC2001",
+                    "ABC2001",
+                    "ABC2001"
+                ],
+                "ECSEQ": [
+                    1,
+                    1,
+                    2,
+                    3
+                ],
+                "ECLNKID": [
+                    "A2-10110114",
+                    "A2-20110114",
+                    "A0-20110124",
+                    "A2-20110125"
+                ],
+                "ECTRT": [
+                    "BOTTLE A",
+                    "BOTTLE A",
+                    "BOTTLE A",
+                    "BOTTLE A"
+                ],
+                "ECPRESP": [
+                    "Y",
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "ECOCCUR": [
+                    "Y",
+                    "Y",
+                    "N",
+                    "Y"
+                ],
+                "ECREASOC": [
+                    "",
+                    "",
+                    "PATIENT MISTAKE",
+                    ""
+                ],
+                "ECDOSE": [
+                    5,
+                    2,
+                    null,
+                    2
+                ],
+                "ECDOSTXT": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "ECDOSU": [
+                    "mL",
+                    "TABLET",
+                    "TABLET",
+                    "TABLET"
+                ],
+                "ECDOSFRM": [
+                    "ONCE",
+                    "QD",
+                    "QD",
+                    "QD"
+                ],
+                "EcROUTE": [
+                    "SUBCUTANEOUS",
+                    "ORAL",
+                    "ORAL",
+                    ""
+                ],
+                "ECSTDTC": [
+                    "2011-01-14 00:00:00",
+                    "2011-01-14 00:00:00",
+                    "2011-01-24 00:00:00",
+                    "2011-01-25 00:00:00"
+                ],
+                "ECENDTC": [
+                    "2011-01-28 00:00:00",
+                    "2011-01-23 00:00:00",
+                    "2011-01-24 00:00:00",
+                    "2011-01-28 00:00:00"
+                ],
+                "ECSTDY": [
+                    1,
+                    1,
+                    11,
+                    12
+                ],
+                "ECENDY": [
+                    15,
+                    10,
+                    11,
+                    15
+                ]
+            }
+        },
+        {
+            "filename": "ex.xpt",
+            "label": "Exposure",
+            "domain": "EX",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EXLNKID",
+                    "label": "Link ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXTRT",
+                    "label": "Name of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXDOSE",
+                    "label": "Dose",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EXDOSTXT",
+                    "label": "Dose Description",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXDOSU",
+                    "label": "Dose Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXDOSFRM",
+                    "label": "Dose Form",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXDOSFRQ",
+                    "label": "Dosing Frequency per Interval",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXROUTE",
+                    "label": "Route of Administration",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXSTDTC",
+                    "label": "Start Date/Time of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXENDTC",
+                    "label": "End Date/Time of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXSTDY",
+                    "label": "Study Day of Start of Treatment",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EXENDY",
+                    "label": "Study Day of End of Treatment",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC",
+                    "ABC",
+                    "ABC"
+                ],
+                "DOMAIN": [
+                    "EX",
+                    "EX",
+                    "EX"
+                ],
+                "USUBJID": [
+                    "ABC1001",
+                    "ABC2001",
+                    "ABC2001"
+                ],
+                "EXSEQ": [
+                    1,
+                    1,
+                    2
+                ],
+                "EXLNKID": [
+                    "A2-10110114",
+                    "A2-20110114",
+                    "A2-20110125"
+                ],
+                "EXTRT": [
+                    "DRUG X",
+                    "DRUG Z",
+                    "DRUG Z"
+                ],
+                "EXDOSE": [
+                    3,
+                    500,
+                    500
+                ],
+                "EXDOSTXT": [
+                    "",
+                    "",
+                    ""
+                ],
+                "EXDOSU": [
+                    "mg/kg",
+                    "mg",
+                    "mg"
+                ],
+                "EXDOSFRM": [
+                    "INJECTION",
+                    "TABLET",
+                    "TABLET"
+                ],
+                "EXDOSFRQ": [
+                    "ONCE",
+                    "QD",
+                    "QD"
+                ],
+                "EXROUTE": [
+                    "SUBCUTANEOUS",
+                    "ORAL",
+                    "ORAL"
+                ],
+                "EXSTDTC": [
+                    "2011-01-14 00:00:00",
+                    "2011-01-14 00:00:00",
+                    "2011-01-25 00:00:00"
+                ],
+                "EXENDTC": [
+                    "2011-01-28 00:00:00",
+                    "2011-01-23 00:00:00",
+                    "2011-01-28 00:00:00"
+                ],
+                "EXSTDY": [
+                    1,
+                    1,
+                    12
+                ],
+                "EXENDY": [
+                    15,
+                    10,
+                    15
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

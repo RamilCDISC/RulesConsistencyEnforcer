@@ -1,0 +1,122 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0428",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variable Qualifier of --TOXGR",
+                                    "Document": "Model v2.0",
+                                    "Item": "--TOX",
+                                    "Section": "Events|Findings"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0428",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Description of toxicity quantified by --TOXGR such as NCI CTCAE Short Name. Examples: HYPERCALCEMIA; HYPOCALCEMIA. Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define-XML document.",
+                                    "Document": "Model v1.4",
+                                    "Item": "--TOX",
+                                    "Section": "2.2.2|2.2.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0428",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Description of toxicity quantified by --TOXGR such as NCI CTCAE Short Name. Examples: HYPERCALCEMIA; HYPOCALCEMIA. Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define-XML document.",
+                                    "Document": "Model v1.7",
+                                    "Item": "--TOX",
+                                    "Section": "2.2.2|2.2.3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--TOX",
+                "operator": "non_empty"
+            },
+            {
+                "name": "--TOXGR",
+                "operator": "empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000102",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --TOX is not empty, but --TOXGR is empty.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--TOXGR should not be null when --TOX is populated.",
+        "Output_Variables": [
+            "--TOX",
+            "--TOXGR"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "EVENTS",
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "AE",
+                "MH",
+                "CE",
+                "EG",
+                "LB",
+                "PC",
+                "PP"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

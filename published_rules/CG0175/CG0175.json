@@ -1,0 +1,117 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0175",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The intent of the domain model is to collect responses to only those criteria that the subject did not meet, and not the responses to all criteria.\u00a0",
+                                    "Document": "SDTMIG v3.4",
+                                    "Item": "Assumption 1",
+                                    "Section": "6.3.4"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0175",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The intent of the domain model is to collect response to only those criteria that the subject did not meet, and not the responses to all criteria.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Assumption 2",
+                                    "Section": "6.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0175",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The intent of the domain model is to collect response to only those criteria that the subject did not meet, and not the responses to all criteria.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 1",
+                                    "Section": "6.3.4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "IECAT",
+                "operator": "equal_to",
+                "value": "EXCLUSION"
+            },
+            {
+                "name": "IEORRES",
+                "operator": "equal_to",
+                "value": "N"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000011",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Verify the value for IEORRES is Y",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "IEORRES = N for an exclusion criteria. Only exclusion criteria not met should be included in IE domain.",
+        "Output_Variables": [
+            "IECAT",
+            "IEORRES"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "IE"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

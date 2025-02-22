@@ -1,0 +1,213 @@
+{
+    "datasets": [
+        {
+            "filename": "ds.xpt",
+            "label": "Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSCAT",
+                    "label": "Category for Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSCAT",
+                    "label": "Subcategory for Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSDTC",
+                    "label": "Date/Time of Collection",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSTDTC",
+                    "label": "Start Date/Time of Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSDY",
+                    "label": "Study Day of Collection",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSSTDY",
+                    "label": "Study Day of Start of Disposition Event",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "CDISC010",
+                    "CDISC010",
+                    "CDISC010",
+                    "CDISC010",
+                    "CDISC010",
+                    "CDISC010",
+                    "CDISC010"
+                ],
+                "DSSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "DSTERM": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZATION CODE ALLOCATED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "COMPLETED"
+                ],
+                "DSDECOD": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZATION CODE ALLOCATED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "COMPLETED"
+                ],
+                "DSCAT": [
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT"
+                ],
+                "DSSCAT": [
+                    "MAIN INFORMED CONSENT",
+                    "SCREENING",
+                    "RANDOMIZATION",
+                    "END OF TREATMENT",
+                    "END OF TREATMENT",
+                    "END OF TREATMENT",
+                    "END OF STUDY"
+                ],
+                "EPOCH": [
+                    "",
+                    "SCREENING",
+                    "",
+                    "FIRST TREATMENT EPOCH",
+                    "SECOND TREATMENT EPOCH",
+                    "THIRD TREATMENT EPOCH",
+                    "FOLLOW-UP"
+                ],
+                "DSDTC": [
+                    "2022-10-27T09:17",
+                    "2022-10-27T09:18",
+                    "2022-11-13T08:24",
+                    "2022-11-13T09:10",
+                    "2022-11-17T09:10",
+                    "2022-11-21T09:10",
+                    "2022-12-15T13:28"
+                ],
+                "DSSTDTC": [
+                    "2022-10-27 00:00:00",
+                    "2022-10-27T09:18",
+                    "2022-11-13T08:24",
+                    "2022-11-13T09:10",
+                    "2022-11-17T09:10",
+                    "2022-11-21T09:10",
+                    "2022-11-28 00:00:00"
+                ],
+                "DSDY": [
+                    -17,
+                    -17,
+                    1,
+                    1,
+                    5,
+                    9,
+                    33
+                ],
+                "DSSTDY": [
+                    -17,
+                    -17,
+                    1,
+                    1,
+                    5,
+                    9,
+                    16
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

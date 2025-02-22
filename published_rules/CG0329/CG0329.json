@@ -1,0 +1,121 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0329",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Either TEENRL or TEDUR must be populated for each Element.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "7.2.2"
+                                },
+                                {
+                                    "Cited_Guidance": "At least one of TEENRL and TEDUR must be populated. Both may be populated.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 12",
+                                    "Section": "7.2.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0329",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Specification[Either TEENRL or TEDUR must be present for each Element.]|Assumption 12[At least one of TEENRL or TEDUR must be populated. Both may be populated.]",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification|Assumption 12",
+                                    "Section": "7.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0329",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Specification[Either TEENRL or TEDUR must be present for each Element.]|Assumption 12[At least one of TEENRL or TEDUR must be populated. Both may be populated.]",
+                                    "Document": "IG v3.3",
+                                    "Item": "Specification|Assumption 12",
+                                    "Section": "7.2.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "TEENRL",
+                "operator": "empty"
+            },
+            {
+                "name": "TEDUR",
+                "operator": "empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000194",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error if TEDUR is null when TEENRL is null",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "TEDUR cannot be null when TEENRL is null",
+        "Output_Variables": [
+            "TEENRL",
+            "TEDUR"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "TRIAL DESIGN"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "TE"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

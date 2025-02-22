@@ -1,0 +1,196 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Sequence number given to ensure uniqueness of subject records within a domain. May be any valid number.",
+                                    "Document": "IG v3.0",
+                                    "Section": "6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND138",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The Sequence Number (--SEQ) variable uniquely identifies a record for a given USUBJID within a domain.",
+                                    "Document": "IG v3.1",
+                                    "Section": "8"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND138",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The Sequence Number (--SEQ) variable uniquely identifies a record for a given USUBJID within a domain.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "8"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND138",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The Sequence Number (--SEQ) variable uniquely identifies a record for a given USUBJID within a domain.",
+                                    "Document": "IG v3.1",
+                                    "Section": "8"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND138",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The Sequence Number (--SEQ) variable uniquely identifies a record for a given USUBJID within a domain.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "8"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND138",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The Sequence Number (--SEQ) variable uniquely identifies a record for a given USUBJID within a domain.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "8"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND138",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "USUBJID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "--SEQ",
+                        "operator": "is_not_unique_set",
+                        "value": "USUBJID"
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "POOLID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "--SEQ",
+                        "operator": "is_not_unique_set",
+                        "value": "POOLID"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000458",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Sequence number given to ensure uniqueness of subject records within a domain. May be any valid number.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--SEQ is not unique within USUBJID or POOLID",
+        "Output_Variables": [
+            "USUBJID",
+            "POOLID",
+            "--SEQ"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "INTERVENTIONS",
+                "EVENTS",
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

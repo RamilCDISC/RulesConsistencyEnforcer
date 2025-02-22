@@ -1,0 +1,112 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0177",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Response to Inclusion/Exclusion criterion result in standard format",
+                                    "Document": "SDTMIG v3.4",
+                                    "Item": "",
+                                    "Section": "6.3.4"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0177",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Response to Inclusion/Exclusion criterion result in standard format.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification",
+                                    "Section": "6.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0177",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Response to Inclusion/Exclusion criterion result in standard format.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Specification",
+                                    "Section": "6.3.4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "IESTRESC",
+                "operator": "not_equal_to",
+                "value": "IEORRES"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000025",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "IESTRESC is not equal to IEORRES",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "IESTRESC is not equal to IEORRES",
+        "Output_Variables": [
+            "IEORRES",
+            "IESTRESC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "IE"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

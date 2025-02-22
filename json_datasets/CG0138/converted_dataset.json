@@ -1,0 +1,257 @@
+{
+    "datasets": [
+        {
+            "filename": "suppec.xpt",
+            "label": "Supplemental Qualifiers for Exposure",
+            "domain": "SUPPEC",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "RDOMAIN",
+                    "label": "Related Domain Abbreviation",
+                    "type": "Char",
+                    "length": 6
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "IDVAR",
+                    "label": "Identifying Variable",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "IDVARVAL",
+                    "label": "Identifying Variable Value",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QNAM",
+                    "label": "Qualifier Variable Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QLABEL",
+                    "label": "Qualifier Variable Label",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QVAL",
+                    "label": "Data Value",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QORIG",
+                    "label": "Origin",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "QEVAL",
+                    "label": "Evaluator",
+                    "type": "Char",
+                    "length": 200
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "RDOMAIN": [
+                    "EC",
+                    "EC"
+                ],
+                "USUBJID": [
+                    "CDISC009",
+                    "CDISC009"
+                ],
+                "IDVAR": [
+                    "ECSEQ",
+                    "ECSEQ"
+                ],
+                "IDVARVAL": [
+                    "122",
+                    "123"
+                ],
+                "QNAM": [
+                    "ECREASOC",
+                    "ECREASOC"
+                ],
+                "QLABEL": [
+                    "Reason for Occur Value",
+                    "Reason for Occur Value"
+                ],
+                "QVAL": [
+                    "INVESTIGATOR DECISION",
+                    "INVESTIGATOR DECISION"
+                ],
+                "QORIG": [
+                    "COLLECTED",
+                    "COLLECTED"
+                ],
+                "QEVAL": [
+                    "INVESTIGATOR",
+                    "INVESTIGATOR"
+                ]
+            }
+        },
+        {
+            "filename": "suppdm.xpt",
+            "label": "Supplemental Qualifiers for Demographics",
+            "domain": "SUPPDM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "RDOMAIN",
+                    "label": "Related Domain Abbreviation",
+                    "type": "Char",
+                    "length": 6
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "IDVAR",
+                    "label": "Identifying Variable",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "IDVARVAL",
+                    "label": "Identifying Variable Value",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QNAM",
+                    "label": "Qualifier Variable Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QLABEL",
+                    "label": "Qualifier Variable Label",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QVAL",
+                    "label": "Data Value",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QORIG",
+                    "label": "Origin",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "QEVAL",
+                    "label": "Evaluator",
+                    "type": "Char",
+                    "length": 200
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "RDOMAIN": [
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM"
+                ],
+                "USUBJID": [
+                    "CDISC009",
+                    "CDISC009",
+                    "CDISC009",
+                    "CDISC009",
+                    "CDISC009"
+                ],
+                "IDVAR": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "IDVARVAL": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "QNAM": [
+                    "COMPLT",
+                    "FULLSET",
+                    "ITT",
+                    "PPROT",
+                    "SAFETY"
+                ],
+                "QLABEL": [
+                    "Completer Flag",
+                    "Full Set Flag",
+                    "Intent to Treat Flag",
+                    "Per Protocol Flag",
+                    "Safety Flag"
+                ],
+                "QVAL": [
+                    "N",
+                    "Y",
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "QORIG": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "QEVAL": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

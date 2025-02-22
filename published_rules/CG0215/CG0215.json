@@ -1,0 +1,103 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Protocol-defined description of clinical encounter.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification",
+                                    "Section": "5 SV"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0215",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.2"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Protocol-defined description of clinical encounter.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Specification",
+                                    "Section": "5.5"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0215",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.3"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "SVUPDES",
+                "operator": "empty"
+            },
+            {
+                "name": "VISIT",
+                "operator": "is_not_contained_by",
+                "value": "$vis_list"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000333",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when SVUPDES is null and SV.VISIT is not in TV.VISIT",
+    "Executability": "Fully Executable",
+    "Operations": [
+        {
+            "domain": "TV",
+            "id": "$vis_list",
+            "name": "VISIT",
+            "operator": "distinct"
+        }
+    ],
+    "Outcome": {
+        "Message": "SV.VISIT value must be present in TV.VISIT when SVUPDES is null",
+        "Output_Variables": [
+            "$vis_list",
+            "SVUPDES",
+            "VISIT"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "SV"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

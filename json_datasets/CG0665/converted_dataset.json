@@ -1,0 +1,88 @@
+{
+    "datasets": [
+        {
+            "filename": "dm.xpt",
+            "label": "Demographics",
+            "domain": "DM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUBJID",
+                    "label": "Subject Identifier for the Study",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SITEID",
+                    "label": "Study Site Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGE",
+                    "label": "Age",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AGEU",
+                    "label": "Age Units",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "DM",
+                    "DM"
+                ],
+                "USUBJID": [
+                    "CDISC-TEST-002",
+                    "CDISC-TEST-004"
+                ],
+                "SUBJID": [
+                    "002",
+                    "004"
+                ],
+                "SITEID": [
+                    "103",
+                    "102"
+                ],
+                "AGE": [
+                    34,
+                    31
+                ],
+                "AGEU": [
+                    "YEARS",
+                    "YEARS"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

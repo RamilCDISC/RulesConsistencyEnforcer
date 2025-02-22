@@ -1,0 +1,210 @@
+{
+    "datasets": [
+        {
+            "filename": "sv.xpt",
+            "label": "Subject Visits",
+            "domain": "SV",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "SVPRESP",
+                    "label": "Pre-specified",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "VISITDY",
+                    "label": "Visit Day",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SVSTDTC",
+                    "label": "Start Date/Time of Visit",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "SVENDTC",
+                    "label": "End Date/Time of Visit",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "SVSTDY",
+                    "label": "Study Day of Start of Visit",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SVENDY",
+                    "label": "Study Day of End of Visit",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SVUPDES",
+                    "label": "Description of Unplanned Visit",
+                    "type": "Char",
+                    "length": 200
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "VISITNUM": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    "4.1",
+                    5,
+                    6,
+                    101
+                ],
+                "VISIT": [
+                    "SCREENING 1",
+                    "SCREENING 2",
+                    "BASELINE",
+                    "WEEK 2",
+                    "WEEK 3: UNSCHEDULED 01",
+                    "WEEK 4",
+                    "WEEK 6",
+                    "EARLY DISCONTINUATION"
+                ],
+                "SVPRESP": [
+                    "Y",
+                    "Y",
+                    "Y",
+                    "Y",
+                    "Y",
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "VISITDY": [
+                    "-8",
+                    "-3",
+                    1,
+                    15,
+                    null,
+                    29,
+                    43,
+                    null
+                ],
+                "SVSTDTC": [
+                    "2012-11-23",
+                    "2012-11-28",
+                    "2012-11-30",
+                    "2012-12-13",
+                    "2012-12-22",
+                    "2013-12-27",
+                    "2013-01-10",
+                    "2013-01-12"
+                ],
+                "SVENDTC": [
+                    "2012-11-23",
+                    "2012-11-28",
+                    "2012-11-30",
+                    "2012-12-13",
+                    "2012-12-22",
+                    "2013-12-27",
+                    "2013-01-10",
+                    "2013-01-12"
+                ],
+                "SVSTDY": [
+                    -7,
+                    -2,
+                    1,
+                    14,
+                    23,
+                    28,
+                    42,
+                    44
+                ],
+                "SVENDY": [
+                    -7,
+                    -2,
+                    1,
+                    14,
+                    23,
+                    28,
+                    42,
+                    44
+                ],
+                "SVUPDES": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "UNSCHEDULED LABS",
+                    "",
+                    "",
+                    "UNSCHEDULED VISIT TO WITHDRAW FROM STUDY"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

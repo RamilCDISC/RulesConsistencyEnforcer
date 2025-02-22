@@ -1,0 +1,444 @@
+{
+    "datasets": [
+        {
+            "filename": "ec.xpt",
+            "label": "Exposure as Collected",
+            "domain": "EC",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ECTRT",
+                    "label": "Name of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECLOC",
+                    "label": "Location of Dose Administration",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECLAT",
+                    "label": "Laterality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECDIR",
+                    "label": "Directionality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ECPORTOT",
+                    "label": "Portion or Totality",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "EC",
+                    "EC"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123102"
+                ],
+                "ECSEQ": [
+                    1,
+                    2
+                ],
+                "ECTRT": [
+                    "DRUG A",
+                    "PLACEBO"
+                ],
+                "ECLOC": [
+                    "ABDOMINAL CAVITY",
+                    "ABDOMINAL CAVITY"
+                ],
+                "ECLAT": [
+                    "LEFT",
+                    "CENTRE"
+                ],
+                "ECDIR": [
+                    "UPPER",
+                    ""
+                ],
+                "ECPORTOT": [
+                    "SINGLE",
+                    "SEGMENT"
+                ]
+            }
+        },
+        {
+            "filename": "pr.xpt",
+            "label": "Procedures",
+            "domain": "PR",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PRSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "PRTRT",
+                    "label": "Reported Name of Procedure",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "PR",
+                    "PR"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123102"
+                ],
+                "PRSEQ": [
+                    1,
+                    2
+                ],
+                "PRTRT": [
+                    "Liver Transplant",
+                    "Reset Broken Arm"
+                ]
+            }
+        },
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "AE",
+                    "AE"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123102"
+                ],
+                "AESEQ": [
+                    1,
+                    2
+                ],
+                "AETERM": [
+                    "Worsening Dry Eyes",
+                    "Worsening Dry Eyes"
+                ]
+            }
+        },
+        {
+            "filename": "oe.xpt",
+            "label": "Ophthalmic Examinations",
+            "domain": "OE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "OETESTCD",
+                    "label": "Short Name of Ophthalmic Test or Exam",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OETEST",
+                    "label": "Name of Ophthalmic Test or Exam",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OELOC",
+                    "label": "Location Used for the Measurement",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OELAT",
+                    "label": "Laterality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OEDIR",
+                    "label": "Directionality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "OEPORTOT",
+                    "label": "Portion or Totality",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "OE",
+                    "OE"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123102"
+                ],
+                "OESEQ": [
+                    1,
+                    1
+                ],
+                "OETESTCD": [
+                    "INTP",
+                    "OEEXAM"
+                ],
+                "OETEST": [
+                    "Interpretation",
+                    "Ophthalmic Examination"
+                ],
+                "OELOC": [
+                    "LENS",
+                    "CONJUNCTIVA"
+                ],
+                "OELAT": [
+                    "LEFT",
+                    "RIGHT"
+                ],
+                "OEDIR": [
+                    "",
+                    "MULTIPLE"
+                ],
+                "OEPORTOT": [
+                    "SEGMENT",
+                    "MANY"
+                ]
+            }
+        },
+        {
+            "filename": "tu.xpt",
+            "label": "Tumor/Lesion Identification",
+            "domain": "TU",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TUSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "TUTESTCD",
+                    "label": "Tumor/Lesion ID Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TUTEST",
+                    "label": "Tumor/Lesion ID Test Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TULOC",
+                    "label": "Location of the Tumor/Lesion",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TULAT",
+                    "label": "Laterality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TUDIR",
+                    "label": "Directionality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TUPORTOT",
+                    "label": "Portion or Totality",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "TU",
+                    "TU"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123102"
+                ],
+                "TUSEQ": [
+                    1,
+                    2
+                ],
+                "TUTESTCD": [
+                    "TUMIDENT",
+                    "TUMIDENT"
+                ],
+                "TUTEST": [
+                    "Tumor Identification",
+                    "Tumor Identification"
+                ],
+                "TULOC": [
+                    "BREAST",
+                    "BREAST"
+                ],
+                "TULAT": [
+                    "LEFT",
+                    "RIGHT"
+                ],
+                "TUDIR": [
+                    "",
+                    ""
+                ],
+                "TUPORTOT": [
+                    "SINGLE",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

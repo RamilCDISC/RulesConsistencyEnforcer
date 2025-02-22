@@ -1,0 +1,227 @@
+{
+    "datasets": [
+        {
+            "filename": "suppqscq.xpt",
+            "label": "Supplemental Qualifiers for QSCG",
+            "domain": "SUPPQSCQ",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RDOMAIN",
+                    "label": "Related Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Subject Identifier",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "IDVAR",
+                    "label": "Identifying Variable",
+                    "type": "Char",
+                    "length": 6
+                },
+                {
+                    "name": "IDVARVAL",
+                    "label": "Identifying Variable Value",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "QNAM",
+                    "label": "Qualifier Variable Name",
+                    "type": "Char",
+                    "length": 11
+                },
+                {
+                    "name": "QLABEL",
+                    "label": "Qualifier Variable Label",
+                    "type": "Char",
+                    "length": 49
+                },
+                {
+                    "name": "QVAL",
+                    "label": "Data Value",
+                    "type": "Char",
+                    "length": 19
+                },
+                {
+                    "name": "QORIG",
+                    "label": "Origin",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QEVAL",
+                    "label": "Evaluator",
+                    "type": "Char",
+                    "length": 22
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC01",
+                    "CDISC01"
+                ],
+                "RDOMAIN": [
+                    "QS",
+                    "QS"
+                ],
+                "USUBJID": [
+                    "CDISC01.100008",
+                    "CDISC01.100014"
+                ],
+                "IDVAR": [
+                    "QSCAT",
+                    "QSCAT"
+                ],
+                "IDVARVAL": [
+                    "CGI",
+                    "CGI"
+                ],
+                "QNAM": [
+                    "QSLANG",
+                    "QSLANG"
+                ],
+                "QLABEL": [
+                    "Questionnaire Language",
+                    "Questionnaire Language"
+                ],
+                "QVAL": [
+                    "GERMAN",
+                    "FRENCH"
+                ],
+                "QORIG": [
+                    "CRF",
+                    "CRF"
+                ],
+                "QEVAL": [
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "suppqssw.xpt",
+            "label": "Supplemental Qualifiers for QSSW",
+            "domain": "SUPPQSSW",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RDOMAIN",
+                    "label": "Related Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Subject Identifier",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "IDVAR",
+                    "label": "Identifying Variable",
+                    "type": "Char",
+                    "length": 6
+                },
+                {
+                    "name": "IDVARVAL",
+                    "label": "Identifying Variable Value",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "QNAM",
+                    "label": "Qualifier Variable Name",
+                    "type": "Char",
+                    "length": 11
+                },
+                {
+                    "name": "QLABEL",
+                    "label": "Qualifier Variable Label",
+                    "type": "Char",
+                    "length": 49
+                },
+                {
+                    "name": "QVAL",
+                    "label": "Data Value",
+                    "type": "Char",
+                    "length": 19
+                },
+                {
+                    "name": "QORIG",
+                    "label": "Origin",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QEVAL",
+                    "label": "Evaluator",
+                    "type": "Char",
+                    "length": 22
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC01",
+                    "CDISC01"
+                ],
+                "RDOMAIN": [
+                    "QS",
+                    "QS"
+                ],
+                "USUBJID": [
+                    "CDISC01.100008",
+                    "CDISC01.100014"
+                ],
+                "IDVAR": [
+                    "QSCAT",
+                    "QSCAT"
+                ],
+                "IDVARVAL": [
+                    "SWLS",
+                    "SWLS"
+                ],
+                "QNAM": [
+                    "QSLANG",
+                    "QSLANG"
+                ],
+                "QLABEL": [
+                    "Questionnaire Language",
+                    "Questionnaire Language"
+                ],
+                "QVAL": [
+                    "GERMAN",
+                    "FRENCH"
+                ],
+                "QORIG": [
+                    "CRF",
+                    "CRF"
+                ],
+                "QEVAL": [
+                    "",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

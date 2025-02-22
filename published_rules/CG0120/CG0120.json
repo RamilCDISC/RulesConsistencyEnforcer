@@ -1,0 +1,100 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Name of the Arm to which the subject was assigned.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification",
+                                    "Section": "5"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0120",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        },
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Name of the Arm to which the subject was assigned.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification",
+                                    "Section": "5"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0121",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.2"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "ARM",
+                "operator": "is_not_contained_by",
+                "value": [
+                    "Screen Failure",
+                    "Not Assigned"
+                ]
+            },
+            {
+                "name": "ARM",
+                "operator": "is_not_contained_by",
+                "value": "$arm_list"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000368",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "ARM values in Demographics are restricted to ARM values in Trial Arms when not equal to \"Screen Failure\" or \"Not Assigned\"",
+    "Executability": "Fully Executable",
+    "Operations": [
+        {
+            "domain": "TA",
+            "id": "$arm_list",
+            "name": "ARM",
+            "operator": "distinct"
+        }
+    ],
+    "Outcome": {
+        "Message": "DM.ARM must equal Screen Failure or Not Assigned if the value is not present in TA.ARM",
+        "Output_Variables": [
+            "$arm_list",
+            "ARM"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

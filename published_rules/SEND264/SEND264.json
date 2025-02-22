@@ -1,0 +1,175 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The variable, --STRESC, is derived either by the conversion of values in --ORRES to values with standard units, or by the assignment of the value of --ORRES.",
+                                    "Document": "IG v3.0",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND264",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The variable, --STRESC, is derived either by the conversion of values in --ORRES to values with standard units, or by the assignment of the value of --ORRES.",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND264",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The variable, --STRESC, is derived either by the conversion of values in --ORRES to values with standard units, or by the assignment of the value of --ORRES.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND264",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "WThe variable, --STRESC, is derived either by the conversion of values in --ORRES to values with standard units, or by the assignment of the value of --ORRES.",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND264",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "WThe variable, --STRESC, is derived either by the conversion of values in --ORRES to values with standard units, or by the assignment of the value of --ORRES.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND264",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "WThe variable, --STRESC, is derived either by the conversion of values in --ORRES to values with standard units, or by the assignment of the value of --ORRES.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND264",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--ORRES",
+                "operator": "empty"
+            },
+            {
+                "name": "--STRESC",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000430",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When --ORRES is null, --STRESC must also be null",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--STRESC must be be null as --ORRES is null.",
+        "Output_Variables": [
+            "--ORRES",
+            "--STRESC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

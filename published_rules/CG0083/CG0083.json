@@ -1,0 +1,118 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0083",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Events[--BODSYSCD][Variable Qualifier of BODSYS]",
+                                    "Document": "Model v2.0",
+                                    "Item": "--BODSYS",
+                                    "Section": "Events"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0083",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variable Qualifier of --BODSYS",
+                                    "Document": "Model v1.7",
+                                    "Section": "2.2.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0083",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variable Qualifier of --BODSYS",
+                                    "Document": "Model v1.4",
+                                    "Section": "2.2.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--BDSYCD",
+                "operator": "exists"
+            },
+            {
+                "name": "--BODSYS",
+                "operator": "exists"
+            },
+            {
+                "name": "--BDSYCD",
+                "operator": "is_not_unique_relationship",
+                "value": "--BODSYS"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000184",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "There must be a one-to-one relationship between --BDSYSCD and --BODSYS",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "There is not a one-to-one relationship between --BODSYS and --BDSYSCD",
+        "Output_Variables": [
+            "--BODSYS",
+            "--BDSYCD"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

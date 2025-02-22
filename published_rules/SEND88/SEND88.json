@@ -1,0 +1,180 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "--STRESN will only contain data values if the data values presented in --STRESC are numeric values",
+                                    "Document": "IG v3.0",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND88",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "--STRESN will only contain data values if the data values presented in --STRESC are numeric values",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND88",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "--STRESN will only contain data values if the data values presented in --STRESC are numeric values",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND88",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "--STRESN will only contain data values if the data values presented in --STRESC are numeric values",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND88",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "--STRESN will only contain data values if the data values presented in --STRESC are numeric values",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND88",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "--STRESN will only contain data values if the data values presented in --STRESC are numeric values",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.5.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND88",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--STRESC",
+                "operator": "non_empty"
+            },
+            {
+                "name": "--STRESC",
+                "operator": "matches_regex",
+                "value": "^-?(0|[1-9]\\d*)(\\.\\d+)?$"
+            },
+            {
+                "name": "--STRESN",
+                "operator": "empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000542",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When --STRESC represents numeric data, --STRESN must be populated.",
+    "Executability": "Partially Executable",
+    "Outcome": {
+        "Message": "--STRESC must be populated as --ORRES is populated",
+        "Output_Variables": [
+            "--STRESC",
+            "--STRESN"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

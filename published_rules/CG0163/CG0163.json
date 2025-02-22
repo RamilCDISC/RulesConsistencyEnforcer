@@ -1,0 +1,125 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0163",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Identifying variable in the parent dataset that identifies the record(s) to which the comment applies.  Examples AESEQ or CMGRPID. Used only when individual comments are related to domain records.  Null for comments collected on separate CRFs.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "5.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0163",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Identifying variable in the parent dataset that identifies the record(s) to which the comment applies. Examples AESEQ or CMGRPID. Used only when individual comments are related to domain records. null for comments collected on separate CRFs.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification",
+                                    "Section": "5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0163",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Identifying variable in the parent dataset that identifies the record(s) to which the comment applies. Examples AESEQ or CMGRPID. Used only when individual comments are related to domain records. null for comments collected on separate CRFs.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Specification",
+                                    "Section": "5.1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "RDOMAIN",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "RDOMAIN",
+                        "operator": "not_equal_to",
+                        "value": "DM",
+                        "value_is_literal": true
+                    },
+                    {
+                        "name": "IDVAR",
+                        "operator": "empty"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000158",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "IDVAR must be specified.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "IDVAR should not be missing when RDOMAIN is not in (empty, DM).",
+        "Output_Variables": [
+            "RDOMAIN",
+            "IDVAR"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "CO"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

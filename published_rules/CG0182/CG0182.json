@@ -1,0 +1,112 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0182",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Lower end of reference range for continuous measurements for LBSTRESC/LBSTRESN in standardized units. Should be populated  only for continuous results. ",
+                                    "Document": "SDTMIG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "6.3.5.6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0182",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Lower end of reference range for continuous measurements in original units. Should be populated only for continuous results.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification",
+                                    "Section": "6.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0182",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Lower end of reference range for continuous measurements in original units. Should be populated only for continuous results.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Specification",
+                                    "Section": "6.3.6"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "LBORRES",
+                "operator": "not_matches_regex",
+                "value": "^-?(0|[1-9]\\d*)(\\.\\d+)?$"
+            },
+            {
+                "name": "LBSTNRLO",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000298",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when LBORRES is not empty and LBSTNRLO is empty.",
+    "Executability": "Partially Executable - Possible Underreporting",
+    "Outcome": {
+        "Message": "LBORRES is not a numeric result/empty and LBSTNRLO is not empty."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "LB"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

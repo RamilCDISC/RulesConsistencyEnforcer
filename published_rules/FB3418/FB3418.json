@@ -1,0 +1,119 @@
+{
+    "Authorities": [
+        {
+            "Organization": "FDA",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3418",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.2"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3418",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.3"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3418",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.4"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "AEOUT",
+                "operator": "equal_to",
+                "value": "RECOVERED/RESOLVED"
+            },
+            {
+                "name": "AEENDTC",
+                "operator": "empty"
+            },
+            {
+                "name": "AEDUR",
+                "operator": "empty"
+            }
+        ]
+    },
+    "Core": {
+        "Status": "Published",
+        "Version": "1",
+        "Id": "CORE-000659"
+    },
+    "Description": "The Outcome of Adverse Event (AEOUT) variable is populated with the value RECOVERED/RESOLVED, however the End Date/Time of Adverse Event (AEENDTC) and Duration of Adverse Event (AEDUR) variables are null. If the adverse event has an outcome of RECOVERED/RESOLVED, it is expected that an end date or a collected duration be provided.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Neither the end date (AEENDTC) nor the collected duration (AEDUR) is populated when AEOUT=RECOVERED/RESOLVED",
+        "Output_Variables": [
+            "AETERM",
+            "AEOUT",
+            "AEENDTC",
+            "AEDUR"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "AE"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

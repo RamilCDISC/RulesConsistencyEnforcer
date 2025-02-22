@@ -1,0 +1,359 @@
+{
+    "datasets": [
+        {
+            "filename": "dm.xpt",
+            "label": "Demographics",
+            "domain": "DM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUBJID",
+                    "label": "Subject Identifier for the Study",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RFSTDTC",
+                    "label": "Subject Reference Start Date/Time",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RFENDTC",
+                    "label": "Subject Reference End Date/Time",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RFXSTDTC",
+                    "label": "Date/Time of First Study Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RFXENDTC",
+                    "label": "Date/Time of Last Study Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RFICDTC",
+                    "label": "Date/Time of Informed Consent",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RFPENDTC",
+                    "label": "Date/Time of End of Participation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DTHDTC",
+                    "label": "Date/Time of Death",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DTHFL",
+                    "label": "Subject Death Flag",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SITEID",
+                    "label": "Study Site Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "BRTHDTC",
+                    "label": "Date/Time of Birth",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGE",
+                    "label": "Age",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AGEU",
+                    "label": "Age Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SEX",
+                    "label": "Sex",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RACE",
+                    "label": "Race",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ETHNIC",
+                    "label": "Ethnicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ARMCD",
+                    "label": "Planned Arm Code",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ARM",
+                    "label": "Description of Planned Arm",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ACTARMCD",
+                    "label": "Actual Arm Code",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ACTARM",
+                    "label": "Description of Actual Arm",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ARMNRS",
+                    "label": "Reason Arm and/or Actual Arm is Null",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ACTARMUD",
+                    "label": "Description of Unplanned Actual Arm",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "COUNTRY",
+                    "label": "Country",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "DM",
+                    "DM"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "SUBJID": [
+                    "1115",
+                    "1211"
+                ],
+                "RFSTDTC": [
+                    "2012-11-30",
+                    "2012-11-15"
+                ],
+                "RFENDTC": [
+                    "2013-01-23",
+                    "2013-01-14"
+                ],
+                "RFXSTDTC": [
+                    "2012-11-30",
+                    "2012-11-15"
+                ],
+                "RFXENDTC": [
+                    "2013-01-23",
+                    "2013-01-12"
+                ],
+                "RFICDTC": [
+                    "2012-11-23",
+                    "2012-10-30"
+                ],
+                "RFPENDTC": [
+                    "2013-05-20",
+                    "2013-01-14"
+                ],
+                "DTHDTC": [
+                    "",
+                    "2013-01-14"
+                ],
+                "DTHFL": [
+                    "",
+                    "Y"
+                ],
+                "SITEID": [
+                    "701",
+                    "701"
+                ],
+                "BRTHDTC": [
+                    "1928",
+                    "1936"
+                ],
+                "AGE": [
+                    84,
+                    76
+                ],
+                "AGEU": [
+                    "YEARS",
+                    "YEARS"
+                ],
+                "SEX": [
+                    "M",
+                    "F"
+                ],
+                "RACE": [
+                    "WHITE",
+                    "WHITE"
+                ],
+                "ETHNIC": [
+                    "NOT HISPANIC OR LATINO",
+                    "NOT HISPANIC OR LATINO"
+                ],
+                "ARMCD": [
+                    "ZAN_LOW",
+                    "ZAN_LOW"
+                ],
+                "ARM": [
+                    "Zanomaline Low Dose (54 mg)",
+                    "Zanomaline Low Dose (54 mg)"
+                ],
+                "ACTARMCD": [
+                    "ZAN_LOW",
+                    "ZAN_LOW"
+                ],
+                "ACTARM": [
+                    "Zanomaline Low Dose (54 mg)",
+                    "Zanomaline Low Dose (54 mg)"
+                ],
+                "ARMNRS": [
+                    "",
+                    ""
+                ],
+                "ACTARMUD": [
+                    "",
+                    ""
+                ],
+                "COUNTRY": [
+                    "USA",
+                    "USA"
+                ]
+            }
+        },
+        {
+            "filename": "dv.xpt",
+            "label": "Protocol Deviations",
+            "domain": "DV",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DVSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DVTERM",
+                    "label": "Protocol Deviation Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DVSTDTC",
+                    "label": "Start Date/Time of Deviation",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "DV",
+                    "DV",
+                    "DV",
+                    "DV"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC002",
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "DVSEQ": [
+                    2,
+                    1,
+                    1,
+                    1
+                ],
+                "DVTERM": [
+                    "M2 PREDOSE PK DONE POSTDOSE",
+                    "INCLUSION CRITERION 2 NOT MET",
+                    "Protocol Deviation",
+                    "Protocol Deviation"
+                ],
+                "DVSTDTC": [
+                    "2012-11-23",
+                    "2012-10-31",
+                    "2012-11-27",
+                    "2012-10-30"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

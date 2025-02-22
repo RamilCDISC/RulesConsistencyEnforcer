@@ -1,0 +1,274 @@
+{
+    "datasets": [
+        {
+            "filename": "ml.xpt",
+            "label": "Meal Data",
+            "domain": "ML",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MLTPT",
+                    "label": "Planned Time Point Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLTPTNUM",
+                    "label": "Planned Time Point Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MLELTM",
+                    "label": "Planned Elapsed Time from Time Point Ref",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLTPTREF",
+                    "label": "Time Point Reference",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLRFTDTC",
+                    "label": "Date/Time of Reference Time Point",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123",
+                    "ABC123",
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "ML",
+                    "ML",
+                    "ML",
+                    "ML",
+                    "ML"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101",
+                    "123101",
+                    "123101",
+                    "123101"
+                ],
+                "MLSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "MLTPT": [
+                    "- 10 MIN ",
+                    "1 HR",
+                    "2 HR",
+                    "24 HR",
+                    "48 HR"
+                ],
+                "MLTPTNUM": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "MLELTM": [
+                    "-PT10M",
+                    "PT1H",
+                    "PT2H",
+                    "PT24H",
+                    "PT48H"
+                ],
+                "MLTPTREF": [
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE"
+                ],
+                "MLRFTDTC": [
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15"
+                ]
+            }
+        },
+        {
+            "filename": "pc.xpt",
+            "label": "Pharmacokinetics Concentrations",
+            "domain": "PC",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "PCDTC",
+                    "label": "Date/Time of Specimen Collection",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCTPT",
+                    "label": "Planned Time Point Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCTPTNUM",
+                    "label": "Planned Time Point Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "PCELTM",
+                    "label": "Planned Elapsed Time from Time Point Ref",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCTPTREF",
+                    "label": "Time Point Reference",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCRFTDTC",
+                    "label": "Date/Time of Reference Point",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123",
+                    "ABC123",
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "PC",
+                    "PC",
+                    "PC",
+                    "PC",
+                    "PC"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101",
+                    "123101",
+                    "123101",
+                    "123101"
+                ],
+                "PCSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "PCDTC": [
+                    "2005-10-13",
+                    "2005-10-13",
+                    "2005-10-13",
+                    "2005-10-13",
+                    "2005-10-13"
+                ],
+                "PCTPT": [
+                    "- 10 MIN ",
+                    "1 HR",
+                    "2 HR",
+                    "24 HR",
+                    "48 HR"
+                ],
+                "PCTPTNUM": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "PCELTM": [
+                    "-PT10M",
+                    "PT1H",
+                    "PT2H",
+                    "PT24H",
+                    "PT48H"
+                ],
+                "PCTPTREF": [
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE",
+                    "DAY 1 DOSE"
+                ],
+                "PCRFTDTC": [
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15",
+                    "2005-10-13T10:15"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

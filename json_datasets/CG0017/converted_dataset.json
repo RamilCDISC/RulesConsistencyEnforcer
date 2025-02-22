@@ -1,0 +1,297 @@
+{
+    "datasets": [
+        {
+            "filename": "qscg.xpt",
+            "label": "Clinical Global Impressions",
+            "domain": "QSCG",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSTESTCD",
+                    "label": "Question Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "QSTEST",
+                    "label": "Question Name",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QSCAT",
+                    "label": "Category of Question",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "QSORRES",
+                    "label": "Finding in Original Units",
+                    "type": "Char",
+                    "length": 23
+                },
+                {
+                    "name": "QSSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "QSSTRESN",
+                    "label": "Numeric Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSLOBXFL",
+                    "label": "Last Observation Before Exposure Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QSDTC",
+                    "label": "Date/Time of Finding",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "QSDY",
+                    "label": "Study Day of Finding",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC01"
+                ],
+                "DOMAIN": [
+                    "QS"
+                ],
+                "USUBJID": [
+                    "CDISC01.100008"
+                ],
+                "QSSEQ": [
+                    1
+                ],
+                "QSTESTCD": [
+                    "CGI0201"
+                ],
+                "QSTEST": [
+                    "CGI02-Severity"
+                ],
+                "QSCAT": [
+                    "CGI"
+                ],
+                "QSORRES": [
+                    "Moderate"
+                ],
+                "QSSTRESC": [
+                    "4"
+                ],
+                "QSSTRESN": [
+                    4
+                ],
+                "QSLOBXFL": [
+                    "Y"
+                ],
+                "VISITNUM": [
+                    1
+                ],
+                "VISIT": [
+                    "WEEK 1"
+                ],
+                "QSDTC": [
+                    "2003-04-15"
+                ],
+                "QSDY": [
+                    1
+                ]
+            }
+        },
+        {
+            "filename": "qspg.xpt",
+            "label": "Patient Global Impressions",
+            "domain": "QSPG",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSTESTCD",
+                    "label": "Question Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "QSTEST",
+                    "label": "Question Name",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QSCAT",
+                    "label": "Category of Question",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "QSORRES",
+                    "label": "Finding in Original Units",
+                    "type": "Char",
+                    "length": 23
+                },
+                {
+                    "name": "QSSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "QSSTRESN",
+                    "label": "Numeric Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSLOBXFL",
+                    "label": "Last Observation Before Exposure Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QSDTC",
+                    "label": "Date/Time of Finding",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "QSDY",
+                    "label": "Study Day of Finding",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC01"
+                ],
+                "DOMAIN": [
+                    "QS"
+                ],
+                "USUBJID": [
+                    "CDISC01.100008"
+                ],
+                "QSSEQ": [
+                    1
+                ],
+                "QSTESTCD": [
+                    "PGI0201"
+                ],
+                "QSTEST": [
+                    "PGI02-Severity"
+                ],
+                "QSCAT": [
+                    "CGI"
+                ],
+                "QSORRES": [
+                    "Moderate"
+                ],
+                "QSSTRESC": [
+                    "4"
+                ],
+                "QSSTRESN": [
+                    4
+                ],
+                "QSLOBXFL": [
+                    "Y"
+                ],
+                "VISITNUM": [
+                    1
+                ],
+                "VISIT": [
+                    "WEEK 1"
+                ],
+                "QSDTC": [
+                    "2003-04-15"
+                ],
+                "QSDY": [
+                    1
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

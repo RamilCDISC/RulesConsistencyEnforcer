@@ -1,0 +1,138 @@
+{
+    "datasets": [
+        {
+            "filename": "suppdm.xpt",
+            "label": "Supplemental Qualifiers for Demographics",
+            "domain": "SUPPDM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RDOMAIN",
+                    "label": "Related Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "IDVAR",
+                    "label": "Identifying Variable",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "IDVARVAL",
+                    "label": "Identifying Variable Value",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "QNAM",
+                    "label": "Qualifier Variable Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "QLABEL",
+                    "label": "Qualifier Variable Label",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "QVAL",
+                    "label": "Data Value",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "QORIG",
+                    "label": "Origin",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "QEVAL",
+                    "label": "Evaluator",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "RDOMAIN": [
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM"
+                ],
+                "USUBJID": [
+                    "S001",
+                    "S001",
+                    "S001",
+                    "S001"
+                ],
+                "IDVAR": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "IDVARVAL": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "QNAM": [
+                    "RACE1",
+                    "RACE2",
+                    "EXITT",
+                    "XENRFL"
+                ],
+                "QLABEL": [
+                    "Race 1",
+                    "Race 2",
+                    "Test name",
+                    "Test name"
+                ],
+                "QVAL": [
+                    "WHITE",
+                    "ASIAN",
+                    "Abcd",
+                    "Abcd"
+                ],
+                "QORIG": [
+                    "CRF",
+                    "CRF",
+                    "CRF",
+                    "CRF"
+                ],
+                "QEVAL": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

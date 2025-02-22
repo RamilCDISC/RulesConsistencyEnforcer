@@ -1,0 +1,96 @@
+{
+    "Authorities": [
+        {
+            "Organization": "FDA",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3420",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.3"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3420",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.4"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "RFICDTC",
+                "operator": "non_empty"
+            },
+            {
+                "name": "RFXSTDTC",
+                "operator": "non_empty"
+            },
+            {
+                "name": "RFICDTC",
+                "operator": "date_greater_than",
+                "value": "RFXSTDTC"
+            }
+        ]
+    },
+    "Core": {
+        "Status": "Published",
+        "Version": "1",
+        "Id": "CORE-000658"
+    },
+    "Description": "Date/Time of Informed Consent (RFICDTC) should not be after Date/Time of First Study Treatment (RFXSTDTC)",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "RFICDTC is greater than RFXSTDTC",
+        "Output_Variables": [
+            "RFICDTC",
+            "RFXSTDTC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

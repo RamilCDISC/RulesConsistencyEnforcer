@@ -1,0 +1,171 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Null flavor for the value of the TSPARMs, which should be included according to the trial summary code table below if and only if TSVAL is null.",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "7.6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND288",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Null flavor for the value of the TSPARMs, which should be included according to the trial summary code table below if and only if TSVAL is null.",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "7.6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND288",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Null flavor for the value of the TSPARMs, which should be included according to the trial summary code table below if and only if TSVAL is null.",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "7.6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND288",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Null flavor for the value of the TSPARMs, which should be included according to the trial summary code table below if and only if TSVAL is null.",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "7.6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND288",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Null flavor for the value of the TSPARMs, which should be included according to the trial summary code table below if and only if TSVAL is null.",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "7.6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND288",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "TSVAL",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "TSVALNF",
+                        "operator": "non_empty"
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "TSVAL",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "TSVALNF",
+                        "operator": "empty"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000583",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Either TSVAL or TSVALNF is populated, but not both. Trigger error when TSVAL and TSVALNF are populated, or when both variables are empty.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Either both TSVALNF and TSVAL are populated, or both are empty."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "TRIAL DESIGN"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "TS"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

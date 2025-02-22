@@ -1,0 +1,282 @@
+{
+    "datasets": [
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESEV",
+                    "label": "Severity/Intensity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESER",
+                    "label": "Serious Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEACN",
+                    "label": "Action Taken with Study Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEREL",
+                    "label": "Causality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEOUT",
+                    "label": "Outcome of Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESCAN",
+                    "label": "Involves Cancer",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESCONG",
+                    "label": "Congenital Anomaly or Birth Defect",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESDISAB",
+                    "label": "Persist or Signif Disability/Incapacity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESDTH",
+                    "label": "Results in Death",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESHOSP",
+                    "label": "Requires or Prolongs Hospitalization",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESLIFE",
+                    "label": "Is Life Threatening",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESOD",
+                    "label": "Occurred with Overdose",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESTDTC",
+                    "label": "Start Date/Time of Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEENDTC",
+                    "label": "End Date/Time of Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESTDY",
+                    "label": "Study Day of Start of Adverse Event",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AEENDY",
+                    "label": "Study Day of End of Adverse Event",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AEENRTPT",
+                    "label": "End Relative to Reference Time Point",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEENTPT",
+                    "label": "End Reference Time Point",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "AE",
+                    "AE",
+                    "AE"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC003",
+                    "CDISC008"
+                ],
+                "AESEQ": [
+                    2,
+                    1,
+                    1
+                ],
+                "AETERM": [
+                    "FATIGUE",
+                    "HYPERHIDROSIS",
+                    "COMPLETED SUICIDE"
+                ],
+                "AESEV": [
+                    "MODERATE",
+                    "MILD",
+                    "SEVERE"
+                ],
+                "AESER": [
+                    "N",
+                    "",
+                    "Y"
+                ],
+                "AEACN": [
+                    "DOSE NOT CHANGED",
+                    "DOSE NOT CHANGED",
+                    "DRUG WITHDRAWN"
+                ],
+                "AEREL": [
+                    "UNLIKELY RELATED",
+                    "POSSIBLY RELATED",
+                    "NOT RELATED"
+                ],
+                "AEOUT": [
+                    "NOT RECOVERED/NOT RESOLVED",
+                    "NOT RECOVERED/NOT RESOLVED",
+                    "FATAL"
+                ],
+                "AESCAN": [
+                    "N",
+                    "N",
+                    "N"
+                ],
+                "AESCONG": [
+                    "N",
+                    "N",
+                    "N"
+                ],
+                "AESDISAB": [
+                    "N",
+                    "N",
+                    "N"
+                ],
+                "AESDTH": [
+                    "N",
+                    "N",
+                    "Y"
+                ],
+                "AESHOSP": [
+                    "N",
+                    "N",
+                    "N"
+                ],
+                "AESLIFE": [
+                    "N",
+                    "N",
+                    "N"
+                ],
+                "AESOD": [
+                    "Y",
+                    "N",
+                    ""
+                ],
+                "EPOCH": [
+                    "TREATMENT",
+                    "TREATMENT",
+                    "TREATMENT"
+                ],
+                "AESTDTC": [
+                    "2013-01-14",
+                    "2013-08-30",
+                    "2014-10-31"
+                ],
+                "AEENDTC": [
+                    "",
+                    "",
+                    "2014-10-31"
+                ],
+                "AESTDY": [
+                    46,
+                    2,
+                    174
+                ],
+                "AEENDY": [
+                    null,
+                    null,
+                    174
+                ],
+                "AEENRTPT": [
+                    "ONGOING",
+                    "ONGOING",
+                    ""
+                ],
+                "AEENTPT": [
+                    "2013-05-20",
+                    "2013-02-13",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

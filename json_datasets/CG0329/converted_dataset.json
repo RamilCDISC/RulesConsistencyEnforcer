@@ -1,0 +1,88 @@
+{
+    "datasets": [
+        {
+            "filename": "te.xpt",
+            "label": "Trial Elements",
+            "domain": "TE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "ETCD",
+                    "label": "Element Code",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "ELEMENT",
+                    "label": "Description of Element",
+                    "type": "Char",
+                    "length": 26
+                },
+                {
+                    "name": "TESTRL",
+                    "label": "Rule for Start of Element",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "TEENRL",
+                    "label": "Rule for End of Element",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "TEDUR",
+                    "label": "Planned Duration of Element",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "TE",
+                    "TE"
+                ],
+                "ETCD": [
+                    "SCREEN",
+                    "PLACEBO"
+                ],
+                "ELEMENT": [
+                    "Screening",
+                    "Placebo"
+                ],
+                "TESTRL": [
+                    "Date of informed consent",
+                    "First dose when drug is Placebo"
+                ],
+                "TEENRL": [
+                    "Completion of all screening activities, no more than 2 weeks from informed consent",
+                    ""
+                ],
+                "TEDUR": [
+                    "",
+                    "P7D"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

@@ -1,0 +1,129 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0116",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Variable Qualifer of --LOC.",
+                                    "Document": "Model v2.0",
+                                    "Item": "--DIR",
+                                    "Section": "Events"
+                                },
+                                {
+                                    "Cited_Guidance": "Variable Qualifer of --LOC.",
+                                    "Document": "Model v2.0",
+                                    "Item": "--DIR",
+                                    "Section": "Interventions"
+                                },
+                                {
+                                    "Cited_Guidance": "Variable Qualifer of --LOC.",
+                                    "Document": "Model v2.0",
+                                    "Item": "--DIR",
+                                    "Section": "Findings"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0116",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Qualifier for anatomical location further detailing directionality ...",
+                                    "Document": "Model v1.4",
+                                    "Item": "--DIR Specification",
+                                    "Section": "2.2.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0116",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Qualifier for anatomical location further detailing directionality ...",
+                                    "Document": "Model v1.7",
+                                    "Item": "--DIR Specification",
+                                    "Section": "2.2.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--LOC",
+                "operator": "not_exists"
+            },
+            {
+                "name": "--DIR",
+                "operator": "exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000098",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --LOC does not exists in a dataset, --DIR exists.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--DIR variable is present, when --LOC variable does not exist in a dataset.",
+        "Output_Variables": [
+            "--LOC",
+            "--DIR"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "INTERVENTIONS",
+                "FINDINGS",
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

@@ -1,0 +1,176 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If no test article was administered, EXLOT should be null.",
+                                    "Document": "IG v3.0",
+                                    "Section": "6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND134",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If no test article was administered, EXLOT should be null.",
+                                    "Document": "IG v3.1",
+                                    "Section": "6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND134",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If no test article was administered, EXLOT should be null.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND134",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If no test article was administered, EXLOT should be null.",
+                                    "Document": "IG v3.1",
+                                    "Section": "6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND134",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If no test article was administered, EXLOT should be null.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND134",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If no test article was administered, EXLOT should be null.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND134",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "EXDOSE",
+                "operator": "equal_to",
+                "value": 0
+            },
+            {
+                "name": "EXLOT",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000599",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "If no test article (as described in EXTRT) is administered (i.e., EXDOSE is 0), EXLOT is null.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "EXDOSE is 0, EXLOT may not be populated",
+        "Output_Variables": [
+            "EXDOSE",
+            "EXLOT"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "INTERVENTIONS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "EX"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

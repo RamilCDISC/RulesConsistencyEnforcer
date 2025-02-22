@@ -1,0 +1,119 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0268",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Sequence number given to ensure uniqueness within a dataset. Allows inclusion of multiple records for the same TSPARMCD.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "7.4.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0268",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "TSSEQ has a different value for each record for the same parameter.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Assumption 5",
+                                    "Section": "7.4"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0268",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "TSSEQ has a different value for each record for the same parameter.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 5",
+                                    "Section": "7.4.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "TSPARMCD",
+                "operator": "is_not_unique_set",
+                "value": [
+                    "DOMAIN"
+                ]
+            },
+            {
+                "name": "TSSEQ",
+                "operator": "is_not_unique_set",
+                "value": "TSPARMCD"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000154",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "TSSEQ must be unique within TSPARMCD",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "TSSEQ is not unique within TSPARMCD",
+        "Output_Variables": [
+            "TSSEQ",
+            "TSPARMCD"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "TRIAL DESIGN"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "TS"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

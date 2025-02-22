@@ -1,0 +1,73 @@
+{
+    "datasets": [
+        {
+            "filename": "ts.xpt",
+            "label": "Trial Summary",
+            "domain": "TS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "TSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 2
+                },
+                {
+                    "name": "TSPARMCD",
+                    "label": "Trial Summary Parameter Short Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "TSVAL",
+                    "label": "Parameter Value",
+                    "type": "Char",
+                    "length": 100
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "TS",
+                    "TS",
+                    "TS"
+                ],
+                "TSSEQ": [
+                    1,
+                    2,
+                    1
+                ],
+                "TSPARMCD": [
+                    "DCUTDTC",
+                    "AGEMAX",
+                    "DCUTDTC"
+                ],
+                "TSVAL": [
+                    "2023-02-30",
+                    "99",
+                    "2023-02-28T09:11"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

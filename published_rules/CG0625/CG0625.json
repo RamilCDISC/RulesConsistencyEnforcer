@@ -1,0 +1,62 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0625",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "--IMPLBL is not be used in human clinical trials.",
+                                    "Document": "SDTM v2.0",
+                                    "Section": "Findings"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--IMPLBL",
+                "operator": "exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000052",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --IMPLBL is present.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--IMPLBL is present."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

@@ -1,0 +1,114 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0057",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The characterization of the end of an observation relative to a reference time point. The sponsor-defined reference time point is in --ENTPT.",
+                                    "Document": "Model v2.0",
+                                    "Section": "Timing",
+                                    "Item": "--ENRTPT"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0057",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Identifies the end of the observation as being before or after the sponsor-defined reference time point defined by variable --ENTPT.",
+                                    "Document": "Model v1.7",
+                                    "Section": "2.2.5 Timing Variables for All Classes",
+                                    "Item": "Table 2.2.5.1 --ENRTPT"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0057",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "(--ENRTPT) Identifies the end of the observation as being before or after the sponsor-defined reference time point defined by variable --ENTPT.",
+                                    "Document": "Model v1.4",
+                                    "Section": "2.2.5 Timing Variables for All Classes",
+                                    "Item": "Specification"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--ENTPT",
+                "operator": "exists"
+            },
+            {
+                "name": "--ENRTPT",
+                "operator": "not_exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000084",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --ENTPT exists in a dataset and --ENRTPT does not exist.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--ENTPT exists in a dataset, but --ENRTPT does not exist.",
+        "Output_Variables": [
+            "--ENTPT"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

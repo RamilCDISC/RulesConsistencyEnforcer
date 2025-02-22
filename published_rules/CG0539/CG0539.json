@@ -1,0 +1,108 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0539",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "DSSCAT = 'STUDY TREATMENT' can be used as a generic identifier when a study has only a single treatment.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 2.b.2",
+                                    "Section": "6.2.3"
+                                },
+                                {
+                                    "Cited_Guidance": "If a study has multiple treatments, then DSSCAT should name the individual treatment.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 2.b.3",
+                                    "Section": "6.2.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0539",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Assumption 2.b.2[DSSCAT = 'STUDY TREATMENT' can be used as a generic identifier when a study has only a single treatment.]|Assumption 2.b.3[If a study has multiple treatments, then DSSCAT should name the individual treatment.]",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 2.b.2|Assumption 2.b.3",
+                                    "Section": "6.2.3 DS"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "DSCAT",
+                "operator": "equal_to",
+                "value": "DISPOSITION EVENT",
+                "value_is_literal": true
+            },
+            {
+                "name": "DSSCAT",
+                "operator": "equal_to",
+                "value": "STUDY TREATMENT"
+            },
+            {
+                "name": "DSSCAT",
+                "operator": "is_not_unique_set",
+                "value": "USUBJID"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000215",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Trigger error when there is more than 1 record per subject has DSSCAT = 'STUDY TREATMENT'",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "There is more than 1 record per subject has DSSCAT = 'STUDY TREATMENT'",
+        "Output_Variables": [
+            "USUBJID",
+            "DSCAT",
+            "DSSCAT"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DS"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

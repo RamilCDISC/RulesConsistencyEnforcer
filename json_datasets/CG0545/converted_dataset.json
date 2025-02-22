@@ -1,0 +1,197 @@
+{
+    "datasets": [
+        {
+            "filename": "sm.xpt",
+            "label": "Subject Disease Milestones",
+            "domain": "SM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SMSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MIDS",
+                    "label": "Disease Milestone Instance Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MIDSTYPE",
+                    "label": "Disease Milestone Type",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SMSTDTC",
+                    "label": "Start Date/Time of Milestone",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SMENDTC",
+                    "label": "End Date/Time of Milestone",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SMSTDY",
+                    "label": "Study Day of Start of Milestone",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SMENDY",
+                    "label": "Study Day of End of Milestone",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ",
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "SM",
+                    "SM",
+                    "SM",
+                    "SM"
+                ],
+                "USUBJID": [
+                    "001",
+                    "001",
+                    "002",
+                    "002"
+                ],
+                "SMSEQ": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "MIDS": [
+                    "DIAG",
+                    "DIAG2",
+                    "DIAG",
+                    "DIAG2"
+                ],
+                "MIDSTYPE": [
+                    "DIAGNOSIS",
+                    "DIAGNOSIS2",
+                    "DIAGNOSIS",
+                    "DIAGNOSIS2"
+                ],
+                "SMSTDTC": [
+                    "2005-10",
+                    "2005-11",
+                    "2005-12",
+                    "2005-13"
+                ],
+                "SMENDTC": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "SMSTDY": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "SMENDY": [
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "filename": "tm.xpt",
+            "label": "Trial Disease Milestones",
+            "domain": "TM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MIDSTYPE",
+                    "label": "Disease Milestone Type",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TMDEF",
+                    "label": "Disease Milestone Definition",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TMRPT",
+                    "label": "Disease Milestone Repetition Indicator",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "TM",
+                    "TM"
+                ],
+                "MIDSTYPE": [
+                    "DIAGNOSIS",
+                    "DIAGNOSIS2"
+                ],
+                "TMDEF": [
+                    "Initial diagnosis",
+                    "Second diagnosis"
+                ],
+                "TMRPT": [
+                    "N",
+                    "Y"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

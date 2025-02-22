@@ -1,0 +1,235 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per test per specimen per observation time per subject or pool",
+                                    "Document": "IG v3.0",
+                                    "Section": "6.3.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND169",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per test per specimen per observation time per subject or pool",
+                                    "Document": "IG v3.1",
+                                    "Section": "6.3.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND169",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per test per specimen per observation time per subject or pool",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.3.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND169",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per test per specimen per observation time per subject or pool",
+                                    "Document": "IG v3.1",
+                                    "Section": "6.3.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND169",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per test per specimen per observation time per subject or pool",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.3.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND169",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per test per specimen per observation time per subject or pool",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.3.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND169",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "TIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "One record per test per specimen per observation time per subject or pool, Tabulation.",
+                                    "Document": "TIG v1.0",
+                                    "Item": "Domain Table Header",
+                                    "Section": "2.8.9.14"
+                                }
+                            ],
+                            "Origin": "TIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "TIG0098",
+                                "Version": "1"
+                            },
+                            "Version": "1.0"
+                        }
+                    ],
+                    "Substandard": "SEND",
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "LBDTC",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "USUBJID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "LBTESTCD",
+                        "operator": "is_not_unique_set",
+                        "value": [
+                            "USUBJID",
+                            "LBSPEC",
+                            "LBDTC"
+                        ]
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "LBDTC",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "POOLID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "LBTESTCD",
+                        "operator": "is_not_unique_set",
+                        "value": [
+                            "POOLID",
+                            "LBSPEC",
+                            "LBDTC"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000584",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when there is more than one record present for any particular Result or Findings as Collected, in the CL Domain, for a subject or pool on a particular date.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "The Clinical Observation test result is not unique for this subject and date/time.",
+        "Output_Variables": [
+            "POOLID",
+            "LBTESTCD",
+            "LBSPEC",
+            "LBDTC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "LB"
+            ]
+        },
+        "Use Case": "NONCLIN"
+    },
+    "Sensitivity": "Record"
+}

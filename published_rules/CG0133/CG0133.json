@@ -1,0 +1,124 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0133",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Indicates the subject died. Should be \"Y\" or null. Should be populated even when the death date is unknown",
+                                    "Document": "IG v3.4",
+                                    "Item": "Specification",
+                                    "Section": "5.2"
+                                },
+                                {
+                                    "Cited_Guidance": "A findings domain that contains the diagnosis of the cause of death for a subject.",
+                                    "Document": "IG v3.4",
+                                    "Item": "DD Description",
+                                    "Section": "6.3.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0133",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Specification[Indicates the subject died. Should be Y or null. Should be populated even when the death date is unknown.]|DD Assumption 1[This domain captures information pertaining to the death of a subject, including the causes of death.]",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification|DD Assumption 1",
+                                    "Section": "5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0133",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "IG v3.3[5.2][Indicates the subject died. Should be Y or null. Should be populated even when the death date is unknown.]||IG v3.3[6.3.2][A findings domain that contains the diagnosis of the cause of death for a subject]",
+                                    "Document": "IG v3.3",
+                                    "Section": "IG v3.3[5.2]|IG v3.3[6.3.2]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "DTHFL",
+                "operator": "empty"
+            },
+            {
+                "name": "DDDTC",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000108",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When a death date is recorded in DD, DM.DTHFL should equal 'Y'",
+    "Executability": "Fully Executable",
+    "Match_Datasets": [
+        {
+            "Name": "DD",
+            "Keys": [
+                "USUBJID"
+            ]
+        }
+    ],
+    "Outcome": {
+        "Message": "DD record present for subject, but DTHFL is not equal to \"Y\"."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

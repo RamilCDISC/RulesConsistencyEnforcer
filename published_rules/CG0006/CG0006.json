@@ -1,0 +1,134 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The Study Day value is incremented by 1 for each date following RFSTDTC. Dates prior to RFSTDTC are decreased by 1, with the date preceding RFSTDTC designated as Study Day -1 (there is no Study Day 0)....All Study Day values are integers. Thus to calculate Study Day, --DY = (date portion of --DTC) - (date portion of RFSTDTC) + 1 if --DTC is on or after RFSTDTC, --DY = (date portion of --DTC) - (date portion of RFSTDTC) if --DTC precedes RFSTDTC. This algorithm should be used across all domains.",
+                                    "Document": "SDTMIG v3.4",
+                                    "Section": "4.4.4"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0006",
+                                "Version": "2"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.4"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "IG v3.2[4.1.4.4][The Study Day value is incremented by 1 for each date following RFSTDTC. Dates prior to RFSTDTC are decreased by 1, with the date preceding RFSTDTC designated as Study Day -1 (there is no Study Day 0). . . . All Study Day values are integers.]IG v3.2[4.1.4.4][Thus, to calculate Study Day:  --DY = (date portion of --DTC) - (date portion of RFSTDTC) + 1 if --DTC is on or after RFSTDTC --DY = (date portion of --DTC) - (date portion of RFSTDTC) if --DTC precedes RFSTDTC This algorithm should be used across all domains.]",
+                                    "Document": "IG v3.2",
+                                    "Section": "4.1.4.4"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0006",
+                                "Version": "2"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.2"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "IG v3.3[4.4.4][The Study Day value is incremented by 1 for each date following RFSTDTC. Dates prior to RFSTDTC are decreased by 1, with the date preceding RFSTDTC designated as Study Day -1 (there is no Study Day 0). . . . All Study Day values are integers.] IG v3.3[4.4.4][ Thus, to calculate Study Day:  --DY = (date portion of --DTC) - (date portion of RFSTDTC) + 1 if --DTC is on or after RFSTDTC --DY = (date portion of --DTC) - (date portion of RFSTDTC) if --DTC precedes RFSTDTC This algorithm should be used across all domains.]",
+                                    "Document": "IG v3.3",
+                                    "Section": "4.4.4"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0006",
+                                "Version": "2"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.3"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--DTC",
+                "operator": "is_complete_date"
+            },
+            {
+                "name": "RFSTDTC",
+                "operator": "is_complete_date"
+            },
+            {
+                "name": "--DY",
+                "operator": "not_equal_to",
+                "value": "$val_dy"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000464",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --DY is not calculated as per the study day algorithm as a non-zero integer value when the date portion of --DTC is complete and the date portion of DM.RFSTDTC is a complete date AND --DY is not empty",
+    "Executability": "Fully Executable",
+    "Match_Datasets": [
+        {
+            "Keys": [
+                "USUBJID"
+            ],
+            "Name": "DM"
+        }
+    ],
+    "Operations": [
+        {
+            "id": "$val_dy",
+            "name": "--DTC",
+            "operator": "dy"
+        }
+    ],
+    "Outcome": {
+        "Message": "--DY is not calculated correctly even though the date portion of --DTC is complete, the date portion of DM.RFSTDTC is a complete date, and --DY is not empty.",
+        "Output_Variables": [
+            "--DY",
+            "--DTC",
+            "$val_dy",
+            "RFSTDTC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

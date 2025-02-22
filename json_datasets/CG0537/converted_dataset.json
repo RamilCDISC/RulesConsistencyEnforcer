@@ -1,0 +1,168 @@
+{
+    "datasets": [
+        {
+            "filename": "ds.xpt",
+            "label": "Subject Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSGRPID",
+                    "label": "Group ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSREFID",
+                    "label": "Reference ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSPID",
+                    "label": "Sponsor-Defined Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSCAT",
+                    "label": "Category for Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSDTC",
+                    "label": "Date/Time of Collection",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSTDTC",
+                    "label": "Start Date/Time of Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSDY",
+                    "label": "Study Day of Collection",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSSTDY",
+                    "label": "Study Day of Start of Disposition Event",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "S001",
+                    "S001"
+                ],
+                "DSSEQ": [
+                    1,
+                    2
+                ],
+                "DSGRPID": [
+                    "",
+                    ""
+                ],
+                "DSREFID": [
+                    "",
+                    ""
+                ],
+                "DSSPID": [
+                    "",
+                    ""
+                ],
+                "DSTERM": [
+                    "COMPLETED",
+                    "COMPLETED"
+                ],
+                "DSDECOD": [
+                    "COMPLETED",
+                    "COMPLETED"
+                ],
+                "DSCAT": [
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT"
+                ],
+                "EPOCH": [
+                    "TREATMENT",
+                    "FOLLOW-UP"
+                ],
+                "DSDTC": [
+                    "",
+                    ""
+                ],
+                "DSSTDTC": [
+                    "",
+                    ""
+                ],
+                "DSDY": [
+                    null,
+                    null
+                ],
+                "DSSTDY": [
+                    null,
+                    null
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

@@ -1,0 +1,81 @@
+{
+    "datasets": [
+        {
+            "filename": "lb.xpt",
+            "label": "Laboratory Test Results",
+            "domain": "LB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Lab Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Lab Test or Examination Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTREFC",
+                    "label": "Character Reference Result",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "LBSTREFN",
+                    "label": "Numeric Reference Result in Std Units",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "LB"
+                ],
+                "USUBJID": [
+                    "CDISC001"
+                ],
+                "LBTESTCD": [
+                    ""
+                ],
+                "LBTEST": [
+                    ""
+                ],
+                "LBSTREFC": [
+                    "ABC"
+                ],
+                "LBSTREFN": [
+                    8
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

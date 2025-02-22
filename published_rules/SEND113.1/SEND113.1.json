@@ -1,0 +1,273 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "IG v3.0",
+                                    "Item": "Specification",
+                                    "Section": "5.1.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND113.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "5.1.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND113.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "5.1.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND113.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "5.1.1.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND113.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                }
+            ]
+        },
+        {
+            "Organization": "FDA",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "A subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB049"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB4901",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "A subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB049"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB4901",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "A subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB049"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB4901",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "A subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB049"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB4901",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "A subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB049"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB4901",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "A subject (animal) may belong to one and only one Trial Set.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB049"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB4901",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.2"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "SETCD",
+                "operator": "non_empty"
+            },
+            {
+                "name": "SETCD",
+                "operator": "is_not_contained_by",
+                "value": "$tx_setcd"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000620",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "The value of SETCD in DM must be one of the SETCD values in TX.",
+    "Executability": "Fully Executable",
+    "Operations": [
+        {
+            "domain": "TX",
+            "id": "$tx_setcd",
+            "name": "SETCD",
+            "operator": "distinct"
+        }
+    ],
+    "Outcome": {
+        "Message": "SETCD is not present in TX.SETCD"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

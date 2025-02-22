@@ -1,0 +1,1365 @@
+{
+    "datasets": [
+        {
+            "filename": "ag.xpt",
+            "label": "Procedure Agents",
+            "domain": "AG",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AGTRT",
+                    "label": "Reported Agent Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGPRESP",
+                    "label": "AG Pre-Specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGOCCUR",
+                    "label": "AG Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "AG",
+                    "AG",
+                    "AG"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "AGSEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "AGTRT": [
+                    "Buprenorphine",
+                    "Minims Proxymetacaine",
+                    "Meloxicam"
+                ],
+                "AGPRESP": [
+                    "",
+                    "Y",
+                    "Y"
+                ],
+                "AGOCCUR": [
+                    "",
+                    "Y",
+                    ""
+                ],
+                "AGSTAT": [
+                    "",
+                    "",
+                    "NOT DONE"
+                ]
+            }
+        },
+        {
+            "filename": "cm.xpt",
+            "label": "Concomitant/Prior Medications",
+            "domain": "CM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CMSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "CMTRT",
+                    "label": "Reported Name of Drug, Med, or Therapy",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CMPRESP",
+                    "label": "CM Pre-specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CMOCCUR",
+                    "label": "CM Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CMSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "CM",
+                    "CM",
+                    "CM"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "CMSEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "CMTRT": [
+                    "ASPIRIN",
+                    "METAMUCIL",
+                    "HYDROCORTISONE, TOPICAL"
+                ],
+                "CMPRESP": [
+                    "",
+                    "Y",
+                    "Y"
+                ],
+                "CMOCCUR": [
+                    "",
+                    "",
+                    "N"
+                ],
+                "CMSTAT": [
+                    "",
+                    "NOT DONE",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "ec.xpt",
+            "label": "Exposure as Collected",
+            "domain": "EC",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "ECSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ECTRT",
+                    "label": "Name of Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "ECPRESP",
+                    "label": "Pre-Specified",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ECOCCUR",
+                    "label": "Occurrence",
+                    "type": "Char",
+                    "length": 1
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "EC",
+                    "EC",
+                    "EC",
+                    "EC"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "ECSEQ": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "ECTRT": [
+                    "ZANOMALINE",
+                    "ZANOMALINE",
+                    "ZANOMALINE",
+                    "ZANOMALINE"
+                ],
+                "ECPRESP": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "ECOCCUR": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "ex.xpt",
+            "label": "Exposure",
+            "domain": "EX",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "EXSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EXTRT",
+                    "label": "Name of Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "EXDOSE",
+                    "label": "Dose",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EXDOSU",
+                    "label": "Dose Units",
+                    "type": "Char",
+                    "length": 2
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "EX",
+                    "EX",
+                    "EX",
+                    "EX"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "EXSEQ": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "EXTRT": [
+                    "ZANOMALINE",
+                    "ZANOMALINE",
+                    "ZANOMALINE",
+                    "ZANOMALINE"
+                ],
+                "EXDOSE": [
+                    54,
+                    54,
+                    54,
+                    54
+                ],
+                "EXDOSU": [
+                    "mg",
+                    "mg",
+                    "mg",
+                    "mg"
+                ]
+            }
+        },
+        {
+            "filename": "ml.xpt",
+            "label": "Meal Data",
+            "domain": "ML",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MLTRT",
+                    "label": "Name of Meal",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLPRESP",
+                    "label": "ML Pre-specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLOCCUR",
+                    "label": "ML Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MLSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "ML",
+                    "ML",
+                    "ML"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "MLSEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "MLTRT": [
+                    "SNACK",
+                    "NUTRITIONAL DRINK",
+                    "WILD MUSHROOMS"
+                ],
+                "MLPRESP": [
+                    "Y",
+                    "Y",
+                    ""
+                ],
+                "MLOCCUR": [
+                    "",
+                    "N",
+                    ""
+                ],
+                "MLSTAT": [
+                    "NOT DONE",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "pr.xpt",
+            "label": "Procedures",
+            "domain": "PR",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PRSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "PRTRT",
+                    "label": "Reported Name of Procedure",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PRPRESP",
+                    "label": "Pre-specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PROCCUR",
+                    "label": "Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PRSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "PR",
+                    "PR",
+                    "PR"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "PRSEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "PRTRT": [
+                    "Wisdom Teeth Extraction",
+                    "Endoscopy",
+                    "Heart Transplant"
+                ],
+                "PRPRESP": [
+                    "Y",
+                    "Y",
+                    ""
+                ],
+                "PROCCUR": [
+                    "",
+                    "Y",
+                    ""
+                ],
+                "PRSTAT": [
+                    "NOT DONE",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "su.xpt",
+            "label": "Substance Use",
+            "domain": "SU",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SUTRT",
+                    "label": "Reported Name of Substance",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUPRESP",
+                    "label": "SU Pre-Specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUOCCUR",
+                    "label": "SU Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "SU",
+                    "SU",
+                    "SU"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "SUSEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "SUTRT": [
+                    "CIGARETTES",
+                    "CAFFEINE",
+                    "TOBACCO"
+                ],
+                "SUPRESP": [
+                    "Y",
+                    "",
+                    "Y"
+                ],
+                "SUOCCUR": [
+                    "",
+                    "",
+                    "N"
+                ],
+                "SUSTAT": [
+                    "NOT DONE",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AELNKID",
+                    "label": "Link ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "AEPRESP",
+                    "label": "Pre-Specified Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "AE",
+                    "AE"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "AESEQ": [
+                    1,
+                    2
+                ],
+                "AELNKID": [
+                    "1",
+                    "2"
+                ],
+                "AETERM": [
+                    "INJECTION SITE REACTION",
+                    "FATIGUE"
+                ],
+                "AEPRESP": [
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "be.xpt",
+            "label": "Biospecimen Events",
+            "domain": "BE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "BESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "BETERM",
+                    "label": "Reported Term for the Biospecimen Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "BEPRESP",
+                    "label": "Biospecimen Events Pre-specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "BEOCCUR",
+                    "label": "Biospecimen Events Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "BESTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "BE",
+                    "BE",
+                    "BE",
+                    "BE"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "BESEQ": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "BETERM": [
+                    "Collecting",
+                    "Extracting",
+                    "Shipping",
+                    "Aliquoting"
+                ],
+                "BEPRESP": [
+                    "Y",
+                    "Y",
+                    "Y",
+                    ""
+                ],
+                "BEOCCUR": [
+                    "",
+                    "Y",
+                    "N",
+                    ""
+                ],
+                "BESTAT": [
+                    "NOT DONE",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "ce.xpt",
+            "label": "Clinical Events",
+            "domain": "CE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "CETERM",
+                    "label": "Reported Term for the Clinical Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CEPRESP",
+                    "label": "Clinical Event Pre-specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CEOCCUR",
+                    "label": "Clinical Event Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CESTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "CE",
+                    "CE",
+                    "CE",
+                    "CE"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "CESEQ": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "CETERM": [
+                    "Rash",
+                    "Wheezing",
+                    "Edema",
+                    "Conjunctivitis"
+                ],
+                "CEPRESP": [
+                    "Y",
+                    "Y",
+                    "Y",
+                    ""
+                ],
+                "CEOCCUR": [
+                    "",
+                    "N",
+                    "Y",
+                    ""
+                ],
+                "CESTAT": [
+                    "NOT DONE",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "ds.xpt",
+            "label": "Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "DSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 29
+                },
+                {
+                    "name": "DSCAT",
+                    "label": "Category for Disposition Event",
+                    "type": "Char",
+                    "length": 18
+                },
+                {
+                    "name": "DSSCAT",
+                    "label": "Subcategory for Disposition Event",
+                    "type": "Char",
+                    "length": 19
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "DSSEQ": [
+                    1,
+                    2,
+                    3,
+                    1
+                ],
+                "DSTERM": [
+                    "INFORMED CONSENT OBTAINED",
+                    "INJECTION SITE REACTION",
+                    "INJECTION SITE REACTION",
+                    "INFORMED CONSENT OBTAINED"
+                ],
+                "DSDECOD": [
+                    "INFORMED CONSENT OBTAINED",
+                    "ADVERSE EVENT",
+                    "ADVERSE EVENT",
+                    "INFORMED CONSENT OBTAINED"
+                ],
+                "DSCAT": [
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE"
+                ],
+                "DSSCAT": [
+                    "",
+                    "STUDY PARTICIPATION",
+                    "STUDY TREATMENT",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "dv.xpt",
+            "label": "Protocol Deviations",
+            "domain": "DV",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DVSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DVTERM",
+                    "label": "Protocol Deviation Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DVDECOD",
+                    "label": "Protocol Deviation Coded Term",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "DV",
+                    "DV",
+                    "DV",
+                    "DV"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "DVSEQ": [
+                    1,
+                    2,
+                    3,
+                    1
+                ],
+                "DVTERM": [
+                    "IVRS PROCESS DEVIATION - NO DOSE CALL\nPERFORMED.",
+                    "DRUG XXX ADMINISTERED DURING STUDY\nTREATMENT PERIOD",
+                    "VISIT 3 DOSE <15 MG",
+                    "TOOK ASPIRIN"
+                ],
+                "DVDECOD": [
+                    "TREATMENT DEVIATION",
+                    "EXCLUDED CONCOMITANT MEDICATION",
+                    "TREATMENT DEVIATION",
+                    "PROHIBITED MEDS"
+                ]
+            }
+        },
+        {
+            "filename": "ho.xpt",
+            "label": "Healthcare Encounters",
+            "domain": "HO",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "HOSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "HOTERM",
+                    "label": "Healthcare Encounter Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "HOPRESP",
+                    "label": "Pre-Specified Healthcare Encounter",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "HOOCCUR",
+                    "label": "Healthcare Encounter Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "HOSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "HO",
+                    "HO",
+                    "HO",
+                    "HO"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "HOSEQ": [
+                    1,
+                    2,
+                    3,
+                    1
+                ],
+                "HOTERM": [
+                    "HOSPITAL",
+                    "NURSING HOME",
+                    "GENERAL WARD",
+                    "INTENSIVE CARE"
+                ],
+                "HOPRESP": [
+                    "",
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "HOOCCUR": [
+                    "",
+                    "",
+                    "",
+                    "N"
+                ],
+                "HOSTAT": [
+                    "",
+                    "NOT DONE",
+                    "NOT DONE",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "mh.xpt",
+            "label": "Medical History",
+            "domain": "MH",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MHTERM",
+                    "label": "Reported Term for the Medical History",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHPRESP",
+                    "label": "Medical History Event Pre-Specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHOCCUR",
+                    "label": "Medical History Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC002"
+                ],
+                "MHSEQ": [
+                    1,
+                    2,
+                    3,
+                    1
+                ],
+                "MHTERM": [
+                    "ASTHMA",
+                    "CONGESTIVE HEART FAILURE",
+                    "BROKEN LEG",
+                    "HEADACHES"
+                ],
+                "MHPRESP": [
+                    "Y",
+                    "Y",
+                    "",
+                    "Y"
+                ],
+                "MHOCCUR": [
+                    "",
+                    "N",
+                    "",
+                    "Y"
+                ],
+                "MHSTAT": [
+                    "NOT DONE",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

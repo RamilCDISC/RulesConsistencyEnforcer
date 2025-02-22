@@ -1,0 +1,256 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Each study must include 1 standardized set of observations in a specific structure; this is the Demographics domain described here.",
+                                    "Document": "Model v2.0",
+                                    "Section": "Demographics"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0368",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.4"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Each study must include one standardized set of observations in a specific structure; this is the Demographics domain described in Table 2.2.6.",
+                                    "Document": "Model v1.4",
+                                    "Section": "2.2.6"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0368",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.2"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Each study must include one standardized set of observations in a specific structure; this is the Demographics domain described in Table 2.2.6.",
+                                    "Document": "Model v1.7",
+                                    "Section": "2.2.6"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0368",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.3"
+                }
+            ]
+        },
+        {
+            "Organization": "FDA",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8601",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8601",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8601",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8601",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8601",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8601",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-AR",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Age or age range should be provided for all animals.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB086"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB8601",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "DM",
+                "operator": "not_exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000581",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when DM dataset is not present",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "DM dataset is missing."
+    },
+    "Rule_Type": "Domain Presence Check",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

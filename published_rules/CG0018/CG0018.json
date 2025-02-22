@@ -1,0 +1,109 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0018",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Supplemental Qualifier datasets for split domains would also be split. The nomenclature would include the additional one-to-two characters used to identify the split dataset.",
+                                    "Document": "IG v3.4",
+                                    "Item": "7",
+                                    "Section": "4.1.7"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0018",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Supplemental Qualifier datasets for split domains would also be split. The nomenclature would include the additional one-to-two characters used to identify the split dataset.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Rule 7",
+                                    "Section": "4.1.1.7"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0018",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Supplemental Qualifier datasets for split domains would also be split. The nomenclature would include the additional one-to-two characters used to identify the split dataset.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Rule 7",
+                                    "Section": "4.1.7"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "dataset_name",
+                "operator": "longer_than",
+                "value": 8
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000357",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When a supplemental qualifier dataset is associated with a split dataset, the dataset name length must not be greater than 8 characters.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Supplemental qualifier dataset associated with a split dataset is greater than 8 characters in length"
+    },
+    "Rule_Type": "Dataset Metadata Check",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "SUPP--"
+            ],
+            "include_split_datasets": true
+        }
+    },
+    "Sensitivity": "Dataset"
+}

@@ -1,0 +1,139 @@
+{
+    "datasets": [
+        {
+            "filename": "ts.xpt",
+            "label": "Trial Summary",
+            "domain": "TS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "TSGRPID",
+                    "label": "Group ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSPARMCD",
+                    "label": "Trial Summary Parameter Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSPARM",
+                    "label": "Trial Summary Parameter",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSVAL",
+                    "label": "Parameter Value",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSVALNF",
+                    "label": "Parameter Value Null Flavor",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSVALCD",
+                    "label": "Parameter Value Code",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSVCDREF",
+                    "label": "Name of the Reference Terminology",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TSVCDVER",
+                    "label": "Version of the Reference Terminology",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC",
+                    "ABC",
+                    "ABC"
+                ],
+                "DOMAIN": [
+                    "TS",
+                    "TS",
+                    "TS"
+                ],
+                "TSSEQ": [
+                    1,
+                    2,
+                    4
+                ],
+                "TSGRPID": [
+                    "P1",
+                    "P2",
+                    "P4"
+                ],
+                "TSPARMCD": [
+                    "RANDOM",
+                    "RANDOM",
+                    "RANDOM"
+                ],
+                "TSPARM": [
+                    "Trial is Randomized",
+                    "Trial is Randomized",
+                    "Trial is Randomized"
+                ],
+                "TSVAL": [
+                    "N",
+                    "Y",
+                    ""
+                ],
+                "TSVALNF": [
+                    "",
+                    "",
+                    ""
+                ],
+                "TSVALCD": [
+                    "C49487",
+                    "C49488",
+                    ""
+                ],
+                "TSVCDREF": [
+                    "CDISC",
+                    "CDISC",
+                    "ISO 21090"
+                ],
+                "TSVCDVER": [
+                    "2023-12-15 00:00:00",
+                    "2023-12-15 00:00:00",
+                    "2023-12-15 00:00:00"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

@@ -1,0 +1,115 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0058",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The description or date and/or time of a time point that acts as a fixed reference for characterizing the end of an observation. This is the sponsor-defined reference point referred to by --ENRTPT.",
+                                    "Document": "Model v2.0",
+                                    "Section": "Timing",
+                                    "Item": "--ENTPT"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0058",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Description or date/time in ISO 8601 or other character format of the sponsor-defined reference point referred to by --ENRTPT. Examples \"2003-12-25\" or \"VISIT 2\".",
+                                    "Document": "Model v1.7",
+                                    "Section": "2.2.5 Timing Variables for All Classes",
+                                    "Item": "Table 2.2.5.1, --ENTPT"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0058",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "(--ENTPT) Description or date/time in ISO 8601 or other character format of the sponsor-defined reference point referred to by --ENRTPT. Examples \"2003-12-25\" or \"VISIT 2\".",
+                                    "Document": "Model v1.4",
+                                    "Section": "2.2.5 Timing Variables for All Classes",
+                                    "Item": "Specification"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--ENRTPT",
+                "operator": "exists"
+            },
+            {
+                "name": "--ENTPT",
+                "operator": "not_exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000171",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raises an error when --ENRTPT is present in dataset but --ENTPT is not present in dataset.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--ENTPT should be present when --ENRTPT is present in a dataset",
+        "Output_Variables": [
+            "--ENRTPT",
+            "--ENTPT"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

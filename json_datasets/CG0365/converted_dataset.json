@@ -1,0 +1,243 @@
+{
+    "datasets": [
+        {
+            "filename": "aprelsub.xpt",
+            "label": "Associated Persons Related to Subjects",
+            "domain": "APRELSUB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "POOLID",
+                    "label": "Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RSUBJID",
+                    "label": "Related Subject or Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SREL",
+                    "label": "Subject Relationship",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RDEVID",
+                    "label": "Related Device Identifier",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "HEM021",
+                    "HEM021",
+                    "HEM021",
+                    "HEM021",
+                    "HEM021",
+                    "HEM021"
+                ],
+                "USUBJID": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "POOLID": [
+                    "HEM021-001",
+                    "HEM021-001",
+                    "HEM021-002",
+                    "HEM021-002",
+                    "HEM021-003",
+                    "HEM021-003"
+                ],
+                "RSUBJID": [
+                    "HEM021-002",
+                    "HEM021-003",
+                    "HEM021-001",
+                    "HEM021-003",
+                    "HEM021-001",
+                    "HEM021-002"
+                ],
+                "SREL": [
+                    "MOTHER,BIOLOGICAL",
+                    "MOTHER,BIOLOGICAL",
+                    "CHILD, BIOLOGICAL",
+                    "TWIN,DIZYGOTIC",
+                    "CHILD, BIOLOGICAL",
+                    "TWIN,DIZYGOTIC"
+                ],
+                "RDEVID": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "aplb.xpt",
+            "label": "Associated Persons Laboratory Test Results",
+            "domain": "APLB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "APID",
+                    "label": "Associated Persons Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "RSUBJID",
+                    "label": "Related Subject or Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RDEVID",
+                    "label": "Related Device Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SREL",
+                    "label": "Subject Relationship",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Lab Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Lab Test or Examination Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBDTC",
+                    "label": "Date/Time of Specimen Collection",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "HEM021",
+                    "HEM021",
+                    "HEM021"
+                ],
+                "DOMAIN": [
+                    "APLB",
+                    "APLB",
+                    "APLB"
+                ],
+                "APID": [
+                    "POOL1",
+                    "POOL2",
+                    "AP001"
+                ],
+                "LBSEQ": [
+                    1,
+                    1,
+                    1
+                ],
+                "RSUBJID": [
+                    "GRNMO13",
+                    "GRNMO13",
+                    "CK001"
+                ],
+                "RDEVID": [
+                    "",
+                    "",
+                    ""
+                ],
+                "SREL": [
+                    "DONOR, SAMPLE",
+                    "DONOR, SAMPLE",
+                    "DONOR, SAMPLE"
+                ],
+                "LBTESTCD": [
+                    "BADSTUFF",
+                    "BADSTUFF",
+                    "BADSTUFF"
+                ],
+                "LBTEST": [
+                    "BADSTUFF",
+                    "BADSTUFF",
+                    "BADSTUFF"
+                ],
+                "LBORRES": [
+                    "POSITIVE",
+                    "POSITIVE",
+                    "NEGATIVE"
+                ],
+                "LBSTRESC": [
+                    "POSITIVE",
+                    "POSITIVE",
+                    "NEGATIVE"
+                ],
+                "LBDTC": [
+                    "2006-04-01 00:00:00",
+                    "2006-04-01 00:00:00",
+                    "2006-05-01 00:00:00"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

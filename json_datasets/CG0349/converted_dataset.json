@@ -1,0 +1,577 @@
+{
+    "datasets": [
+        {
+            "filename": "lb.xpt",
+            "label": "Laboratory Test Results",
+            "domain": "LB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "X1SEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Lab Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Lab Test or Examination Name",
+                    "type": "Char",
+                    "length": 39
+                },
+                {
+                    "name": "LBCAT",
+                    "label": "Category for Lab Test",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "LBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 6
+                },
+                {
+                    "name": "LBORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "LBORNRLO",
+                    "label": "Reference Range Lower Limit in Orig Unit",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "LBORNRHI",
+                    "label": "Reference Range Upper Limit in Orig Unit",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "LBSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "LBSTRESN",
+                    "label": "Numeric Result/Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBSTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "LBSTNRLO",
+                    "label": "Reference Range Lower Limit-Std Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBSTNRHI",
+                    "label": "Reference Range Upper Limit-Std Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBNRIND",
+                    "label": "Reference Range Indicator",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "LBSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBLOBXFL",
+                    "label": "Last Observation Before Exposure Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "LBDRVFL",
+                    "label": "Derived Flag",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 9
+                },
+                {
+                    "name": "LBDTC",
+                    "label": "Date/Time of Specimen Collection",
+                    "type": "Char",
+                    "length": 19
+                },
+                {
+                    "name": "LBDY",
+                    "label": "Study Day of Specimen Collection",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "LB",
+                    "LB",
+                    "LB"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "X1SEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "LBTESTCD": [
+                    "ALB",
+                    "ALP",
+                    "ALB"
+                ],
+                "LBTEST": [
+                    "Albumin",
+                    "Alkaline Phosphatase",
+                    "Albumin"
+                ],
+                "LBCAT": [
+                    "CHEMISTRY",
+                    "CHEMISTRY",
+                    "CHEMISTRY"
+                ],
+                "LBORRES": [
+                    "3.9",
+                    "",
+                    ""
+                ],
+                "LBORRESU": [
+                    "g/dL",
+                    "U/L",
+                    "g/dL"
+                ],
+                "LBORNRLO": [
+                    "3.5",
+                    "35",
+                    "3.5"
+                ],
+                "LBORNRHI": [
+                    "4.6",
+                    "115",
+                    "4.6"
+                ],
+                "LBSTRESC": [
+                    "39",
+                    "93",
+                    "39"
+                ],
+                "LBSTRESN": [
+                    39,
+                    93,
+                    39
+                ],
+                "LBSTRESU": [
+                    "g/L",
+                    "U/L",
+                    "g/L"
+                ],
+                "LBSTNRLO": [
+                    35,
+                    35,
+                    35
+                ],
+                "LBSTNRHI": [
+                    46,
+                    115,
+                    46
+                ],
+                "LBNRIND": [
+                    "NORMAL",
+                    "NORMAL",
+                    "NORMAL"
+                ],
+                "LBSTAT": [
+                    "",
+                    "NOT DONE",
+                    ""
+                ],
+                "LBLOBXFL": [
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "LBDRVFL": [
+                    "",
+                    "",
+                    "Y"
+                ],
+                "VISITNUM": [
+                    1,
+                    1,
+                    1
+                ],
+                "VISIT": [
+                    "SCREENING 1",
+                    "SCREENING 1",
+                    "SCREENING 1"
+                ],
+                "EPOCH": [
+                    "SCREENING",
+                    "SCREENING",
+                    "SCREENING"
+                ],
+                "LBDTC": [
+                    "2012-11-23T11:20",
+                    "2012-11-23T11:20",
+                    "2012-11-23T11:20"
+                ],
+                "LBDY": [
+                    -7,
+                    -7,
+                    -7
+                ]
+            }
+        },
+        {
+            "filename": "zb.xpt",
+            "label": "Conventional Test Results ",
+            "domain": "ZB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "ZBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ZBTESTCD",
+                    "label": "Lab Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "ZBTEST",
+                    "label": "Lab Test or Examination Name",
+                    "type": "Char",
+                    "length": 39
+                },
+                {
+                    "name": "ZBCAT",
+                    "label": "Category for Lab Test",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "ZBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 6
+                },
+                {
+                    "name": "ZBORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "ZBORNRLO",
+                    "label": "Reference Range Lower Limit in Orig Unit",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "ZBORNRHI",
+                    "label": "Reference Range Upper Limit in Orig Unit",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "ZBSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "ZBSTRESN",
+                    "label": "Numeric Result/Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ZBSTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "ZBSTNRLO",
+                    "label": "Reference Range Lower Limit-Std Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ZBSTNRHI",
+                    "label": "Reference Range Upper Limit-Std Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ZBNRIND",
+                    "label": "Reference Range Indicator",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "ZBSTAT",
+                    "label": "Completion Status",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ZBLOBXFL",
+                    "label": "Last Observation Before Exposure Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ZBDRVFL",
+                    "label": "Derived Flag",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 9
+                },
+                {
+                    "name": "ZBDTC",
+                    "label": "Date/Time of Specimen Collection",
+                    "type": "Char",
+                    "length": 19
+                },
+                {
+                    "name": "ZBDY",
+                    "label": "Study Day of Specimen Collection",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "ZB",
+                    "ZB",
+                    "ZB"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "ZBSEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "ZBTESTCD": [
+                    "AZB",
+                    "ALP",
+                    "AZB"
+                ],
+                "ZBTEST": [
+                    "AZBumin",
+                    "Alkaline Phosphatase",
+                    "AZBumin"
+                ],
+                "ZBCAT": [
+                    "CHEMISTRY",
+                    "CHEMISTRY",
+                    "CHEMISTRY"
+                ],
+                "ZBORRES": [
+                    "3.9",
+                    "",
+                    ""
+                ],
+                "ZBORRESU": [
+                    "g/dL",
+                    "U/L",
+                    "g/dL"
+                ],
+                "ZBORNRLO": [
+                    "3.5",
+                    "35",
+                    "3.5"
+                ],
+                "ZBORNRHI": [
+                    "4.6",
+                    "115",
+                    "4.6"
+                ],
+                "ZBSTRESC": [
+                    "39",
+                    "93",
+                    "39"
+                ],
+                "ZBSTRESN": [
+                    39,
+                    93,
+                    39
+                ],
+                "ZBSTRESU": [
+                    "g/L",
+                    "U/L",
+                    "g/L"
+                ],
+                "ZBSTNRLO": [
+                    35,
+                    35,
+                    35
+                ],
+                "ZBSTNRHI": [
+                    46,
+                    115,
+                    46
+                ],
+                "ZBNRIND": [
+                    "NORMAL",
+                    "NORMAL",
+                    "NORMAL"
+                ],
+                "ZBSTAT": [
+                    "",
+                    "",
+                    ""
+                ],
+                "ZBLOBXFL": [
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "ZBDRVFL": [
+                    "",
+                    "",
+                    ""
+                ],
+                "VISITNUM": [
+                    1,
+                    1,
+                    1
+                ],
+                "VISIT": [
+                    "SCREENING 1",
+                    "SCREENING 1",
+                    "SCREENING 1"
+                ],
+                "EPOCH": [
+                    "SCREENING",
+                    "SCREENING",
+                    "SCREENING"
+                ],
+                "ZBDTC": [
+                    "2012-11-23T11:20",
+                    "2012-11-23T11:20",
+                    "2012-11-23T11:20"
+                ],
+                "ZBDY": [
+                    -7,
+                    -7,
+                    -7
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

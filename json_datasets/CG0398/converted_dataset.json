@@ -1,0 +1,130 @@
+{
+    "datasets": [
+        {
+            "filename": "ds.xpt",
+            "label": "Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "DSCAT",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSTDTC",
+                    "label": "Date/Time of Informed Consent",
+                    "type": "Char",
+                    "length": 19
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-036-0002-00004",
+                    "015246-036-0002-00004",
+                    "015246-036-0002-00004"
+                ],
+                "DSTERM": [
+                    "FUTURE USE OF SAMPLES INFORMED CONSENT OBTAINED",
+                    "STUDY INFORMED CONSENT OBTAINED",
+                    "ADVERSE EVENT",
+                    "ADVERSE EVENT",
+                    "SIGNED",
+                    "SIGNED"
+                ],
+                "DSDECOD": [
+                    "FUTURE USE OF SAMPLES INFORMED CONSENT OBTAINED",
+                    "STUDY INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "COMPLETED"
+                ],
+                "DSCAT": [
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE"
+                ],
+                "EPOCH": [
+                    "SCREENING",
+                    "",
+                    "FU",
+                    "SCREENING",
+                    "",
+                    ""
+                ],
+                "DSSTDTC": [
+                    "2018-03-06",
+                    "2018-03-06",
+                    "2018-03-30",
+                    "2018-03-30T13:05",
+                    "2018-03-30T13:05",
+                    "2019-03-30T13:05"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

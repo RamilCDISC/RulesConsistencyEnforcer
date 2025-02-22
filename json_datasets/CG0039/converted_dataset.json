@@ -1,0 +1,354 @@
+{
+    "datasets": [
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AESPID",
+                    "label": "Sponsor-Defined Identifier",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 38
+                },
+                {
+                    "name": "AELLT",
+                    "label": "Lowest Level Term",
+                    "type": "Char",
+                    "length": 38
+                },
+                {
+                    "name": "AELLTCD",
+                    "label": "Lowest Level Term Code",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AEDECOD",
+                    "label": "Dictionary-Derived Term",
+                    "type": "Char",
+                    "length": 38
+                },
+                {
+                    "name": "AEPTCD",
+                    "label": "Preferred Term Code",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AEHLT",
+                    "label": "High Level Term",
+                    "type": "Char",
+                    "length": 65
+                },
+                {
+                    "name": "AEHLTCD",
+                    "label": "High Level Term Code",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AEHLGT",
+                    "label": "High Level Group Term",
+                    "type": "Char",
+                    "length": 55
+                },
+                {
+                    "name": "AEHLGTCD",
+                    "label": "High Level Group Term Code",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AESCAT",
+                    "label": "Subcategory for Adverse Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "AEBODSYS",
+                    "label": "Body System or Organ Class",
+                    "type": "Char",
+                    "length": 52
+                },
+                {
+                    "name": "AEBDSYCD",
+                    "label": "Body System or Organ Class Code",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AESOC",
+                    "label": "Primary System Organ Class",
+                    "type": "Char",
+                    "length": 52
+                },
+                {
+                    "name": "AESOCCD",
+                    "label": "Primary System Organ Class Code",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AESEV",
+                    "label": "Severity/Intensity",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "AESER",
+                    "label": "Serious Event",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "AEACN",
+                    "label": "Action Taken with Study Treatment",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "AEREL",
+                    "label": "Causality",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "AEOUT",
+                    "label": "Outcome of Adverse Event",
+                    "type": "Char",
+                    "length": 26
+                },
+                {
+                    "name": "AESHOSP",
+                    "label": "Requires or Prolongs Hospitalization",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "AESTDTC",
+                    "label": "Start Date/Time of Adverse Event",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "AEENDTC",
+                    "label": "End Date/Time of Adverse Event",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "AESTDY",
+                    "label": "Study Day of Start of Adverse Event",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE"
+                ],
+                "USUBJID": [
+                    "CDISC-TEST-099",
+                    "CDISC-TEST-099",
+                    "CDISC-TEST-100",
+                    "CDISC-TEST-100"
+                ],
+                "AESEQ": [
+                    1593,
+                    1595,
+                    1596,
+                    1598
+                ],
+                "AESPID": [
+                    "1586",
+                    "1594",
+                    "1603",
+                    "1615"
+                ],
+                "AETERM": [
+                    "PNEUMONIA",
+                    "URINARY TRACT INFECTION",
+                    "UPSET STOMACH",
+                    "BACK PAIN"
+                ],
+                "AELLT": [
+                    "Pneumonia",
+                    "Urinary tract infection",
+                    "Upset stomach",
+                    "Back pain"
+                ],
+                "AELLTCD": [
+                    10035664,
+                    10046571,
+                    10046318,
+                    10003988
+                ],
+                "AEDECOD": [
+                    "Pneumonia",
+                    "Urinary tract infection",
+                    "Abdominal discomfort",
+                    "Back pain"
+                ],
+                "AEPTCD": [
+                    10035664,
+                    10046571,
+                    10000059,
+                    10003988
+                ],
+                "AEHLT": [
+                    "Lower respiratory tract and lung infections",
+                    "Urinary tract infections",
+                    "Gastrointestinal signs and symptoms NEC",
+                    "Musculoskeletal and connective tissue pain and discomfort"
+                ],
+                "AEHLTCD": [
+                    10025101,
+                    10046577,
+                    10027678,
+                    10068757
+                ],
+                "AEHLGT": [
+                    "Infections - pathogen unspecified",
+                    "Infections - pathogen unspecified",
+                    "Gastrointestinal signs and symptoms",
+                    "Musculoskeletal and connective tissue disorders NEC"
+                ],
+                "AEHLGTCD": [
+                    10021879,
+                    10021879,
+                    10018012,
+                    10028393
+                ],
+                "AESCAT": [
+                    "INFECTIONS AND INFESTATIONS",
+                    "INFECTIONS AND INFESTATIONS",
+                    "Gastrointestinal disorders",
+                    "MUSCULOSKELETAL AND CONNECTIVE TISSUE DISORDERS"
+                ],
+                "AEBODSYS": [
+                    "Infections and infestations",
+                    "Cardiac disorders",
+                    "Musculoskeletal and connective tissue disorders",
+                    "Musculoskeletal and connective tissue disorders"
+                ],
+                "AEBDSYCD": [
+                    10021881,
+                    10007541,
+                    10028395,
+                    10028395
+                ],
+                "AESOC": [
+                    "Infections and infestations",
+                    "Cardiac disorders",
+                    "Musculoskeletal and connective tissue disorders",
+                    "Musculoskeletal and connective tissue disorders"
+                ],
+                "AESOCCD": [
+                    10021881,
+                    10007541,
+                    10028395,
+                    10028395
+                ],
+                "AESEV": [
+                    "MODERATE",
+                    "MILD",
+                    "MILD",
+                    "MILD"
+                ],
+                "AESER": [
+                    "N",
+                    "N",
+                    "N",
+                    "N"
+                ],
+                "AEACN": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "AEREL": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "AEOUT": [
+                    "RECOVERED/RESOLVED",
+                    "RECOVERED/RESOLVED",
+                    "RECOVERED/RESOLVED",
+                    "RECOVERED/RESOLVED"
+                ],
+                "AESHOSP": [
+                    "Y",
+                    "N",
+                    "N",
+                    "N"
+                ],
+                "AESTDTC": [
+                    "2019-06-07",
+                    "2019-03-17",
+                    "2019-05-30",
+                    "2019-03-05"
+                ],
+                "AEENDTC": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "AESTDY": [
+                    97,
+                    15,
+                    88,
+                    2
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

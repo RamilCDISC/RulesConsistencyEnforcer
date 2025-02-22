@@ -1,0 +1,675 @@
+{
+    "datasets": [
+        {
+            "filename": "qs1.xpt",
+            "label": "Clinical Global Impressions1",
+            "domain": "QS1",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSTESTCD",
+                    "label": "Question Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "QSTEST",
+                    "label": "Question Name",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QSCAT",
+                    "label": "Category of Question",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "QSORRES",
+                    "label": "Finding in Original Units",
+                    "type": "Char",
+                    "length": 23
+                },
+                {
+                    "name": "QSSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "QSSTRESN",
+                    "label": "Numeric Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSLOBXFL",
+                    "label": "Last Observation Before Exposure Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QSDTC",
+                    "label": "Date/Time of Finding",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "QSDY",
+                    "label": "Study Day of Finding",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC01"
+                ],
+                "DOMAIN": [
+                    "QS"
+                ],
+                "USUBJID": [
+                    "CDISC01.100018"
+                ],
+                "QSSEQ": [
+                    1
+                ],
+                "QSTESTCD": [
+                    "CGI0201"
+                ],
+                "QSTEST": [
+                    "CGI02-Severity"
+                ],
+                "QSCAT": [
+                    "CGI"
+                ],
+                "QSORRES": [
+                    "Moderate"
+                ],
+                "QSSTRESC": [
+                    "4"
+                ],
+                "QSSTRESN": [
+                    4
+                ],
+                "QSLOBXFL": [
+                    "Y"
+                ],
+                "VISITNUM": [
+                    1
+                ],
+                "VISIT": [
+                    "WEEK 1"
+                ],
+                "QSDTC": [
+                    "2003-04-15"
+                ],
+                "QSDY": [
+                    1
+                ]
+            }
+        },
+        {
+            "filename": "qsae.xpt",
+            "label": "Clinical Global ImpressionsAE",
+            "domain": "QSAE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSTESTCD",
+                    "label": "Question Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "QSTEST",
+                    "label": "Question Name",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QSCAT",
+                    "label": "Category of Question",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "QSORRES",
+                    "label": "Finding in Original Units",
+                    "type": "Char",
+                    "length": 23
+                },
+                {
+                    "name": "QSSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "QSSTRESN",
+                    "label": "Numeric Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSLOBXFL",
+                    "label": "Last Observation Before Exposure Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QSDTC",
+                    "label": "Date/Time of Finding",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "QSDY",
+                    "label": "Study Day of Finding",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC01"
+                ],
+                "DOMAIN": [
+                    "QS"
+                ],
+                "USUBJID": [
+                    "CDISC01.100018"
+                ],
+                "QSSEQ": [
+                    1
+                ],
+                "QSTESTCD": [
+                    "CGI0201"
+                ],
+                "QSTEST": [
+                    "CGI02-Severity"
+                ],
+                "QSCAT": [
+                    "CGI"
+                ],
+                "QSORRES": [
+                    "Moderate"
+                ],
+                "QSSTRESC": [
+                    "4"
+                ],
+                "QSSTRESN": [
+                    4
+                ],
+                "QSLOBXFL": [
+                    "Y"
+                ],
+                "VISITNUM": [
+                    1
+                ],
+                "VISIT": [
+                    "WEEK 1"
+                ],
+                "QSDTC": [
+                    "2003-04-15"
+                ],
+                "QSDY": [
+                    1
+                ]
+            }
+        },
+        {
+            "filename": "qs.xpt",
+            "label": "Questionnaires",
+            "domain": "QS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSTESTCD",
+                    "label": "Question Short Name",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "QSTEST",
+                    "label": "Question Name",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QSCAT",
+                    "label": "Category of Question",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "QSORRES",
+                    "label": "Finding in Original Units",
+                    "type": "Char",
+                    "length": 23
+                },
+                {
+                    "name": "QSSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "QSSTRESN",
+                    "label": "Numeric Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "QSLOBXFL",
+                    "label": "Last Observation Before Exposure Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "QSDTC",
+                    "label": "Date/Time of Finding",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "QSDY",
+                    "label": "Study Day of Finding",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC01"
+                ],
+                "DOMAIN": [
+                    "QS"
+                ],
+                "USUBJID": [
+                    "CDISC01.100018"
+                ],
+                "QSSEQ": [
+                    1
+                ],
+                "QSTESTCD": [
+                    "CGI0201"
+                ],
+                "QSTEST": [
+                    "CGI02-Severity"
+                ],
+                "QSCAT": [
+                    "CGI"
+                ],
+                "QSORRES": [
+                    "Moderate"
+                ],
+                "QSSTRESC": [
+                    "4"
+                ],
+                "QSSTRESN": [
+                    4
+                ],
+                "QSLOBXFL": [
+                    "Y"
+                ],
+                "VISITNUM": [
+                    1
+                ],
+                "VISIT": [
+                    "WEEK 1"
+                ],
+                "QSDTC": [
+                    "2003-04-15"
+                ],
+                "QSDY": [
+                    1
+                ]
+            }
+        },
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESEV",
+                    "label": "Severity/Intensity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESER",
+                    "label": "Serious Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEACN",
+                    "label": "Action Taken with Study Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEREL",
+                    "label": "Causality",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEOUT",
+                    "label": "Outcome of Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESCAN",
+                    "label": "Involves Cancer",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESCONG",
+                    "label": "Congenital Anomaly or Birth Defect",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESDISAB",
+                    "label": "Persist or Signif Disability/Incapacity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESDTH",
+                    "label": "Results in Death",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESHOSP",
+                    "label": "Requires or Prolongs Hospitalization",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESLIFE",
+                    "label": "Is Life Threatening",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESOD",
+                    "label": "Occurred with Overdose",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESMIE",
+                    "label": "Other Medically Important Serious Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESTDTC",
+                    "label": "Start Date/Time of Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEENDTC",
+                    "label": "End Date/Time of Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESTDY",
+                    "label": "Study Day of Start of Adverse Event",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AEENDY",
+                    "label": "Study Day of End of Adverse Event",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AEENRTPT",
+                    "label": "End Relative to Reference Time Point",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AEENTPT",
+                    "label": "End Reference Time Point",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "AE"
+                ],
+                "USUBJID": [
+                    "CDISC001"
+                ],
+                "AESEQ": [
+                    1
+                ],
+                "AETERM": [
+                    "INJECTION SITE REACTION"
+                ],
+                "AESEV": [
+                    "MODERATE"
+                ],
+                "AESER": [
+                    "N"
+                ],
+                "AEACN": [
+                    "DRUG WITHDRAWN"
+                ],
+                "AEREL": [
+                    "RELATED"
+                ],
+                "AEOUT": [
+                    "NOT RECOVERED/NOT RESOLVED"
+                ],
+                "AESCAN": [
+                    "U"
+                ],
+                "AESCONG": [
+                    "N"
+                ],
+                "AESDISAB": [
+                    "N"
+                ],
+                "AESDTH": [
+                    "N"
+                ],
+                "AESHOSP": [
+                    "N"
+                ],
+                "AESLIFE": [
+                    "N"
+                ],
+                "AESOD": [
+                    "N"
+                ],
+                "AESMIE": [
+                    "N"
+                ],
+                "EPOCH": [
+                    "TREATMENT"
+                ],
+                "AESTDTC": [
+                    "2012-12-02"
+                ],
+                "AEENDTC": [
+                    ""
+                ],
+                "AESTDY": [
+                    3
+                ],
+                "AEENDY": [
+                    null
+                ],
+                "AEENRTPT": [
+                    "ONGOING"
+                ],
+                "AEENTPT": [
+                    "2013-05-20"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

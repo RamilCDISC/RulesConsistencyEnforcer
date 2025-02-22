@@ -1,0 +1,718 @@
+{
+    "datasets": [
+        {
+            "filename": "dm.xpt",
+            "label": "Demographics",
+            "domain": "DM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "SUBJID",
+                    "label": "Subject Identifier for the Study",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "RFSTDTC",
+                    "label": "Subject Reference Start Date/Time",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFENDTC",
+                    "label": "Subject Reference End Date/Time",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFXSTDTC",
+                    "label": "Date/Time of First Study Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFXENDTC",
+                    "label": "Date/Time of Last Study Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFICDTC",
+                    "label": "Date/Time of Informed Consent",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFPENDTC",
+                    "label": "Date/Time of End of Participation",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DTHDTC",
+                    "label": "Date/Time of Death",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DTHFL",
+                    "label": "Subject Death Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "SITEID",
+                    "label": "Study Site Identifier",
+                    "type": "Char",
+                    "length": 3
+                },
+                {
+                    "name": "BRTHDTC",
+                    "label": "Date/Time of Birth",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "AGE",
+                    "label": "Age",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AGETXT",
+                    "label": "Age Text",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "AGEU",
+                    "label": "Age Units",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "SEX",
+                    "label": "Sex",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "RACE",
+                    "label": "Race",
+                    "type": "Char",
+                    "length": 41
+                },
+                {
+                    "name": "ETHNIC",
+                    "label": "Ethnicity",
+                    "type": "Char",
+                    "length": 22
+                },
+                {
+                    "name": "ARMCD",
+                    "label": "Planned Arm Code",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "ARM",
+                    "label": "Description of Planned Arm",
+                    "type": "Char",
+                    "length": 28
+                },
+                {
+                    "name": "ACTARMCD",
+                    "label": "Actual Arm Code",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "ACTARM",
+                    "label": "Description of Actual Arm",
+                    "type": "Char",
+                    "length": 28
+                },
+                {
+                    "name": "ARMNRS",
+                    "label": "Reason Arm and/or Actual Arm is Null",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "ACTARMUD",
+                    "label": "Description of Unplanned Actual Arm",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "COUNTRY",
+                    "label": "Country",
+                    "type": "Char",
+                    "length": 3
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM"
+                ],
+                "USUBJID": [
+                    "015246-076-0003-00003",
+                    "015246-300-0004-00002",
+                    "015246-222-0002-00004",
+                    "015246-888-0008-08888",
+                    "015246-999-0003-09999"
+                ],
+                "SUBJID": [
+                    "076000300003",
+                    "300000400002",
+                    "222000200004",
+                    "888000808888",
+                    "999000309999"
+                ],
+                "RFSTDTC": [
+                    "2018-04-02T11:32",
+                    "2018-05-08T11:20",
+                    "2018-05-08T11:20",
+                    "2018-05-08T11:20",
+                    "2018-05-08T11:20"
+                ],
+                "RFENDTC": [
+                    "2019-02-19T10:55",
+                    "2018-08-29T10:35",
+                    "2018-08-29T10:35",
+                    "2018-08-29T10:35",
+                    "2018-08-29T10:35"
+                ],
+                "RFXSTDTC": [
+                    "2018-04-02T11:32",
+                    "2018-05-08T11:20",
+                    "2018-05-08T11:20",
+                    "2018-05-08T11:20",
+                    "2018-05-08T11:20"
+                ],
+                "RFXENDTC": [
+                    "2019-02-19T10:55",
+                    "2018-08-29T10:35",
+                    "2018-08-29T10:35",
+                    "2018-08-29T10:35",
+                    "2018-08-29T10:35"
+                ],
+                "RFICDTC": [
+                    "2018-03-06",
+                    "2018-04-17",
+                    "2018-04-17",
+                    "2018-04-17",
+                    "2018-04-17"
+                ],
+                "RFPENDTC": [
+                    "2021-02-18",
+                    "2018-09-04",
+                    "2018-09-04",
+                    "2018-09-04",
+                    "2018-09-04"
+                ],
+                "DTHDTC": [
+                    "2022-02-20",
+                    "2018-09-04",
+                    "",
+                    "2019-01-10",
+                    "2021-02-16"
+                ],
+                "DTHFL": [
+                    "Y",
+                    "Y",
+                    "",
+                    "Y",
+                    "Y"
+                ],
+                "SITEID": [
+                    "0760003",
+                    "3000004",
+                    "2220002",
+                    "8880008",
+                    "9990003"
+                ],
+                "BRTHDTC": [
+                    "1940-01-14",
+                    "1947-12-23",
+                    "1947-12-23",
+                    "1941-12-23",
+                    "1947-12-23"
+                ],
+                "AGE": [
+                    78,
+                    70,
+                    70,
+                    77,
+                    70
+                ],
+                "AGETXT": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "AGEU": [
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS"
+                ],
+                "SEX": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ],
+                "RACE": [
+                    "WHITE",
+                    "WHITE",
+                    "WHITE",
+                    "WHITE",
+                    "WHITE"
+                ],
+                "ETHNIC": [
+                    "HISPANIC OR LATINO",
+                    "NOT HISPANIC OR LATINO",
+                    "NOT HISPANIC OR LATINO",
+                    "NOT HISPANIC OR LATINO",
+                    "NOT HISPANIC OR LATINO"
+                ],
+                "ARMCD": [
+                    "IKD",
+                    "IKD",
+                    "IKD",
+                    "IKD",
+                    "IKD"
+                ],
+                "ARM": [
+                    "IKd",
+                    "IKd",
+                    "IKd",
+                    "IKd",
+                    "IKd"
+                ],
+                "ACTARMCD": [
+                    "IKD",
+                    "IKD",
+                    "IKD",
+                    "IKD",
+                    "IKD"
+                ],
+                "ACTARM": [
+                    "IKd",
+                    "IKd",
+                    "IKd",
+                    "IKd",
+                    "IKd"
+                ],
+                "ARMNRS": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "ACTARMUD": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "COUNTRY": [
+                    "BRA",
+                    "GRC",
+                    "GRC",
+                    "USA",
+                    "USA"
+                ]
+            }
+        },
+        {
+            "filename": "ds.xpt",
+            "label": "Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "DSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSCAT",
+                    "label": "Category for Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSCAT",
+                    "label": "Subcategory for Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSTDTC",
+                    "label": "Start Date/Time of Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-222-0002-00004",
+                    "015246-222-0002-00004",
+                    "015246-222-0002-00004",
+                    "015246-888-0008-08888",
+                    "015246-888-0008-08888",
+                    "015246-888-0008-08888",
+                    "015246-888-0008-08888",
+                    "015246-888-0008-08888",
+                    "015246-999-0003-09999",
+                    "015246-999-0003-09999",
+                    "015246-999-0003-09999",
+                    "015246-999-0003-09999",
+                    "015246-999-0003-09999"
+                ],
+                "DSSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    1,
+                    2,
+                    3,
+                    1,
+                    2,
+                    2,
+                    3,
+                    4,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "DSTERM": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "DEATH",
+                    "PROGRESSIVE DISEASE",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "ADVERSE EVENT",
+                    "DEATH",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "CARDIAC ARREST",
+                    "INFORMED CONSENT OBTAINED",
+                    "RANDOMIZED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "AUTOMOBILE ACCIDENT",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "CARDIAC ARREST",
+                    "CARDIAC ARREST"
+                ],
+                "DSDECOD": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "LAST CONTACT",
+                    "DEATH",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "DEATH",
+                    "LAST CONTACT",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "DEATH",
+                    "INFORMED CONSENT OBTAINED",
+                    "RANDOMIZED",
+                    "COMPLETED",
+                    "COMPLETED",
+                    "DEATH",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "DEATH"
+                ],
+                "DSCAT": [
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT"
+                ],
+                "DSSCAT": [
+                    "",
+                    "",
+                    "",
+                    "PREMATURE TREATMENT-DEX",
+                    "DEFINITIVE TREATMENT-ALL STUDY TREATMENTS",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "DEFINITIVE TREATMENT-ALL STUDY TREATMENTS",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "STUDY PARTICIPATION",
+                    "STUDY PARTICIPATION",
+                    "STUDY PARTICIPATION",
+                    "",
+                    "",
+                    "",
+                    "PREMATURE TREATMENT-DEX",
+                    ""
+                ],
+                "EPOCH": [
+                    "",
+                    "SCREENING",
+                    "",
+                    "TREATMENT",
+                    "TREATMENT",
+                    "FOLLOW-UP",
+                    "FOLLOW-UP",
+                    "",
+                    "SCREENING",
+                    "",
+                    "TREATMENT",
+                    "TREATMENT",
+                    "FOLLOW-UP",
+                    "",
+                    "SCREENING",
+                    "TREATMENT",
+                    "",
+                    "SCREENING",
+                    "SCREENING",
+                    "TREATMENT",
+                    "FOLLOW-UP",
+                    "",
+                    "SCREENING",
+                    "",
+                    "TREATMENT",
+                    "FOLLOW-UP"
+                ],
+                "DSSTDTC": [
+                    "2018-03-06",
+                    "2018-03-30",
+                    "2018-03-30T13:05",
+                    "2018-09-03",
+                    "2019-02-19",
+                    "2020-02-18",
+                    "2022-02-20",
+                    "2018-04-17",
+                    "2018-05-07",
+                    "2018-05-07T12:36",
+                    "2018-08-29",
+                    "2018-09-04",
+                    "2018-09-04",
+                    "2018-04-17",
+                    "2018-05-07",
+                    "",
+                    "2018-03-06",
+                    "2018-05-07T12:36",
+                    "2018-03-30",
+                    "2018-03-30",
+                    "2019-01-10",
+                    "2018-03-06",
+                    "2018-03-30",
+                    "2018-03-30T13:05",
+                    "2018-09-03",
+                    "2021-02-16"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

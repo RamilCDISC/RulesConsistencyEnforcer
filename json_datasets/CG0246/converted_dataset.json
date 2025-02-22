@@ -1,0 +1,96 @@
+{
+    "datasets": [
+        {
+            "filename": "te.xpt",
+            "label": "Trial Elements",
+            "domain": "TE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "ETCD",
+                    "label": "Element Code",
+                    "type": "Char",
+                    "length": 7
+                },
+                {
+                    "name": "ELEMENT",
+                    "label": "Description of Element",
+                    "type": "Char",
+                    "length": 26
+                },
+                {
+                    "name": "TESTRL",
+                    "label": "Rule for Start of Element",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "TEENRL",
+                    "label": "Rule for End of Element",
+                    "type": "Char",
+                    "length": 200
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "TE",
+                    "TE",
+                    "TE",
+                    "TE",
+                    "TE"
+                ],
+                "ETCD": [
+                    "SCREEN",
+                    "PLACEBO",
+                    "LOW",
+                    "TITRATE",
+                    "HIGH"
+                ],
+                "ELEMENT": [
+                    "Screening",
+                    "Placebo",
+                    "Zanomaline 54 mg",
+                    "Zanomaline 54 mg Titration",
+                    "Zanomaline 81 mg"
+                ],
+                "TESTRL": [
+                    "Date of informed consent",
+                    "First dose when drug is Placebo",
+                    "First dose when Dose=54 mg",
+                    "First dose of titration period",
+                    "First dose when Dose=81 mg"
+                ],
+                "TEENRL": [
+                    "Completion of all screening activities, no more than 2 weeks from informed consent",
+                    "26 weeks after the start of the Element",
+                    "26 weeks after the start of the Element",
+                    "2 weeks after the start of the Element",
+                    "22 weeks after the start of the Element"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

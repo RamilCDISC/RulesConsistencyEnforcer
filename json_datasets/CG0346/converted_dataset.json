@@ -1,0 +1,72 @@
+{
+    "datasets": [
+        {
+            "filename": "dv.xpt",
+            "label": "Protocol Deviations",
+            "domain": "DV",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DVSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DVTERM",
+                    "label": "Protocol Deviation Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DVSTDTC",
+                    "label": "Start Date/Time of Deviation",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "DV"
+                ],
+                "USUBJID": [
+                    "CDISC001"
+                ],
+                "DVSEQ": [
+                    2
+                ],
+                "DVTERM": [
+                    "M2 PREDOSE PK DONE POSTDOSE"
+                ],
+                "DVSTDTC": [
+                    "2012-11-23"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

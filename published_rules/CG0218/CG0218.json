@@ -1,0 +1,130 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0218",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If TAETORD and/or EPOCH are added, then the values must be those at the start of the visit.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 11",
+                                    "Section": "5.5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0218",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If TAETORD and/or EPOCH are added, then the values must be those at the start of the visit.It would be inappropriate to add the variables that support time points (--TPT, --TPTNUM, --ELTM, --TPTREF, and --RFTDTC), since the topic of this dataset is visits.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Assumption 11",
+                                    "Section": "5 SV"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0218",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If TAETORD and/or EPOCH are added, then the values must be those at the start of the visit.It would be inappropriate to add the variables that support time points (--TPT, --TPTNUM, --ELTM, --TPTREF, and --RFTDTC), since the topic of this dataset is visits.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 11",
+                                    "Section": "5.5"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "EPOCH",
+                "operator": "exists"
+            },
+            {
+                "name": "SESTDTC",
+                "operator": "date_less_than_or_equal_to",
+                "value": "SVSTDTC"
+            },
+            {
+                "name": "SVSTDTC",
+                "operator": "date_less_than_or_equal_to",
+                "value": "SEENDTC"
+            },
+            {
+                "name": "EPOCH",
+                "operator": "not_equal_to",
+                "value": "SE.EPOCH"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000097",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when variable EPOCH values don't match between Subject Visits (SV) and Subject Elements (SE) datasets.",
+    "Executability": "Fully Executable",
+    "Match_Datasets": [
+        {
+            "Name": "SE",
+            "Keys": [
+                "USUBJID"
+            ]
+        }
+    ],
+    "Outcome": {
+        "Message": "EPOCH values don't match between Subject Visits (SV) and Subject Elements (SE) datasets."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "SV"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

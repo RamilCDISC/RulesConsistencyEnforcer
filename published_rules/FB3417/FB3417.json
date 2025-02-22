@@ -1,0 +1,114 @@
+{
+    "Authorities": [
+        {
+            "Organization": "FDA",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3417",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.2"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3417",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.3"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Start date/time of observation (--DTC) should be submitted, if collected, and study day of observation (--DY) should be submitted.",
+                                    "Document": "FDA",
+                                    "Section": "FDAB034"
+                                }
+                            ],
+                            "Origin": "FDA Business Rules",
+                            "Rule_Identifier": {
+                                "Id": "FB3417",
+                                "Version": "1"
+                            },
+                            "Version": "1.5"
+                        }
+                    ],
+                    "Version": "3.4"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "AEOUT",
+                "operator": "equal_to",
+                "value": "NOT RECOVERED/NOT RESOLVED"
+            },
+            {
+                "name": "AEENDTC",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Status": "Published",
+        "Version": "1",
+        "Id": "CORE-000657"
+    },
+    "Description": "The Outcome of Adverse Event (AEOUT) variable is populated with the value NOT RECOVERED/NOT RESOLVED, however the End Date/Time of Adverse Event (AEENDTC) variable is populated with an end date for the adverse event. If the adverse event has an outcome of NOT RECOVERED/NOT RESOLVED, it is expected that no end date is available.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "AEENDTC is populated, when AEOUT = NOT RECOVERED/NOT RESOLVED",
+        "Output_Variables": [
+            "AETERM",
+            "AEOUT",
+            "AEENDTC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "AE"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

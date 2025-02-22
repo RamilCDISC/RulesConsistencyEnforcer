@@ -1,0 +1,129 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0114",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Units for --DOSE, --DOSTOT, or --DOSTXT",
+                                    "Document": "Model v2.0",
+                                    "Item": "--DOSU",
+                                    "Section": "Interventions"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0114",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Units for --DOSE, --DOSTOT, or --DOSTXT (Examples: ng, mg, mg/kg).",
+                                    "Document": "Model v1.4",
+                                    "Item": "--DOSU Specification",
+                                    "Section": "2.2.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0114",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Units for --DOSE, --DOSTOT, or --DOSTXT. Examples: \"ng\", \"mg\", \"mg/kg\".",
+                                    "Document": "Model v1.7",
+                                    "Item": "Specification",
+                                    "Section": "2.2.1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--DOSU",
+                "operator": "empty"
+            },
+            {
+                "any": [
+                    {
+                        "name": "--DOSE",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "--DOSTXT",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "--DOSTOT",
+                        "operator": "non_empty"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000093",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --DOSU = null and (--DOSE ^= null or --DOSTOT ^= null or --DOSTXT ^= null)",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Missing value for --DOSU, when --DOSE, --DOSTXT or --DOSTOT is provided",
+        "Output_Variables": [
+            "--DOSE",
+            "--DOSTXT",
+            "--DOSTOT",
+            "--DOSU"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "INTERVENTIONS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,85 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0117",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Description of actual Arm. When an Arm is not planned (not in Trial Arms), ACTARM will be \u201cUnplanned Treatment\u201d. Randomized subjects who were not treated will be given a value of \u201cNot Treated\u201d. Values should be \u201cScreen Failure\u201d for screen failures and \u201cNot Assigned\u201d for subjects not assigned to treatment. Restricted to values in Trial Arms in all other cases.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Specification",
+                                    "Section": "5"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "ACTARM",
+                "operator": "is_not_contained_by",
+                "value": [
+                    "Screen Failure",
+                    "Not Assigned",
+                    "Not Treated",
+                    "Unplanned Treatment"
+                ]
+            },
+            {
+                "name": "ACTARM",
+                "operator": "is_not_contained_by",
+                "value": "$ARMS_IN_TA"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000367",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when no TA.ARM exists for ACTARM in DM and ACTARM does not equal Screen Failure, Not Assigned, Not Treated, or Unplanned Treatment in DM",
+    "Executability": "Fully Executable",
+    "Operations": [
+        {
+            "operator": "distinct",
+            "domain": "TA",
+            "name": "ARM",
+            "id": "$ARMS_IN_TA"
+        }
+    ],
+    "Outcome": {
+        "Message": "ACTARM not in TA.ARM, but ACTARM does not equal Screen Failure, Not Assigned, Not Treated, or Unplanned Treatment in DM",
+        "Output_Variables": [
+            "ACTARM"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,369 @@
+{
+    "datasets": [
+        {
+            "filename": "ds.xpt",
+            "label": "Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "DSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSCAT",
+                    "label": "Category for Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSCAT",
+                    "label": "Subcategory for Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DSSTDTC",
+                    "label": "Start Date/Time of Disposition Event",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002"
+                ],
+                "DSSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "DSTERM": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "DEATH",
+                    "PROGRESSIVE DISEASE",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "ADVERSE EVENT",
+                    "DEATH"
+                ],
+                "DSDECOD": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "LAST CONTACT",
+                    "DEATH",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "DEATH",
+                    "LAST CONTACT"
+                ],
+                "DSCAT": [
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT",
+                    "DISPOSITION EVENT"
+                ],
+                "DSSCAT": [
+                    "",
+                    "",
+                    "",
+                    "PREMATURE TREATMENT-DEX",
+                    "DEFINITIVE TREATMENT-ALL STUDY TREATMENTS",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "DEFINITIVE TREATMENT-ALL STUDY TREATMENTS",
+                    "",
+                    ""
+                ],
+                "EPOCH": [
+                    "",
+                    "SCREENING",
+                    "",
+                    "TREATMENT",
+                    "TREATMENT",
+                    "FOLLOW-UP",
+                    "FOLLOW-UP",
+                    "",
+                    "SCREENING",
+                    "",
+                    "TREATMENT",
+                    "TREATMENT",
+                    "TREATMENT"
+                ],
+                "DSSTDTC": [
+                    "2018-03-06 00:00:00",
+                    "2018-03-30 00:00:00",
+                    "2018-03-30T13:05",
+                    "2018-09-03 00:00:00",
+                    "2019-02-19 00:00:00",
+                    "2020-02-18 00:00:00",
+                    "2021-02-18 00:00:00",
+                    "2018-04-17 00:00:00",
+                    "2018-05-07 00:00:00",
+                    "2018-05-07T12:36",
+                    "2018-08-29 00:00:00",
+                    "2018-09-04 00:00:00",
+                    "2018-09-04 00:00:00"
+                ]
+            }
+        },
+        {
+            "filename": "ss.xpt",
+            "label": "Subject Status",
+            "domain": "SS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "SSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SSTESTCD",
+                    "label": "Status Short Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "SSTEST",
+                    "label": "Status Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SSORRES",
+                    "label": "Result or Finding\nOriginal Result",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SSSTRESC",
+                    "label": "Character\nResult/Finding in\nStd Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SSDTC",
+                    "label": "Date/Time of\nAssessment",
+                    "type": "Char",
+                    "length": 19
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS"
+                ],
+                "USUBJID": [
+                    "015246-076-0003-00003",
+                    "015246-076-0003-00003",
+                    "015246-300-0004-00002",
+                    "015246-300-0004-00002"
+                ],
+                "SSSEQ": [
+                    1,
+                    2,
+                    1,
+                    2
+                ],
+                "SSTESTCD": [
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT"
+                ],
+                "SSTEST": [
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status"
+                ],
+                "SSORRES": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ],
+                "SSSTRESC": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ],
+                "VISITNUM": [
+                    10,
+                    9900,
+                    10,
+                    9900
+                ],
+                "EPOCH": [
+                    "SCREENING",
+                    "FOLLOW-UP",
+                    "SCREENING",
+                    "FOLLOW-UP"
+                ],
+                "SSDTC": [
+                    "2019-02-18",
+                    "2020-02-18",
+                    "2017-09-04",
+                    "2018-09-04"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

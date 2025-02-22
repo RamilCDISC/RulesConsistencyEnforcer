@@ -1,0 +1,198 @@
+{
+    "datasets": [
+        {
+            "filename": "suppae.xpt",
+            "label": "Supplemental Qualifiers for AE",
+            "domain": "SUPPAE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RDOMAIN",
+                    "label": "Related Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "IDVAR",
+                    "label": "Identifying Variable",
+                    "type": "Char",
+                    "length": 6
+                },
+                {
+                    "name": "IDVARVAL",
+                    "label": "Identifying Variable Value",
+                    "type": "Char",
+                    "length": 4
+                },
+                {
+                    "name": "QNAM",
+                    "label": "Qualifier Variable Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QLABEL",
+                    "label": "Qualifier Variable Label",
+                    "type": "Char",
+                    "length": 40
+                },
+                {
+                    "name": "QVAL",
+                    "label": "Data Value",
+                    "type": "Char",
+                    "length": 19
+                },
+                {
+                    "name": "QORIG",
+                    "label": "Origin",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "QEVAL",
+                    "label": "Evaluator",
+                    "type": "Char",
+                    "length": 22
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "RDOMAIN": [
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE"
+                ],
+                "USUBJID": [
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001"
+                ],
+                "IDVAR": [
+                    "AESPID",
+                    "AESPID",
+                    "AESPID",
+                    "AESPID",
+                    "AESPID",
+                    "AESPID",
+                    "AESPID",
+                    "AESPID",
+                    "AESPID",
+                    "AESPID"
+                ],
+                "IDVARVAL": [
+                    "1",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "QNAM": [
+                    "DICTVER",
+                    "DICTVE1",
+                    "DICTVER",
+                    "DIC_VER",
+                    "DICTVER",
+                    "DICTVER",
+                    "DICTVERS",
+                    "DICTVER",
+                    "DICTVERS",
+                    "DICTVER"
+                ],
+                "QLABEL": [
+                    "Dictionary Version",
+                    "Dictionary Version",
+                    "Dictionary Version",
+                    "Dictionary Version",
+                    "Dictionary Version",
+                    "Dictionary Version",
+                    "Dictionary Version",
+                    "Dictionary Version",
+                    "DictionaryVersionDictionaryVersionVersio",
+                    "Dictionary Version"
+                ],
+                "QVAL": [
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0",
+                    "MEDDRA VERSION 22.0"
+                ],
+                "QORIG": [
+                    "Assigned",
+                    "Assigned",
+                    "Assigned",
+                    "Assigned",
+                    "Assigned",
+                    "Assigned",
+                    "Assigned",
+                    "Assigned",
+                    "Assigned",
+                    "Assigned"
+                ],
+                "QEVAL": [
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR",
+                    "CLINICAL STUDY SPONSOR"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

@@ -1,0 +1,392 @@
+{
+    "datasets": [
+        {
+            "filename": "dm.xpt",
+            "label": "Demographics",
+            "domain": "DM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "SUBJID",
+                    "label": "Subject Identifier for the Study",
+                    "type": "Char",
+                    "length": 3
+                },
+                {
+                    "name": "RFSTDTC",
+                    "label": "Subject Reference Start Date/Time",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFENDTC",
+                    "label": "Subject Reference End Date/Time",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFXSTDTC",
+                    "label": "Date/Time of First Study Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFXENDTC",
+                    "label": "Date/Time of Last Study Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFICDTC",
+                    "label": "Date/Time of Informed Consent",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFPENDTC",
+                    "label": "Date/Time of End of Participation",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DTHDTC",
+                    "label": "Date/Time of Death",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "DTHFL",
+                    "label": "Subject Death Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "SITEID",
+                    "label": "Study Site Identifier",
+                    "type": "Char",
+                    "length": 3
+                },
+                {
+                    "name": "AGE",
+                    "label": "Age",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AGEU",
+                    "label": "Age Units",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "SEX",
+                    "label": "Sex",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "RACE",
+                    "label": "Race",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ARMCD",
+                    "label": "Planned Arm Code",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ARM",
+                    "label": "Description of Planned Arm",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "ACTARMCD",
+                    "label": "Actual Arm Code",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ACTARM",
+                    "label": "Description of Actual Arm",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "COUNTRY",
+                    "label": "Country",
+                    "type": "Char",
+                    "length": 3
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM"
+                ],
+                "USUBJID": [
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-002",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-005",
+                    "CDISC-TEST-006",
+                    "CDISC-TEST-007",
+                    "CDISC-TEST-008",
+                    "CDISC-TEST-009"
+                ],
+                "SUBJID": [
+                    "001",
+                    "002",
+                    "003",
+                    "004",
+                    "005",
+                    "006",
+                    "007",
+                    "008",
+                    "009"
+                ],
+                "RFSTDTC": [
+                    "2019-03-12",
+                    "2019-01-30",
+                    "2019-01-26",
+                    "2019-02-16",
+                    "2019-03-02",
+                    "2019-02-18",
+                    "2019-02-25",
+                    "2019-02-06",
+                    "2019-01-25"
+                ],
+                "RFENDTC": [
+                    "2019-09-10",
+                    "2019-07-31",
+                    "2019-07-27",
+                    "2019-08-17",
+                    "2019-08-31",
+                    "2019-08-19",
+                    "2019-08-26",
+                    "2019-08-07",
+                    "2019-07-26"
+                ],
+                "RFXSTDTC": [
+                    "2019-03-12",
+                    "2019-01-30",
+                    "2019-01-26",
+                    "2019-02-16",
+                    "2019-03-02",
+                    "2019-02-18",
+                    "2019-02-25",
+                    "2019-02-06",
+                    "2019-01-25"
+                ],
+                "RFXENDTC": [
+                    "2019-09-10",
+                    "2019-07-31",
+                    "2019-07-27",
+                    "2019-08-17",
+                    "2019-08-31",
+                    "2019-08-19",
+                    "2019-08-26",
+                    "2019-08-07",
+                    "2019-07-26"
+                ],
+                "RFICDTC": [
+                    "2019-02-25",
+                    "2019-01-15",
+                    "2019-01-11",
+                    "2019-02-01",
+                    "2019-02-15",
+                    "2019-02-03",
+                    "2019-02-10",
+                    "2019-01-22",
+                    "2019-01-10"
+                ],
+                "RFPENDTC": [
+                    "2019-10-10",
+                    "2019-08-30",
+                    "2019-08-26",
+                    "2019-09-16",
+                    "2019-09-30",
+                    "2019-09-18",
+                    "2019-09-25",
+                    "2019-09-06",
+                    "2019-08-25"
+                ],
+                "DTHDTC": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "DTHFL": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "SITEID": [
+                    "102",
+                    "103",
+                    "102",
+                    "102",
+                    "103",
+                    "102",
+                    "102",
+                    "102",
+                    "102"
+                ],
+                "AGE": [
+                    26,
+                    34,
+                    57,
+                    31,
+                    21,
+                    52,
+                    57,
+                    50,
+                    48
+                ],
+                "AGEU": [
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS"
+                ],
+                "SEX": [
+                    "F",
+                    "M",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "M",
+                    "F",
+                    "M"
+                ],
+                "RACE": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "ARMCD": [
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B"
+                ],
+                "ARM": [
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "METFORMIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "METFORMIN"
+                ],
+                "ACTARMCD": [
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B"
+                ],
+                "ACTARM": [
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "METFORMIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "METFORMIN"
+                ],
+                "COUNTRY": [
+                    "FRA",
+                    "JPN",
+                    "FRA",
+                    "FRA",
+                    "JPN",
+                    "FRA",
+                    "FRA",
+                    "FRA",
+                    "FRA"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

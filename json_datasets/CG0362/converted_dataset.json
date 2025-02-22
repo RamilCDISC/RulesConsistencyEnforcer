@@ -1,0 +1,88 @@
+{
+    "datasets": [
+        {
+            "filename": "relsub.xpt",
+            "label": "Related Subjects ",
+            "domain": "RELSUB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "POOLID",
+                    "label": "Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RSUBJID",
+                    "label": "Related Subject or Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SREL",
+                    "label": "Subject Relationship",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "HEM021",
+                    "HEM021",
+                    "HEM021",
+                    "HEM021",
+                    "HEM021",
+                    "HEM021"
+                ],
+                "USUBJID": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "HEM021-003"
+                ],
+                "POOLID": [
+                    "HEM021-001",
+                    "HEM021-001",
+                    "HEM021-002",
+                    "HEM021-002",
+                    "HEM021-003",
+                    ""
+                ],
+                "RSUBJID": [
+                    "HEM021-002",
+                    "HEM021-003",
+                    "HEM021-001",
+                    "HEM021-003",
+                    "HEM021-001",
+                    "HEM021-002"
+                ],
+                "SREL": [
+                    "MOTHER,BIOLOGICAL",
+                    "MOTHER,BIOLOGICAL",
+                    "CHILD, BIOLOGICAL",
+                    "TWIN,DIZYGOTIC",
+                    "CHILD, BIOLOGICAL",
+                    "TWIN,DIZYGOTIC"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

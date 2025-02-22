@@ -1,0 +1,742 @@
+{
+    "datasets": [
+        {
+            "filename": "dm.xpt",
+            "label": "Demographics",
+            "domain": "DM",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "SUBJID",
+                    "label": "Subject Identifier for the Study",
+                    "type": "Char",
+                    "length": 3
+                },
+                {
+                    "name": "RFSTDTC",
+                    "label": "Subject Reference Start Date/Time",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFENDTC",
+                    "label": "Subject Reference End Date/Time",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFXSTDTC",
+                    "label": "Date/Time of First Study Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFXENDTC",
+                    "label": "Date/Time of Last Study Treatment",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFICDTC",
+                    "label": "Date/Time of Informed Consent",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "RFPENDTC",
+                    "label": "Date/Time of End of Participation",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DTHDTC",
+                    "label": "Date/Time of Death",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "DTHFL",
+                    "label": "Subject Death Flag",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "SITEID",
+                    "label": "Study Site Identifier",
+                    "type": "Char",
+                    "length": 3
+                },
+                {
+                    "name": "AGE",
+                    "label": "Age",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AGEU",
+                    "label": "Age Units",
+                    "type": "Char",
+                    "length": 5
+                },
+                {
+                    "name": "SEX",
+                    "label": "Sex",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "RACE",
+                    "label": "Race",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ARMCD",
+                    "label": "Planned Arm Code",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ARM",
+                    "label": "Description of Planned Arm",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "ACTARMCD",
+                    "label": "Actual Arm Code",
+                    "type": "Char",
+                    "length": 1
+                },
+                {
+                    "name": "ACTARM",
+                    "label": "Description of Actual Arm",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "COUNTRY",
+                    "label": "Country",
+                    "type": "Char",
+                    "length": 3
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM",
+                    "DM"
+                ],
+                "USUBJID": [
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-002",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-005"
+                ],
+                "SUBJID": [
+                    "001",
+                    "002",
+                    "003",
+                    "004",
+                    "005"
+                ],
+                "RFSTDTC": [
+                    "2019-03-12",
+                    "2019-01-30",
+                    "2019-01-26",
+                    "2019-02-16",
+                    "2019-03-02"
+                ],
+                "RFENDTC": [
+                    "2019-09-10",
+                    "2019-07-31",
+                    "2019-07-27",
+                    "2019-08-17",
+                    "2019-08-31"
+                ],
+                "RFXSTDTC": [
+                    "2019-03-12",
+                    "2019-01-30",
+                    "2019-01-26",
+                    "2019-02-16",
+                    "2019-03-02"
+                ],
+                "RFXENDTC": [
+                    "2019-09-10",
+                    "2019-07-31",
+                    "2019-07-27",
+                    "2019-08-17",
+                    "2019-08-31"
+                ],
+                "RFICDTC": [
+                    "2019-02-25",
+                    "2019-01-15",
+                    "2019-01-11",
+                    "2019-02-01",
+                    "2019-02-15"
+                ],
+                "RFPENDTC": [
+                    "2019-10-10",
+                    "2019-08-30",
+                    "2019-08-26",
+                    "2019-09-16",
+                    "2019-09-30"
+                ],
+                "DTHDTC": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "DTHFL": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "SITEID": [
+                    "102",
+                    "103",
+                    "102",
+                    "102",
+                    "103"
+                ],
+                "AGE": [
+                    26,
+                    34,
+                    57,
+                    31,
+                    21
+                ],
+                "AGEU": [
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS",
+                    "YEARS"
+                ],
+                "SEX": [
+                    "F",
+                    "M",
+                    "F",
+                    "F",
+                    "F"
+                ],
+                "RACE": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "ARMCD": [
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                ],
+                "ARM": [
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN",
+                    "METFORMIN",
+                    "HUMAN INSULIN",
+                    "HUMAN INSULIN"
+                ],
+                "ACTARMCD": [
+                    "SCRNFAIL",
+                    "A",
+                    "B",
+                    "NOTASSGN",
+                    "NOTTRT"
+                ],
+                "ACTARM": [
+                    "Screening Failure",
+                    "HUMAN INSULIN",
+                    "METFORMIN",
+                    "Not Assigned",
+                    "Not Treated"
+                ],
+                "COUNTRY": [
+                    "FRA",
+                    "JPN",
+                    "FRA",
+                    "FRA",
+                    "JPN"
+                ]
+            }
+        },
+        {
+            "filename": "ds.xpt",
+            "label": "Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 14
+                },
+                {
+                    "name": "DSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 27
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 27
+                },
+                {
+                    "name": "DSCAT",
+                    "label": "Category for Disposition Event",
+                    "type": "Char",
+                    "length": 18
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 9
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 18
+                },
+                {
+                    "name": "VISITDY",
+                    "label": "Planned Study Day of Visit",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSSTDTC",
+                    "label": "Start Date/Time of Disposition Event",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "DSDY",
+                    "label": "Study Day of Visit/Collection/Exam",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST",
+                    "CDISC-TEST"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-001",
+                    "CDISC-TEST-002",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-003",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-004",
+                    "CDISC-TEST-005",
+                    "CDISC-TEST-005",
+                    "CDISC-TEST-005",
+                    "CDISC-TEST-005",
+                    "CDISC-TEST-005",
+                    "CDISC-TEST-005"
+                ],
+                "DSSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    10,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                ],
+                "DSTERM": [
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED",
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED",
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED"
+                ],
+                "DSDECOD": [
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED",
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED",
+                    "COMPLETED",
+                    "COMPLETED TREATMENT",
+                    "FIRST DATE ON TRIAL PRODUCT",
+                    "INFORMED CONSENT OBTAINED",
+                    "LAST DATE ON TRIAL PRODUCT",
+                    "RANDOMIZED"
+                ],
+                "DSCAT": [
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "DISPOSITION EVENT",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE",
+                    "PROTOCOL MILESTONE"
+                ],
+                "EPOCH": [
+                    "FOLLOW-UP",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "FOLLOW-UP",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "FOLLOW-UP",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "FOLLOW-UP",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "VISITNUM": [
+                    2900,
+                    2800,
+                    200,
+                    100,
+                    2800,
+                    200,
+                    100,
+                    2900,
+                    2800,
+                    200,
+                    100,
+                    2800,
+                    200,
+                    2900,
+                    2800,
+                    200,
+                    100,
+                    2800,
+                    200,
+                    2900,
+                    2800,
+                    200,
+                    100,
+                    2800,
+                    200
+                ],
+                "VISIT": [
+                    "END OF TRIAL",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)",
+                    "VISIT 1 (WEEK -2)",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)",
+                    "VISIT 1 (WEEK -2)",
+                    "END OF TRIAL",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)",
+                    "VISIT 1 (WEEK -2)",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)",
+                    "END OF TRIAL",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)",
+                    "VISIT 1 (WEEK -2)",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)",
+                    "END OF TRIAL",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)",
+                    "VISIT 1 (WEEK -2)",
+                    "VISIT 28 (WEEK 26)",
+                    "VISIT 2 (WEEK 0)"
+                ],
+                "VISITDY": [
+                    213,
+                    183,
+                    1,
+                    -15,
+                    183,
+                    1,
+                    -15,
+                    213,
+                    183,
+                    1,
+                    -15,
+                    183,
+                    1,
+                    213,
+                    183,
+                    1,
+                    -15,
+                    183,
+                    1,
+                    213,
+                    183,
+                    1,
+                    -15,
+                    183,
+                    1
+                ],
+                "DSSTDTC": [
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         .",
+                    "         ."
+                ],
+                "DSDY": [
+                    213,
+                    183,
+                    1,
+                    -14,
+                    183,
+                    1,
+                    -14,
+                    213,
+                    183,
+                    1,
+                    -14,
+                    183,
+                    1,
+                    213,
+                    183,
+                    1,
+                    -14,
+                    183,
+                    1,
+                    213,
+                    183,
+                    1,
+                    -14,
+                    183,
+                    1
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

@@ -1,0 +1,170 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The SENDIG requires dates and times of day to be stored according to the international standard ISO 8601 (http://www.iso.org).",
+                                    "Document": "IG v3.0",
+                                    "Section": "4.4|4.4.3|4.4.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND66",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The SENDIG requires dates and times of day to be stored according to the international standard ISO 8601 (http://www.iso.org).",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.4|4.4.3|4.4.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND66",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The SENDIG requires dates and times of day to be stored according to the international standard ISO 8601 (http://www.iso.org).",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.4|4.4.3|4.4.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND66",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The SENDIG requires dates and times of day to be stored according to the international standard ISO 8601 (http://www.iso.org).",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.4|4.4.3|4.4.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND66",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The SENDIG requires dates and times of day to be stored according to the international standard ISO 8601 (http://www.iso.org).",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.4|4.4.3|4.4.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND66",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The SENDIG requires dates and times of day to be stored according to the international standard ISO 8601 (http://www.iso.org).",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.4|4.4.3|4.4.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND66",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--DTC",
+                "operator": "invalid_date"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000588",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Variables that include dates (--DTC) are required to be presented according to the international standard ISO 8601 date or date/time format",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Variable value is not in ISO 8601 date / datetime format",
+        "Output_Variables": [
+            "--DTC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

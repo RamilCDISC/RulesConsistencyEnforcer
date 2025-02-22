@@ -1,0 +1,96 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0649",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Some codelists used for TSVAL include terms which are also null flavors. For example, the Pharmaceutical Dosage Form codelist includes the values 'UNKNOWN' and 'NOT APPLICABLE. In such cases, TSVAL should have the term from the codelist and TSVALNF should be null.",
+                                    "Document": "SDTMIG v3.4",
+                                    "Item": "Assumption 11",
+                                    "Section": "7.4.2"
+                                },
+                                {
+                                    "Cited_Guidance": "While it would be possible to allow a value such as NONE or UNBOUNDED to be entered in TSVAL,  validation programs would then have to recognize this special term as an exception to the expected data format. Therefore, it was decided that a separate null flavor variable that uses the ISO 21090 null flavor terminology would be a better solution.",
+                                    "Document": "SDTMIG v3.4",
+                                    "Section": "7.4.2.1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "TSVAL",
+                "operator": "non_empty"
+            },
+            {
+                "name": "TSVAL",
+                "operator": "is_not_contained_by_case_insensitive",
+                "value": [
+                    "NI",
+                    "INV",
+                    "DER",
+                    "OTH",
+                    "NINF",
+                    "PINF",
+                    "UNC",
+                    "MSK",
+                    "NA",
+                    "UNK",
+                    "ASKU",
+                    "NAV",
+                    "NASK",
+                    "NAVU",
+                    "NAV",
+                    "QS",
+                    "TRC",
+                    "NP"
+                ]
+            },
+            {
+                "name": "TSVALNF",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000041",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When TSVAL is not populated with values or synonyms of values in the ISO 21090 null flavor codelist (or other terms that can be represented as null flavors), unless the term is included in published terminology, TSVALNF should be null.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "TSVALNF is populated when TSVAL is populated with a value that is not in the ISO 21090 null flavor codelist."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "TRIAL DESIGN"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "TS"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

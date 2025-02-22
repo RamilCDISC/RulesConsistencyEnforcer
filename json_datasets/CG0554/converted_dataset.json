@@ -1,0 +1,768 @@
+{
+    "datasets": [
+        {
+            "filename": "apsu.xpt",
+            "label": "Associated Persons Substance Use",
+            "domain": "APSU",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "APID",
+                    "label": "Associated Persons Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "RSUBJID",
+                    "label": "Related Subject or Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SREL",
+                    "label": "Subject, Device, or Study Relationship",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUTRT",
+                    "label": "Reported Name of Substance",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUPRESP",
+                    "label": "SU Pre-Specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SUOCCUR",
+                    "label": "SU Occurrence",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "APSU",
+                    "APSU",
+                    "APSU"
+                ],
+                "APID": [
+                    "XYZ-AP001",
+                    "XYZ-AP002",
+                    "XYZ-AP003"
+                ],
+                "SUSEQ": [
+                    1,
+                    1,
+                    1
+                ],
+                "RSUBJID": [
+                    "XYZ-001-001",
+                    "XYZ-001-002",
+                    "XYZ-001-003"
+                ],
+                "SREL": [
+                    "MOTHER, BIOLOGICAL",
+                    "MOTHER, BIOLOGICAL",
+                    "MOTHER, BIOLOGICAL"
+                ],
+                "SUTRT": [
+                    "SMOKING",
+                    "SMOKING",
+                    "SMOKING"
+                ],
+                "SUPRESP": [
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "SUOCCUR": [
+                    "Y",
+                    "Y",
+                    "N"
+                ]
+            }
+        },
+        {
+            "filename": "mh.xpt",
+            "label": "Medical History",
+            "domain": "MH",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MHTERM",
+                    "label": "Reported Term for the Medical History",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHCAT",
+                    "label": "Category for Medical History",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHPRESP",
+                    "label": "Medical History Event Pre-Specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHOCCUR",
+                    "label": "Medical History Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHDTC",
+                    "label": "Date/Time of History Collection",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHSTDTC",
+                    "label": "Start Date/Time of Medical History Event",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "MH",
+                    "MH"
+                ],
+                "USUBJID": [
+                    "XYZ-001-001",
+                    "XYZ-001-001"
+                ],
+                "MHSEQ": [
+                    1,
+                    2
+                ],
+                "MHTERM": [
+                    "ASTHMA",
+                    "CHRONIC OBSTRUCTIVE PULMONARY DISEASE"
+                ],
+                "MHCAT": [
+                    "RESPIRATORY",
+                    "RESPIRATORY"
+                ],
+                "MHPRESP": [
+                    "Y",
+                    "Y"
+                ],
+                "MHOCCUR": [
+                    "Y",
+                    "N"
+                ],
+                "MHDTC": [
+                    "2013-05-15",
+                    "2013-05-15"
+                ],
+                "MHSTDTC": [
+                    "2009-07",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "lb.xpt",
+            "label": "Laboratory Test Results",
+            "domain": "LB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "POOLID",
+                    "label": "Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Lab Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Lab Test or Examination Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBCAT",
+                    "label": "Category for Lab Test",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTRESN",
+                    "label": "Numeric Result/Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBSTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSPEC",
+                    "label": "Specimen Type",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBDTC",
+                    "label": "Date/Time of Specimen Collection",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "LB",
+                    "LB"
+                ],
+                "POOLID": [
+                    "XYZ-P001",
+                    "XYZ-P002"
+                ],
+                "LBSEQ": [
+                    1,
+                    1
+                ],
+                "LBTESTCD": [
+                    "POOLSTUFF",
+                    "POOLSTUFF"
+                ],
+                "LBTEST": [
+                    "Stuff Tested on a Pool",
+                    "Stuff Tested on a Pool"
+                ],
+                "LBCAT": [
+                    "HEMATOLOGY",
+                    "HEMATOLOGY"
+                ],
+                "LBORRES": [
+                    "2.5",
+                    "5.9"
+                ],
+                "LBORRESU": [
+                    "mg/L",
+                    "mg/L"
+                ],
+                "LBSTRESC": [
+                    "2.5",
+                    "5.9"
+                ],
+                "LBSTRESN": [
+                    2.5,
+                    5.9
+                ],
+                "LBSTRESU": [
+                    "mg/L",
+                    "mg/L"
+                ],
+                "LBSPEC": [
+                    "BLOOD",
+                    "BLOOD"
+                ],
+                "VISITNUM": [
+                    1,
+                    1
+                ],
+                "VISIT": [
+                    "Week 1",
+                    "Week 1"
+                ],
+                "LBDTC": [
+                    "2013-05-15",
+                    "2013-05-15"
+                ]
+            }
+        },
+        {
+            "filename": "re.xpt",
+            "label": "Respiratory System Findings",
+            "domain": "RE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SPDEVID",
+                    "label": "Sponsor Device Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "RETESTCD",
+                    "label": "Short Name of Respiratory Test",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RETEST",
+                    "label": "Name of Respiratory Test",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "REORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "REORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "REORREF",
+                    "label": "Reference Result in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RESTRESC",
+                    "label": "Character Result/Finding in Std Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RESTRESN",
+                    "label": "Numeric Result/Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "RESTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RESTREFC",
+                    "label": "Character Reference Result",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "RESTREFN",
+                    "label": "Numeric Reference Result in Std Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "REDTC",
+                    "label": "Date/Time of Collection",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ",
+                    "XYZ",
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "RE",
+                    "RE",
+                    "RE",
+                    "RE",
+                    "RE"
+                ],
+                "USUBJID": [
+                    "XYZ-001-001",
+                    "XYZ-001-001",
+                    "XYZ-001-001",
+                    "XYZ-001-001",
+                    "XYZ-001-001"
+                ],
+                "SPDEVID": [
+                    "ABC001",
+                    "ABC001",
+                    "ABC001",
+                    "ABC001",
+                    "DEF999"
+                ],
+                "RESEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "RETESTCD": [
+                    "FEV1",
+                    "FVC",
+                    "FEV1PP",
+                    "FVCPP",
+                    "PEF"
+                ],
+                "RETEST": [
+                    "Forced Expiratory Volume in 1 Second",
+                    "Forced Vital Capacity",
+                    "Percent Predicted FEV1",
+                    "Percent Predicted Forced Vital Capacity",
+                    "Peak Expiratory Flow"
+                ],
+                "REORRES": [
+                    "2.73",
+                    "3.91",
+                    "81",
+                    "101.3",
+                    "6.11"
+                ],
+                "REORRESU": [
+                    "L",
+                    "L",
+                    "%",
+                    "%",
+                    "L/s"
+                ],
+                "REORREF": [
+                    "3.37",
+                    "3.86",
+                    "",
+                    "",
+                    "7.33"
+                ],
+                "RESTRESC": [
+                    "2.73",
+                    "3.91",
+                    "81",
+                    "101.3",
+                    "6.11"
+                ],
+                "RESTRESN": [
+                    "2.73",
+                    "3.91",
+                    81,
+                    "101.3",
+                    "6.11"
+                ],
+                "RESTRESU": [
+                    "L",
+                    "L",
+                    "%",
+                    "%",
+                    "L/s"
+                ],
+                "RESTREFC": [
+                    "2.73",
+                    "3.91",
+                    "81",
+                    "101.3",
+                    "6.11"
+                ],
+                "RESTREFN": [
+                    "2.73",
+                    "3.91",
+                    81,
+                    "101.3",
+                    "6.11"
+                ],
+                "VISITNUM": [
+                    2,
+                    2,
+                    2,
+                    2,
+                    4
+                ],
+                "VISIT": [
+                    "VISIT 2",
+                    "VISIT 2",
+                    "VISIT 2",
+                    "VISIT 2",
+                    "VISIT 4"
+                ],
+                "REDTC": [
+                    "2013-06-30",
+                    "2013-06-30",
+                    "2013-06-30",
+                    "2013-06-30",
+                    "2013-07-17"
+                ]
+            }
+        },
+        {
+            "filename": "pooldef.xpt",
+            "label": "Pool Definition",
+            "domain": "POOLDEF",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "POOLID",
+                    "label": "Pool Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ",
+                    "XYZ",
+                    "XYZ",
+                    "XYZ",
+                    "XYZ"
+                ],
+                "POOLID": [
+                    "XYZ-P001",
+                    "XYZ-P001",
+                    "XYZ-P001",
+                    "XYZ-P002",
+                    "XYZ-P002",
+                    "XYZ-P002"
+                ],
+                "USUBJID": [
+                    "XYZ-001-001",
+                    "XYZ-001-002",
+                    "XYZ-001-003",
+                    "XYZ-001-004",
+                    "XYZ-001-005",
+                    "XYZ-001-006"
+                ]
+            }
+        },
+        {
+            "filename": "di.xpt",
+            "label": "Device Identifiers",
+            "domain": "DI",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SPDEVID",
+                    "label": "Sponsor Device Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DISEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DIPARMCD",
+                    "label": "Device Identifier Element Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DIPARM",
+                    "label": "Device Identifier Element Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DIVAL",
+                    "label": "Device Identifier Element Value",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "DI",
+                    "DI"
+                ],
+                "SPDEVID": [
+                    "ABC001",
+                    "DEF999"
+                ],
+                "DISEQ": [
+                    1,
+                    1
+                ],
+                "DIPARMCD": [
+                    "DEVTYPE",
+                    "DEVTYPE"
+                ],
+                "DIPARM": [
+                    "Device Type",
+                    "Device Type"
+                ],
+                "DIVAL": [
+                    "SPIROMETER",
+                    "PEAK FLOW METER"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

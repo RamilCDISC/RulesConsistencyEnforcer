@@ -1,0 +1,158 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The STUDYID in all domains must be the same in all records across the study.",
+                                    "Document": "IG v3.1",
+                                    "Section": "3.7.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND249.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The STUDYID in all domains must be the same in all records across the study.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "3.7.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND249.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The STUDYID in all domains must be the same in all records across the study.",
+                                    "Document": "IG v3.1",
+                                    "Section": "3.7.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND249.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The STUDYID in all domains must be the same in all records across the study.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "3.7.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND249.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The STUDYID in all domains must be the same in all records across the study.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "3.7.6"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND249.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "STUDYID",
+                "operator": "is_not_contained_by",
+                "value": "$dm_studyid"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000489",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "The STUDYID in all domains must be the same in all records across the study.",
+    "Executability": "Fully Executable",
+    "Operations": [
+        {
+            "domain": "DM",
+            "id": "$dm_studyid",
+            "name": "STUDYID",
+            "operator": "distinct"
+        }
+    ],
+    "Outcome": {
+        "Message": "STUDYID is not equal to DM.STUDYID",
+        "Output_Variables": [
+            "STUDYID"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

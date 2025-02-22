@@ -1,0 +1,135 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If multiple races are collected then the value of RACE should be 'MULTIPLE' and the additional information will be included in the Supplemental Qualifiers dataset.",
+                                    "Document": "IG v3.2",
+                                    "Item": "Assumption 6",
+                                    "Section": "5"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0140",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.2"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If multiple races are collected then the value of RACE should be 'MULTIPLE' and the additional information will be included in the Supplemental Qualifiers dataset.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 6",
+                                    "Section": "5.2"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0140",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.3"
+                },
+                {
+                    "Name": "SDTMIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If multiple races are collected then the value of RACE should be 'MULTIPLE' and the additional information will be included in the Supplemental Qualifiers dataset.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 6",
+                                    "Section": "5.2"
+                                }
+                            ],
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0140",
+                                "Version": "1"
+                            },
+                            "Version": "2.0"
+                        }
+                    ],
+                    "Version": "3.4"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "RACE",
+                "operator": "not_equal_to",
+                "value": "MULTIPLE"
+            },
+            {
+                "name": "QNAM",
+                "operator": "starts_with",
+                "value": "RACE",
+                "value_is_literal": true
+            },
+            {
+                "name": "QNAM",
+                "operator": "suffix_matches_regex",
+                "suffix": 1,
+                "value": "^[A-Z0-9]"
+            },
+            {
+                "name": "QNAM",
+                "operator": "not_suffix_matches_regex",
+                "suffix": 3,
+                "value": "(OTH)"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000337",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when multiple races are collected in SUPPDM but RACE in DM does not equal \"MULTIPLE\".",
+    "Executability": "Fully Executable",
+    "Match_Datasets": [
+        {
+            "Is Relationship": true,
+            "Keys": [
+                "USUBJID"
+            ],
+            "Name": "DM"
+        }
+    ],
+    "Outcome": {
+        "Message": "Multiple races are collected in SUPPDM but RACE in DM does not equal \"MULTIPLE\"."
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "SUPPDM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,93 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0521",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If ARMCD is null, then ARM must be null and ARMNRS must be populated with the reason ARMCD is null.",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 4",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0521",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If ARMCD is null, then ARM must be null and ARMNRS must be populated with the reason ARMCD is null.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 4",
+                                    "Section": "5.2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "ARMCD",
+                "operator": "empty"
+            },
+            {
+                "name": "ARM",
+                "operator": "non_empty"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000119",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when ARM is not empty, but ARMCD is empty",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "ARM is populated, when ARMCD is NULL",
+        "Output_Variables": [
+            "ARMCD",
+            "ARM"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "SPECIAL PURPOSE"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DM"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

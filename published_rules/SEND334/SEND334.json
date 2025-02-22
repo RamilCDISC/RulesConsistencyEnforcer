@@ -1,0 +1,167 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "EGEVAL: Role of the person who provided the evaluation. Should be null for records that contain collected or derived data.",
+                                    "Document": "IG v3.1",
+                                    "Section": "6.3.16"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND334",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "EGEVAL: Role of the person who provided the evaluation. Should be null for records that contain collected or derived data.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.3.16"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND334",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "EGEVAL: Role of the person who provided the evaluation. Should be null for records that contain collected or derived data.",
+                                    "Document": "IG v3.1",
+                                    "Section": "6.3.16"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND334",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "EGEVAL: Role of the person who provided the evaluation. Should be null for records that contain collected or derived data.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.3.16"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND334",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "EGEVAL: Role of the person who provided the evaluation. Should be null for records that contain collected or derived data.",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "6.3.16"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND334",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "EGCAT",
+                        "operator": "equal_to_case_insensitive",
+                        "value": "MEASUREMENT"
+                    },
+                    {
+                        "name": "EGEVAL",
+                        "operator": "non_empty"
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "EGORRESU",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "EGEVAL",
+                        "operator": "non_empty"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000471",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Report an error when EGCAT=MEASUREMENT (case-insensitive) and EGEVAL is populated, or when EGORRESU is not null and EGEVAL is populated",
+    "Executability": "Partially Executable",
+    "Outcome": {
+        "Message": "EGEVAL must be null for results that are collected or derived"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "EG"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

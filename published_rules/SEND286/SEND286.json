@@ -1,0 +1,187 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Record-to-record relationships (USUBJID or POOLID, and IDVARVAL are populated; RELTYPE is null)",
+                                    "Document": "IG v3.1",
+                                    "Item": "Assumption 3",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND286",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Record-to-record relationships (USUBJID or POOLID, and IDVARVAL are populated; RELTYPE is null)",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Assumption 3",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND286",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Record-to-record relationships (USUBJID or POOLID, and IDVARVAL are populated; RELTYPE is null)",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Assumption 3",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND286",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Record-to-record relationships (USUBJID or POOLID, and IDVARVAL are populated; RELTYPE is null)",
+                                    "Document": "IG v3.1",
+                                    "Item": "Assumption 3",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND286",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Record-to-record relationships (USUBJID or POOLID, and IDVARVAL are populated; RELTYPE is null)",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Assumption 3",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND286",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "USUBJID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "IDVARVAL",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "RELTYPE",
+                        "operator": "non_empty"
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "POOLID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "IDVARVAL",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "RELTYPE",
+                        "operator": "non_empty"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000388",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When USUBJID or POOLID are populated, and IDVARVAL is populated, then RELTYPE must be null.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "RELTYPE may not be populated when USUBJID or POOID is populated, and IDVARVAL is populated",
+        "Output_Variables": [
+            "RDOMAIN",
+            "USUBJID",
+            "POOLID",
+            "IDVAR",
+            "IDVARVAL",
+            "RELTYPE"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "RELATIONSHIP"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "RELREC"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

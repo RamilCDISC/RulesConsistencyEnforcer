@@ -1,0 +1,62 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0648",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "The TP dataset must not be used in human clinical trials.",
+                                    "Document": "SDTM v2.0",
+                                    "Section": "Trial Repro Paths"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "TP",
+                "operator": "exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000043",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when TP dataset is present.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "TP dataset is present."
+    },
+    "Rule_Type": "Domain Presence Check",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "TP"
+            ]
+        }
+    },
+    "Sensitivity": "Study"
+}

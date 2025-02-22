@@ -1,0 +1,96 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0538",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "DSSCAT = \"STUDY PARTICIPATION\" is used to represent disposition of study participation",
+                                    "Document": "IG v3.4",
+                                    "Item": "Assumption 2.b.1",
+                                    "Section": "6.2.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0538",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "DSSCAT = \"STUDY PARTICIPATION\" is used to represent disposition of study participation.",
+                                    "Document": "IG v3.3",
+                                    "Item": "Assumption 2.b.1",
+                                    "Section": "6.2.3 DS"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "DSSCAT",
+                "operator": "equal_to",
+                "value": "STUDY PARTICIPATION",
+                "value_is_literal": true
+            },
+            {
+                "name": "DSSCAT",
+                "operator": "is_not_unique_set",
+                "value": "USUBJID"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000214",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Trigger error when more than 1 record per subject has DSSCAT = 'STUDY PARTICIPATION'",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "There is more than 1 record per subject has DSSCAT = 'STUDY PARTICIPATION'",
+        "Output_Variables": [
+            "DSSCAT",
+            "USUBJID"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "DS"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

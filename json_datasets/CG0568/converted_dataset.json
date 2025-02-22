@@ -1,0 +1,108 @@
+{
+    "datasets": [
+        {
+            "filename": "ex.xpt",
+            "label": "Exposure",
+            "domain": "EX",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EXTRT",
+                    "label": "Name of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXDOSE",
+                    "label": "Dose",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EXDOSU",
+                    "label": "Dose Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXDOSFRM",
+                    "label": "Dose Form",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXSTDTC",
+                    "label": "Start Date/Time of Treatment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EXENDTC",
+                    "label": "End Date/Time of Treatment",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "EX"
+                ],
+                "USUBJID": [
+                    "CDISC001"
+                ],
+                "EXSEQ": [
+                    1
+                ],
+                "EXTRT": [
+                    "DRUG1"
+                ],
+                "EXDOSE": [
+                    20
+                ],
+                "EXDOSU": [
+                    "mg/kg"
+                ],
+                "EXDOSFRM": [
+                    "SOLUTION"
+                ],
+                "EXSTDTC": [
+                    "2023-02-15"
+                ],
+                "EXENDTC": [
+                    "2023-06-30"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

@@ -1,0 +1,357 @@
+{
+    "datasets": [
+        {
+            "filename": "tv.xpt",
+            "label": "Trial Visits",
+            "domain": "TV",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "VISITDY",
+                    "label": "Planned Study Day of Visit",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ARMCD",
+                    "label": "Planned Arm Code",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "TVSTRL",
+                    "label": "Visit Start Rule",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "TVENRL",
+                    "label": "Visit End Rule",
+                    "type": "Char",
+                    "length": 200
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV",
+                    "TV"
+                ],
+                "VISITNUM": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    101,
+                    201
+                ],
+                "VISIT": [
+                    "SCREENING 1",
+                    "SCREENING 2",
+                    "BASELINE",
+                    "WEEK 2",
+                    "WEEK 4",
+                    "WEEK 6",
+                    "WEEK 8",
+                    "WEEK 12",
+                    "WEEK 16",
+                    "WEEK 20",
+                    "WEEK 24",
+                    "WEEK 26",
+                    "EARLY DISCONTINUATION",
+                    "EARLY DISCONTINUATION RETRIEVAL"
+                ],
+                "VISITDY": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "ARMCD": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "TVSTRL": [
+                    "Informed Consent Obtained",
+                    "Day Before Initial Study Treatment",
+                    "Day of Initial Study Treatment",
+                    "2 Weeks After Start of Study Treatment",
+                    "4 Weeks After Start of Study Treatment",
+                    "6 Weeks After Start of Study Treatment",
+                    "8 Weeks After Start of Study Treatment",
+                    "12 Weeks After Start of Study Treatment",
+                    "16 Weeks After Start of Study Treatment",
+                    "20 Weeks After Start of Study Treatment",
+                    "24 Weeks After Start of Study Treatment",
+                    "26 Weeks After Start of Study Treatment",
+                    "Discontinuation Date Prior to Week 24",
+                    "Approximately 24 Weeks After Start of Study Treatment for Early Discontinuations"
+                ],
+                "TVENRL": [
+                    "Screening Assessments Completed",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        },
+        {
+            "filename": "sv.xpt",
+            "label": "Subject Visits",
+            "domain": "SV",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "VISITDY",
+                    "label": "Planned Study Day of Visit",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SVSTDTC",
+                    "label": "Start Date/Time of Visit",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "SVENDTC",
+                    "label": "End Date/Time of Visit",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "SVSTDY",
+                    "label": "Study Day of Start of Visit",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SVENDY",
+                    "label": "Study Day of End of Visit",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SVUPDES",
+                    "label": "Description of Unplanned Visit",
+                    "type": "Char",
+                    "length": 200
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV",
+                    "SV"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001",
+                    "CDISC001"
+                ],
+                "VISITNUM": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    5.01
+                ],
+                "VISIT": [
+                    "SCREENING 1",
+                    "SCREENING 2",
+                    "BASELINE",
+                    "WEEK 2",
+                    "WEEK 4",
+                    "WEEK 4: UNSCHEDULED 01"
+                ],
+                "VISITDY": [
+                    1,
+                    2,
+                    11,
+                    18,
+                    39,
+                    null
+                ],
+                "SVSTDTC": [
+                    "2012-11-23",
+                    "2012-11-28",
+                    "2012-11-30",
+                    "2012-12-13",
+                    "2012-12-26",
+                    "2012-12-28"
+                ],
+                "SVENDTC": [
+                    "2012-11-23",
+                    "2012-11-28",
+                    "2012-11-30",
+                    "2012-12-13",
+                    "2012-12-26",
+                    "2012-12-28"
+                ],
+                "SVSTDY": [
+                    -7,
+                    -2,
+                    1,
+                    14,
+                    27,
+                    29
+                ],
+                "SVENDY": [
+                    -7,
+                    -2,
+                    1,
+                    14,
+                    27,
+                    29
+                ],
+                "SVUPDES": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "UNSCHEDULED LABS"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

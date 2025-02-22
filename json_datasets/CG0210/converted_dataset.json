@@ -1,0 +1,226 @@
+{
+    "datasets": [
+        {
+            "filename": "se.xpt",
+            "label": "Subject Elements",
+            "domain": "SE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ETCD",
+                    "label": "Element Code",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ELEMENT",
+                    "label": "Description of Element",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TAETORD",
+                    "label": "Planned Order of Element within Arm",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SESTDTC",
+                    "label": "Start Date/Time of Element",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SEENDTC",
+                    "label": "End Date/Time of Element",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SESTDY",
+                    "label": "Study Day of Start of Element",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SEENDY",
+                    "label": "Study Day of End of Element",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SEUPDES",
+                    "label": "Description of Unplanned Element",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "Sample001",
+                    "Sample001",
+                    "Sample001",
+                    "Sample001",
+                    "Sample001",
+                    "Sample001",
+                    "Sample001",
+                    "Sample001"
+                ],
+                "DOMAIN": [
+                    "SE",
+                    "SE",
+                    "SE",
+                    "SE",
+                    "SE",
+                    "SE",
+                    "SE",
+                    "SE"
+                ],
+                "USUBJID": [
+                    "1201001",
+                    "1201001",
+                    "1201001",
+                    "1201002",
+                    "1201002",
+                    "1201003",
+                    "1201003",
+                    "1201003"
+                ],
+                "SESEQ": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    2,
+                    1,
+                    2,
+                    3
+                ],
+                "ETCD": [
+                    "SCRN",
+                    "TRTZ",
+                    "FU",
+                    "SCRN",
+                    "TRTZ",
+                    "SCRN",
+                    "TRTZ",
+                    "FU"
+                ],
+                "ELEMENT": [
+                    "Screen",
+                    "TRTMTA",
+                    "Follow-up",
+                    "Screen",
+                    "TRTMTA",
+                    "Screen",
+                    "TRTMTA",
+                    "Follow-up"
+                ],
+                "TAETORD": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    2,
+                    1,
+                    2,
+                    3
+                ],
+                "EPOCH": [
+                    "SCREENING",
+                    "OPEN LABEL\nTREATMENT",
+                    "FOLLOW-UP",
+                    "SCREENING",
+                    "OPEN LABEL\nTREATMENT",
+                    "SCREENING",
+                    "OPEN LABEL\nTREATMENT",
+                    "FOLLOW-UP"
+                ],
+                "SESTDTC": [
+                    "2018-06-29",
+                    "2018-08-13",
+                    "2019-05-13",
+                    "2018-11-20",
+                    "2019-01-07",
+                    "2019-01-10",
+                    "2019-02-06",
+                    "2019-04-24"
+                ],
+                "SEENDTC": [
+                    "2018-08-13",
+                    "2019-05-13",
+                    "2020-03-22",
+                    "2019-01-07",
+                    "2022-01-19",
+                    "2019-02-06",
+                    "2019-04-24",
+                    "2019-06-21"
+                ],
+                "SESTDY": [
+                    -45,
+                    1,
+                    274,
+                    -48,
+                    1,
+                    -27,
+                    1,
+                    78
+                ],
+                "SEENDY": [
+                    1,
+                    274,
+                    588,
+                    1,
+                    1109,
+                    1,
+                    78,
+                    136
+                ],
+                "SEUPDES": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

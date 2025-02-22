@@ -1,0 +1,225 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Domain-to-domain relationships (USUBJID, POOLID, and IDVARVAL are null; RELTYPE is populated)",
+                                    "Document": "IG v3.0",
+                                    "Item": "Specification",
+                                    "Section": "8.3.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND253",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Domain-to-domain relationships (USUBJID, POOLID, and IDVARVAL are null; RELTYPE is populated)",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND253.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Domain-to-domain relationships (USUBJID, POOLID, and IDVARVAL are null; RELTYPE is populated)",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND253.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Domain-to-domain relationships (USUBJID, POOLID, and IDVARVAL are null; RELTYPE is populated)",
+                                    "Document": "IG v3.1",
+                                    "Item": "Specification",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND253.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Domain-to-domain relationships (USUBJID, POOLID, and IDVARVAL are null; RELTYPE is populated)",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND253.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Domain-to-domain relationships (USUBJID, POOLID, and IDVARVAL are null; RELTYPE is populated)",
+                                    "Document": "IG v3.1.1",
+                                    "Item": "Specification",
+                                    "Section": "8.2.1"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND253.1",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "USUBJID",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "POOLID",
+                        "operator": "not_exists"
+                    },
+                    {
+                        "name": "IDVARVAL",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "RELTYPE",
+                        "operator": "not_equal_to",
+                        "value": "ONE"
+                    },
+                    {
+                        "name": "RELTYPE",
+                        "operator": "not_equal_to",
+                        "value": "MANY"
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "USUBJID",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "POOLID",
+                        "operator": "exists"
+                    },
+                    {
+                        "name": "POOLID",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "IDVARVAL",
+                        "operator": "empty"
+                    },
+                    {
+                        "name": "RELTYPE",
+                        "operator": "not_equal_to",
+                        "value": "ONE"
+                    },
+                    {
+                        "name": "RELTYPE",
+                        "operator": "not_equal_to",
+                        "value": "MANY"
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000557",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "When USUBJID, POOLID, and IDVARVAL are empty, RELTYPE can only be \"ONE\" or \"MANY\"",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "For RELTYPE, only \"ONE\" and \"MANY\" are allowed when USUBJID, POOLID, and IDVARVAL are null"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "RELATIONSHIP"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "RELREC"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

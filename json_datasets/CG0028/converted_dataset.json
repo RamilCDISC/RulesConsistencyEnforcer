@@ -1,0 +1,1031 @@
+{
+    "datasets": [
+        {
+            "filename": "ds.xpt",
+            "label": "Disposition",
+            "domain": "DS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "DSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "DSTERM",
+                    "label": "Reported Term for the Disposition Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "DSDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS",
+                    "DS"
+                ],
+                "USUBJID": [
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002"
+                ],
+                "DSSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "DSTERM": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "DEATH",
+                    "PROGRESSIVE DISEASE",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "ADVERSE EVENT",
+                    "DEATH",
+                    "DEATH"
+                ],
+                "DSDECOD": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "LAST CONTACT",
+                    "DEATH",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "DEATH",
+                    "LAST CONTACT",
+                    "LAST CONTACT"
+                ]
+            }
+        },
+        {
+            "filename": "ss1.xpt",
+            "label": "Subject Status1",
+            "domain": "SS1",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "SSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SSTESTCD",
+                    "label": "Status Short Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "SSTEST",
+                    "label": "Status Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SSORRES",
+                    "label": "Result or Finding\nOriginal Result",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SSSTRESC",
+                    "label": "Character\nResult/Finding in\nStd Format",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS"
+                ],
+                "USUBJID": [
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002"
+                ],
+                "SSSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "SSTESTCD": [
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT"
+                ],
+                "SSTEST": [
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status"
+                ],
+                "SSORRES": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ],
+                "SSSTRESC": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ]
+            }
+        },
+        {
+            "filename": "ss2.xpt",
+            "label": "Subject Status2",
+            "domain": "SS2",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "SSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SSTESTCD",
+                    "label": "Status Short Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "SSTEST",
+                    "label": "Status Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SSORRES",
+                    "label": "Result or Finding\nOriginal Result",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SSSTRESC",
+                    "label": "Character\nResult/Finding in\nStd Format",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS",
+                    "SS"
+                ],
+                "USUBJID": [
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002"
+                ],
+                "SSSEQ": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                ],
+                "SSTESTCD": [
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT"
+                ],
+                "SSTEST": [
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status"
+                ],
+                "SSORRES": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ],
+                "SSSTRESC": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ]
+            }
+        },
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "POOLID",
+                    "label": "Pool Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 200
+                },
+                {
+                    "name": "AEDECOD",
+                    "label": "Standardized Disposition Term",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE",
+                    "AE"
+                ],
+                "POOLID": [
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002"
+                ],
+                "AESEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "AETERM": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "DEATH",
+                    "PROGRESSIVE DISEASE",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "ADVERSE EVENT",
+                    "DEATH",
+                    "DEATH"
+                ],
+                "AEDECOD": [
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "PROGRESSIVE DISEASE",
+                    "LAST CONTACT",
+                    "DEATH",
+                    "INFORMED CONSENT OBTAINED",
+                    "COMPLETED",
+                    "RANDOMIZED",
+                    "ADVERSE EVENT",
+                    "DEATH",
+                    "LAST CONTACT",
+                    "LAST CONTACT"
+                ]
+            }
+        },
+        {
+            "filename": "lbae.xpt",
+            "label": "Labs AE",
+            "domain": "LBAE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "POOLID",
+                    "label": "Pool Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "LBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Status Short Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Status Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRES",
+                    "label": "Result or Finding\nOriginal Result",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTRESC",
+                    "label": "Character\nResult/Finding in\nStd Format",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB"
+                ],
+                "POOLID": [
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002"
+                ],
+                "LBSEQ": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "LBTESTCD": [
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT"
+                ],
+                "LBTEST": [
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status"
+                ],
+                "LBORRES": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ],
+                "LBSTRESC": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ]
+            }
+        },
+        {
+            "filename": "lbds.xpt",
+            "label": "Labs DS",
+            "domain": "LBDS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "POOLID",
+                    "label": "Pool Identifier",
+                    "type": "Char",
+                    "length": 20
+                },
+                {
+                    "name": "LBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Status Short Name",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Status Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRES",
+                    "label": "Result or Finding\nOriginal Result",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSTRESC",
+                    "label": "Character\nResult/Finding in\nStd Format",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01",
+                    "CDISCCORE01"
+                ],
+                "DOMAIN": [
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB",
+                    "LB"
+                ],
+                "POOLID": [
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0001",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002",
+                    "0002"
+                ],
+                "LBSEQ": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                ],
+                "LBTESTCD": [
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT",
+                    "SURVSTAT"
+                ],
+                "LBTEST": [
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status",
+                    "Survival Status"
+                ],
+                "LBORRES": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ],
+                "LBSTRESC": [
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD",
+                    "ALIVE",
+                    "DEAD"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

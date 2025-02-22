@@ -1,0 +1,161 @@
+{
+    "datasets": [
+        {
+            "filename": "se.xpt",
+            "label": "Subject Elements",
+            "domain": "SE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "ETCD",
+                    "label": "Element Code",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "ELEMENT",
+                    "label": "Description of Element",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "TAETORD",
+                    "label": "Planned Order of Element within Arm",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EPOCH",
+                    "label": "Epoch",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SESTDTC",
+                    "label": "Start Date/Time of Element",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SEENDTC",
+                    "label": "End Date/Time of Element",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "SESTDY",
+                    "label": "Study Day of Start of Element",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SEENDY",
+                    "label": "Study Day of End of Element",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "SEUPDES",
+                    "label": "Description of Unplanned Element",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CORE01",
+                    "CORE01",
+                    "CORE01"
+                ],
+                "DOMAIN": [
+                    "SE",
+                    "SE",
+                    "SE"
+                ],
+                "USUBJID": [
+                    "TEST_123",
+                    "TEST_123",
+                    "TEST_123"
+                ],
+                "SESEQ": [
+                    1,
+                    2,
+                    3
+                ],
+                "ETCD": [
+                    "SCRN",
+                    "DBA",
+                    "UNPLAN"
+                ],
+                "ELEMENT": [
+                    "Screening",
+                    "Drug A",
+                    "Unplanned Drug B"
+                ],
+                "TAETORD": [
+                    1,
+                    2,
+                    null
+                ],
+                "EPOCH": [
+                    "SCREENING",
+                    "BLINDED TREATMENT",
+                    "BLINDED TREATMENT"
+                ],
+                "SESTDTC": [
+                    "2006-06-01",
+                    "2006-06-03",
+                    "2006-05-31"
+                ],
+                "SEENDTC": [
+                    "2006-06-03",
+                    "2006-06-10",
+                    "2006-06-13"
+                ],
+                "SESTDY": [
+                    -2,
+                    1,
+                    29
+                ],
+                "SEENDY": [
+                    1,
+                    8,
+                    42
+                ],
+                "SEUPDES": [
+                    "",
+                    "",
+                    "Drug B dispensed in error"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

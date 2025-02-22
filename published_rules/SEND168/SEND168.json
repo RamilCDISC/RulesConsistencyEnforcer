@@ -1,0 +1,227 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Food and Water Consumption - Findings. One record per test per interval per subject or pool",
+                                    "Document": "IG v.3.0",
+                                    "Item": "Domain table header",
+                                    "Section": "6.3.5"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND168",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Food and Water Consumption - Findings. One record per test per interval per subject or pool",
+                                    "Document": "IG v.3.1",
+                                    "Item": "Domain table header",
+                                    "Section": "6.3.5"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND168",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Food and Water Consumption - Findings. One record per test per interval per subject or pool",
+                                    "Document": "IG v.3.1.1",
+                                    "Item": "Domain table header",
+                                    "Section": "6.3.5"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND168",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Food and Water Consumption - Findings. One record per test per interval per subject or pool",
+                                    "Document": "IG v.3.1",
+                                    "Item": "Domain table header",
+                                    "Section": "6.3.5"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND168",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Food and Water Consumption - Findings. One record per test per interval per subject or pool",
+                                    "Document": "IG v.3.1.1",
+                                    "Item": "Domain table header",
+                                    "Section": "6.3.5"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND168",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Food and Water Consumption - Findings. One record per test per interval per subject or pool",
+                                    "Document": "IG v.3.1",
+                                    "Item": "Domain table header",
+                                    "Section": "6.3.5"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND168",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                },
+                {
+                    "Name": "TIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Food and Water Consumption - Findings. One record per test per interval per subject or pool, Tabulation.",
+                                    "Document": "TIG v1.0",
+                                    "Item": "Domain Table Header",
+                                    "Section": "2.8.9.12"
+                                }
+                            ],
+                            "Origin": "TIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "TIG0097",
+                                "Version": "1"
+                            },
+                            "Version": "1.0"
+                        }
+                    ],
+                    "Substandard": "SEND",
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "any": [
+            {
+                "all": [
+                    {
+                        "name": "USUBJID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "FWTESTCD",
+                        "operator": "is_not_unique_set",
+                        "value": [
+                            "USUBJID",
+                            "FWDTC",
+                            "FWENDTC"
+                        ]
+                    }
+                ]
+            },
+            {
+                "all": [
+                    {
+                        "name": "POOLID",
+                        "operator": "non_empty"
+                    },
+                    {
+                        "name": "FWTESTCD",
+                        "operator": "is_not_unique_set",
+                        "value": [
+                            "POOLID",
+                            "FWDTC",
+                            "FWENDTC"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000496",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "Structure must be one record per test per interval (as defined by FWDTC and FWENDTC) per subject or pool"
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "FINDINGS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "FW"
+            ]
+        },
+        "Use Case": "NONCLIN"
+    },
+    "Sensitivity": "Record"
+}

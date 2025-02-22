@@ -1,0 +1,180 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If both --DTC and --ENDTC are collected, durations can be calculated by the difference in these two values...",
+                                    "Document": "IG v3.0",
+                                    "Section": "4.4.3"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND58",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.0"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If both --DTC and --ENDTC are collected, durations can be calculated by the difference in these two values...",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.4.3"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND58",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1"
+                },
+                {
+                    "Name": "SENDIG",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If both --DTC and --ENDTC are collected, durations can be calculated by the difference in these two values...",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.4.3"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND58",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "3.1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If both --DTC and --ENDTC are collected, durations can be calculated by the difference in these two values...",
+                                    "Document": "IG v3.1",
+                                    "Section": "4.4.3"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND58",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.1"
+                },
+                {
+                    "Name": "SENDIG-DART",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If both --DTC and --ENDTC are collected, durations can be calculated by the difference in these two values...",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.4.3"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND58",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.2"
+                },
+                {
+                    "Name": "SENDIG-GENETOX",
+                    "References": [
+                        {
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "If both --DTC and --ENDTC are collected, durations can be calculated by the difference in these two values...",
+                                    "Document": "IG v3.1.1",
+                                    "Section": "4.4.3"
+                                }
+                            ],
+                            "Origin": "SEND Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "SEND58",
+                                "Version": "1"
+                            },
+                            "Version": "5.0"
+                        }
+                    ],
+                    "Version": "1.0"
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--ENDTC",
+                "operator": "non_empty"
+            },
+            {
+                "name": "--DTC",
+                "operator": "non_empty"
+            },
+            {
+                "name": "--DTC",
+                "operator": "date_greater_than",
+                "value": "--ENDTC"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000653",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --ENDTC before --DTC",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--ENDTC must be greater than or equal to --DTC",
+        "Output_Variables": [
+            "--ENDTC",
+            "--DTC"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

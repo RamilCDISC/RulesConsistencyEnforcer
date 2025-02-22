@@ -1,0 +1,150 @@
+{
+    "datasets": [
+        {
+            "filename": "ag.xpt",
+            "label": "Procedure Agents",
+            "domain": "AG",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AGTRT",
+                    "label": "Reported Agent Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGPRESP",
+                    "label": "AG Pre-Specified",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGOCCUR",
+                    "label": "AG Occurrence",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGDOSE",
+                    "label": "Dose per Administration",
+                    "type": "Num",
+                    "length": 50
+                },
+                {
+                    "name": "AGDOSU",
+                    "label": "Dose Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGTRTV",
+                    "label": "Treatment Vehicle",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGVAMT",
+                    "label": "Treatment Vehicle\nAmount",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AGVAMTU",
+                    "label": "Treatment Vehicle\nAmount Units",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "XYZ",
+                    "XYZ",
+                    "XYZ"
+                ],
+                "DOMAIN": [
+                    "AG",
+                    "AG",
+                    "AG"
+                ],
+                "USUBJID": [
+                    "XYZ-001-001",
+                    "XYZ-001-002",
+                    "XYZ-001-003"
+                ],
+                "AGSEQ": [
+                    1,
+                    1,
+                    1
+                ],
+                "AGTRT": [
+                    "Tuberculin PPD-S",
+                    "Tuberculin PPD-S",
+                    "Tuberculin PPD-S"
+                ],
+                "AGPRESP": [
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "AGOCCUR": [
+                    "Y",
+                    "Y",
+                    "Y"
+                ],
+                "AGDOSE": [
+                    5,
+                    5,
+                    5
+                ],
+                "AGDOSU": [
+                    "tuberculin unit",
+                    "tuberculin unit",
+                    "tuberculin unit"
+                ],
+                "AGTRTV": [
+                    "SALINE",
+                    "SALINE",
+                    ""
+                ],
+                "AGVAMT": [
+                    "0.1",
+                    "0.1",
+                    ""
+                ],
+                "AGVAMTU": [
+                    "mL",
+                    "mL",
+                    ""
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

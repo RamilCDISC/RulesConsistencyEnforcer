@@ -1,0 +1,117 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0115",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Events[Variable Qualifer of --LOC.] Interventions[Variable Qualifer of --LOC.] Findings[Variable Qualifer of --LOC.]",
+                                    "Document": "Model v2.0",
+                                    "Item": "--PORTOT",
+                                    "Section": "Events Interventions Findings"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0115",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Qualifier for anatomical location further detailing the distribution, which means arrangement of, apportioning of the intervention administration.",
+                                    "Document": "Model v1.4",
+                                    "Item": "--PORTOT Specification",
+                                    "Section": "2.2.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0115",
+                                "Version": "2"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "Qualifier for anatomical location further detailing the distribution, which means arrangement of, apportioning of the intervention administration.",
+                                    "Document": "Model v1.7",
+                                    "Item": "--PORTOT Specification",
+                                    "Section": "2.2.1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "--LOC",
+                "operator": "not_exists"
+            },
+            {
+                "name": "--PORTOT",
+                "operator": "exists"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000096",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when --LOC does not exists in a dataset, --PORTOT exists.",
+    "Executability": "Fully Executable",
+    "Outcome": {
+        "Message": "--PORTOT variable is present, when --LOC variable does not exist in a dataset.",
+        "Output_Variables": [
+            "--LOC",
+            "--PORTOT"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "INTERVENTIONS",
+                "FINDINGS",
+                "EVENTS"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Dataset"
+}

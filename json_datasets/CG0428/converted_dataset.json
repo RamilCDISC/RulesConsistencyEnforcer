@@ -1,0 +1,682 @@
+{
+    "datasets": [
+        {
+            "filename": "ae.xpt",
+            "label": "Adverse Events",
+            "domain": "AE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "AETERM",
+                    "label": "Reported Term for the Adverse Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AETOX",
+                    "label": "Toxicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "AETOXGR",
+                    "label": "Standard Toxicity Grade",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "AE",
+                    "AE"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "AESEQ": [
+                    1,
+                    2
+                ],
+                "AETERM": [
+                    "NAUSEA",
+                    "VOMITING"
+                ],
+                "AETOX": [
+                    "CTCAE 4.03",
+                    "CTCAE 4.03"
+                ],
+                "AETOXGR": [
+                    "GRADE 1",
+                    "GRADE 2"
+                ]
+            }
+        },
+        {
+            "filename": "mh.xpt",
+            "label": "Medical History",
+            "domain": "MH",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MHTERM",
+                    "label": "Reported Term for the Medical History",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHTOX",
+                    "label": "Toxicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHTOXGR",
+                    "label": "Standard Toxicity Grade",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "MH",
+                    "MH"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "MHSEQ": [
+                    1,
+                    2
+                ],
+                "MHTERM": [
+                    "Fracture",
+                    "Soft Tissue Damage"
+                ],
+                "MHTOX": [
+                    "CTCAE 4.03",
+                    "CTCAE 4.03"
+                ],
+                "MHTOXGR": [
+                    "GRADE 1",
+                    "GRADE 2"
+                ]
+            }
+        },
+        {
+            "filename": "ce.xpt",
+            "label": "Clinical Events",
+            "domain": "CE",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CESEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "CETERM",
+                    "label": "Reported Term for the Clinical Event",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CETOX",
+                    "label": "Toxicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "CETOXGR",
+                    "label": "Standard Toxicity Grade",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "CE",
+                    "CE"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "CESEQ": [
+                    1,
+                    2
+                ],
+                "CETERM": [
+                    "Migraine",
+                    "Edema"
+                ],
+                "CETOX": [
+                    "CTCAE 4.03",
+                    "CTCAE 4.03"
+                ],
+                "CETOXGR": [
+                    "GRADE 1",
+                    "GRADE 2"
+                ]
+            }
+        },
+        {
+            "filename": "eg.xpt",
+            "label": "ECG Test Results",
+            "domain": "EG",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EGSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "EGTESTCD",
+                    "label": "ECG Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EGTEST",
+                    "label": "ECG Test or Examination Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EGORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EGORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EGTOX",
+                    "label": "Toxicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "EGTOXGR",
+                    "label": "Standard Toxicity Grade",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "EG",
+                    "EG"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "EGSEQ": [
+                    1,
+                    2
+                ],
+                "EGTESTCD": [
+                    "QRSAG",
+                    "QTAG"
+                ],
+                "EGTEST": [
+                    "PR Interval, Aggregate",
+                    "QT Interval, Aggregate"
+                ],
+                "EGORRES": [
+                    "0.362",
+                    "221"
+                ],
+                "EGORRESU": [
+                    "sec",
+                    "msec"
+                ],
+                "EGTOX": [
+                    "CTCAE 4.03",
+                    "CTCAE 4.03"
+                ],
+                "EGTOXGR": [
+                    "GRADE 1",
+                    "GRADE 2"
+                ]
+            }
+        },
+        {
+            "filename": "lb.xpt",
+            "label": "Laboratory Test Results",
+            "domain": "LB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "LBTESTCD",
+                    "label": "Lab Test or Examination Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTEST",
+                    "label": "Lab Test or Examination Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTOX",
+                    "label": "Toxicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "LBTOXGR",
+                    "label": "Standard Toxicity Grade",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "LB",
+                    "LB"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "LBSEQ": [
+                    1,
+                    2
+                ],
+                "LBTESTCD": [
+                    "HGFR",
+                    "GLUC"
+                ],
+                "LBTEST": [
+                    "Hepatocyte Growth Factor Receptor",
+                    "HGFR"
+                ],
+                "LBORRES": [
+                    "35",
+                    "7"
+                ],
+                "LBORRESU": [
+                    "ng/mL",
+                    "mg/dL"
+                ],
+                "LBTOX": [
+                    "CTCAE 4.03",
+                    "CTCAE 4.03"
+                ],
+                "LBTOXGR": [
+                    "GRADE 1",
+                    "GRADE 2"
+                ]
+            }
+        },
+        {
+            "filename": "pc.xpt",
+            "label": "Pharmacokinetics Concentrations",
+            "domain": "PC",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "PCTESTCD",
+                    "label": "Pharmacokinetic Test Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCTEST",
+                    "label": "Pharmacokinetic Test Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCTOX",
+                    "label": "Toxicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PCTOXGR",
+                    "label": "Standard Toxicity Grade",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "PC",
+                    "PC"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "PCSEQ": [
+                    1,
+                    2
+                ],
+                "PCTESTCD": [
+                    "DRUG X",
+                    "DRUG X"
+                ],
+                "PCTEST": [
+                    "STUDYDRUG",
+                    "STUDYDRUG"
+                ],
+                "PCORRES": [
+                    "9",
+                    "20"
+                ],
+                "PCORRESU": [
+                    "ug/mL",
+                    "ug/mL"
+                ],
+                "PCTOX": [
+                    "NCI 4.03",
+                    "NCI 4.03"
+                ],
+                "PCTOXGR": [
+                    "GRADE 1",
+                    "GRADE 2"
+                ]
+            }
+        },
+        {
+            "filename": "pp.xpt",
+            "label": "Pharmacokinetics Parameters",
+            "domain": "PP",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PPSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "PPTESTCD",
+                    "label": "Parameter Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PPTEST",
+                    "label": "Parameter Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PPORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PPORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PPTOX",
+                    "label": "Toxicity",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "PPTOXGR",
+                    "label": "Standard Toxicity Grade",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC123",
+                    "ABC123"
+                ],
+                "DOMAIN": [
+                    "PP",
+                    "PP"
+                ],
+                "USUBJID": [
+                    "123101",
+                    "123101"
+                ],
+                "PPSEQ": [
+                    1,
+                    2
+                ],
+                "PPTESTCD": [
+                    "TMAX",
+                    "CMAX"
+                ],
+                "PPTEST": [
+                    "Time of CMAX",
+                    "Max Conc"
+                ],
+                "PPORRES": [
+                    "1.87",
+                    "44.5"
+                ],
+                "PPORRESU": [
+                    "h",
+                    "ug/L"
+                ],
+                "PPTOX": [
+                    "NCI 4.03",
+                    "NCI 4.03"
+                ],
+                "PPTOXGR": [
+                    "GRADE 1",
+                    "GRADE 2"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

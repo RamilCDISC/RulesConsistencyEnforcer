@@ -1,0 +1,162 @@
+{
+    "datasets": [
+        {
+            "filename": "gf.xpt",
+            "label": "Genomics Findings",
+            "domain": "GF",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "GFTESTCD",
+                    "label": "Short Name of Measurement, Test, or Exam",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFTEST",
+                    "label": "Name of Measurement, Test, or Exam",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFTSTDTL",
+                    "label": "Measurement, Test, or Examination Detail",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFORREF",
+                    "label": "Reference Result in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFSTRESC",
+                    "label": "Result or Finding in Standard Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFSTREFC",
+                    "label": "Reference Result in Standard Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "GFDRVFL",
+                    "label": "Derived Flag",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "C12345",
+                    "C12345",
+                    "C12345",
+                    "C12345"
+                ],
+                "DOMAIN": [
+                    "GF",
+                    "GF",
+                    "GF",
+                    "GF"
+                ],
+                "USUBJID": [
+                    "C12345-001",
+                    "C12345-001",
+                    "C12345-001",
+                    "C12345-001"
+                ],
+                "GFSEQ": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "GFTESTCD": [
+                    "SNV",
+                    "SNV",
+                    "SNV",
+                    "SNV"
+                ],
+                "GFTEST": [
+                    "Single Nucleotide Variation",
+                    "Single Nucleotide Variation",
+                    "Single Nucleotide Variation",
+                    "Single Nucleotide Variation"
+                ],
+                "GFTSTDTL": [
+                    "GENOTYPE",
+                    "GENOTYPE",
+                    "GENOTYPE",
+                    "GENOTYPE"
+                ],
+                "GFORRES": [
+                    "T/T",
+                    "G/T",
+                    "G/G",
+                    ""
+                ],
+                "GFORREF": [
+                    "G/G",
+                    "G/G",
+                    "G/G",
+                    ""
+                ],
+                "GFSTRESC": [
+                    "T/T",
+                    "G/T",
+                    "G/G",
+                    "G/T"
+                ],
+                "GFSTREFC": [
+                    "G/G",
+                    "G/G",
+                    "G/G",
+                    "G/G"
+                ],
+                "GFDRVFL": [
+                    "",
+                    "",
+                    "",
+                    "Y"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

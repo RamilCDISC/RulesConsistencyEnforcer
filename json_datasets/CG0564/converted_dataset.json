@@ -1,0 +1,575 @@
+{
+    "datasets": [
+        {
+            "filename": "mb.xpt",
+            "label": "Microbiology Specimen",
+            "domain": "MB",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MBREFID",
+                    "label": "Reference ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBLNKID",
+                    "label": "Link ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBTESTCD",
+                    "label": "Microbiology Test or Finding Short Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBTEST",
+                    "label": "Microbiology Test or Finding Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBSTRESC",
+                    "label": "Result or Finding in Standard Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBNAM",
+                    "label": "Laboratory/Vendor Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBSPEC",
+                    "label": "Specimen Material Type",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBLOC",
+                    "label": "Specimen Collection Location",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBMETHOD",
+                    "label": "Method of Test or Examination",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "VISITNUM",
+                    "label": "Visit Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "VISIT",
+                    "label": "Visit Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MBDTC",
+                    "label": "Date/Time of Collection",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC",
+                    "ABC"
+                ],
+                "DOMAIN": [
+                    "MB",
+                    "MB"
+                ],
+                "USUBJID": [
+                    "ABC-001-002",
+                    "ABC-001-002"
+                ],
+                "MBSEQ": [
+                    1,
+                    2
+                ],
+                "MBREFID": [
+                    "SPEC01",
+                    "SPEC01"
+                ],
+                "MBLNKID": [
+                    "1",
+                    "2"
+                ],
+                "MBTESTCD": [
+                    "MCORGIDN",
+                    "MCORGIDN"
+                ],
+                "MBTEST": [
+                    "Microbial Organism Identification",
+                    "Microbial Organism Identification"
+                ],
+                "MBORRES": [
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS"
+                ],
+                "MBSTRESC": [
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS"
+                ],
+                "MBNAM": [
+                    "CENTRAL LAB ABC",
+                    "LOCAL LAB XYZ"
+                ],
+                "MBSPEC": [
+                    "FLUID",
+                    "FLUID"
+                ],
+                "MBLOC": [
+                    "SKIN",
+                    "SKIN"
+                ],
+                "MBMETHOD": [
+                    "MICROBIAL CULTURE, SOLID",
+                    "MICROBIAL CULTURE, SOLID"
+                ],
+                "VISITNUM": [
+                    1,
+                    1
+                ],
+                "VISIT": [
+                    "VISIT 1",
+                    "VISIT 1"
+                ],
+                "MBDTC": [
+                    "2005-07-21T08:00",
+                    "2005-07-21T08:00"
+                ]
+            }
+        },
+        {
+            "filename": "ms.xpt",
+            "label": "Microbiology Susceptibility",
+            "domain": "MS",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "NHOID",
+                    "label": "Non-host Organism ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MSGRPID",
+                    "label": "Group ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSREFID",
+                    "label": "Reference ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSLNKGRP",
+                    "label": "Link Group ID",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSTESTCD",
+                    "label": "Short Name of Assessment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSTEST",
+                    "label": "Name of Assessment",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSAGENT",
+                    "label": "Agent Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSCONC",
+                    "label": "Agent Concentration",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MSCONCU",
+                    "label": "Agent Concentration Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSORRES",
+                    "label": "Result or Finding in Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSORRESU",
+                    "label": "Original Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSSTRESC",
+                    "label": "Result or Finding in Standard Format",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSSTRESN",
+                    "label": "Numeric Result/Finding in Standard Units",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MSSTRESU",
+                    "label": "Standard Units",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSNAM",
+                    "label": "Laboratory/Vendor Name",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSMETHOD",
+                    "label": "Method of Test or Examination",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MSDTC",
+                    "label": "Date/Time of Collection",
+                    "type": "Char",
+                    "length": 50
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC",
+                    "ABC"
+                ],
+                "DOMAIN": [
+                    "MS",
+                    "MS",
+                    "MS",
+                    "MS",
+                    "MS",
+                    "MS",
+                    "MS",
+                    "MS",
+                    "MS",
+                    "MS"
+                ],
+                "USUBJID": [
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002",
+                    "ABC-001-002"
+                ],
+                "NHOID": [
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS",
+                    "ENTEROCOCCUS FAECALIS"
+                ],
+                "MSSEQ": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ],
+                "MSGRPID": [
+                    "1",
+                    "1",
+                    "2",
+                    "2",
+                    "",
+                    "",
+                    "3",
+                    "3",
+                    "4",
+                    "4"
+                ],
+                "MSREFID": [
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01",
+                    "SPEC01"
+                ],
+                "MSLNKGRP": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "MSTESTCD": [
+                    "MIC",
+                    "MICROSUS",
+                    "MIC",
+                    "MICROSUS",
+                    "MICROSUS",
+                    "MICROSUS",
+                    "DIAZOINH",
+                    "MICROSUS",
+                    "DIAZOINH",
+                    "MICROSUS"
+                ],
+                "MSTEST": [
+                    "Minimum Inhibitory Concentration",
+                    "Microbial Susceptibility",
+                    "Minimum Inhibitory Concentration",
+                    "Microbial Susceptibility",
+                    "Microbial Susceptibility",
+                    "Microbial Susceptibility",
+                    "Diameter of the Zone of Inhibition",
+                    "Microbial Susceptibility",
+                    "Diameter of the Zone of Inhibition",
+                    "Microbial Susceptibility"
+                ],
+                "MSAGENT": [
+                    "Sponsor Drug",
+                    "Sponsor Drug",
+                    "Amoxicillin",
+                    "Amoxicillin",
+                    "Sponsor Drug",
+                    "Amoxicillin",
+                    "Sponsor Drug",
+                    "Sponsor Drug",
+                    "Amoxicillin",
+                    "Amoxicillin"
+                ],
+                "MSCONC": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    "0.5",
+                    "0.5",
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "MSCONCU": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "ug/dL",
+                    "ug/dL",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "MSORRES": [
+                    "0.25",
+                    "SUSCEPTIBLE",
+                    "1",
+                    "RESISTANT",
+                    "SUSCEPTIBLE",
+                    "RESISTANT",
+                    "23",
+                    "SUSCEPTIBLE",
+                    "25",
+                    "RESISTANT"
+                ],
+                "MSORRESU": [
+                    "ug/dL",
+                    "",
+                    "ug/dL",
+                    "",
+                    "",
+                    "",
+                    "mm",
+                    "",
+                    "mm",
+                    ""
+                ],
+                "MSSTRESC": [
+                    "0.25",
+                    "SUSCEPTIBLE",
+                    "1",
+                    "RESISTANT",
+                    "SUSCEPTIBLE",
+                    "RESISTANT",
+                    "23",
+                    "SUSCEPTIBLE",
+                    "",
+                    "RESISTANT"
+                ],
+                "MSSTRESN": [
+                    "0.25",
+                    null,
+                    1,
+                    null,
+                    null,
+                    null,
+                    23,
+                    null,
+                    25,
+                    null
+                ],
+                "MSSTRESU": [
+                    "ug/dL",
+                    "",
+                    "ug/dL",
+                    "",
+                    "",
+                    "",
+                    "mm",
+                    "",
+                    "mm",
+                    ""
+                ],
+                "MSNAM": [
+                    "CENTRAL LAB ABC",
+                    "CENTRAL LAB ABC",
+                    "CENTRAL LAB ABC",
+                    "CENTRAL LAB ABC",
+                    "LOCAL LAB XYZ",
+                    "LOCAL LAB XYZ",
+                    "LOCAL LAB XYZ",
+                    "LOCAL LAB XYZ",
+                    "LOCAL LAB XYZ",
+                    "LOCAL LAB XYZ"
+                ],
+                "MSMETHOD": [
+                    "EPSILOMETER",
+                    "EPSILOMETER",
+                    "EPSILOMETER",
+                    "EPSILOMETER",
+                    "MACRO BROTH DILUTION",
+                    "MACRO BROTH DILUTION",
+                    "DISK DIFFUSION",
+                    "DISK DIFFUSION",
+                    "DISK DIFFUSION",
+                    "DISK DIFFUSION"
+                ],
+                "MSDTC": [
+                    "2005-06-19T08:00",
+                    "2005-06-19T08:00",
+                    "2005-06-19T08:00",
+                    "2005-06-19T08:00",
+                    "2005-06-19T08:00",
+                    "2005-06-19T08:00",
+                    "2005-06-26T08:00",
+                    "2005-06-26T08:00",
+                    "2005-06-26T08:00",
+                    "2005-06-26T08:00"
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}

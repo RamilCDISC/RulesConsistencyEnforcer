@@ -1,0 +1,119 @@
+{
+    "Authorities": [
+        {
+            "Organization": "CDISC",
+            "Standards": [
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.4",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0409",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "All records with the same STUDYID value are a group of records that describe that study.",
+                                    "Document": "IG v3.4",
+                                    "Item": "2.B.1",
+                                    "Section": "4.2.6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.3",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0409",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "All records with the same STUDYID value are a group of records that describe that study",
+                                    "Document": "IG v3.3",
+                                    "Item": "2.B.1",
+                                    "Section": "4.2.6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "SDTMIG",
+                    "Version": "3.2",
+                    "References": [
+                        {
+                            "Origin": "SDTM and SDTMIG Conformance Rules",
+                            "Rule_Identifier": {
+                                "Id": "CG0409",
+                                "Version": "1"
+                            },
+                            "Version": "2.0",
+                            "Citations": [
+                                {
+                                    "Cited_Guidance": "All records with the same STUDYID value are a group of records that describe that study",
+                                    "Document": "IG v3.2",
+                                    "Item": "2.B.1",
+                                    "Section": "4.1.2.6"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Check": {
+        "all": [
+            {
+                "name": "STUDYID",
+                "operator": "is_not_contained_by",
+                "value": "$dm_studyid"
+            }
+        ]
+    },
+    "Core": {
+        "Id": "CORE-000172",
+        "Status": "Published",
+        "Version": "1"
+    },
+    "Description": "Raise an error when STUDYID is not equal to DM.STUDYID",
+    "Executability": "Fully Executable",
+    "Operations": [
+        {
+            "domain": "DM",
+            "id": "$dm_studyid",
+            "name": "STUDYID",
+            "operator": "distinct"
+        }
+    ],
+    "Outcome": {
+        "Message": "STUDYID is not equal to DM.STUDYID",
+        "Output_Variables": [
+            "STUDYID"
+        ]
+    },
+    "Rule_Type": "Record Data",
+    "Scope": {
+        "Classes": {
+            "Include": [
+                "ALL"
+            ]
+        },
+        "Domains": {
+            "Include": [
+                "ALL"
+            ]
+        }
+    },
+    "Sensitivity": "Record"
+}

@@ -1,0 +1,198 @@
+{
+    "datasets": [
+        {
+            "filename": "mh.xpt",
+            "label": "Medical History",
+            "domain": "MH",
+            "variables": [
+                {
+                    "name": "STUDYID",
+                    "label": "Study Identifier",
+                    "type": "Char",
+                    "length": 12
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain Abbreviation",
+                    "type": "Char",
+                    "length": 2
+                },
+                {
+                    "name": "USUBJID",
+                    "label": "Unique Subject Identifier",
+                    "type": "Char",
+                    "length": 8
+                },
+                {
+                    "name": "MHSEQ",
+                    "label": "Sequence Number",
+                    "type": "Num",
+                    "length": 8
+                },
+                {
+                    "name": "MHCAT",
+                    "label": "Category for Medical History",
+                    "type": "Char",
+                    "length": 50
+                },
+                {
+                    "name": "MHTERM",
+                    "label": "Reported Term for the Medical History",
+                    "type": "Char",
+                    "length": 19
+                },
+                {
+                    "name": "MHEVDTYP",
+                    "label": "Medical History Event Date Type",
+                    "type": "Char",
+                    "length": 13
+                },
+                {
+                    "name": "MHSTDTC",
+                    "label": "Start Date/Time of Medical History Event",
+                    "type": "Char",
+                    "length": 10
+                },
+                {
+                    "name": "MHSTDY",
+                    "label": "Study Day of Start of Observation",
+                    "type": "Num",
+                    "length": 8
+                }
+            ],
+            "records": {
+                "STUDYID": [
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01",
+                    "CDISCPILOT01"
+                ],
+                "DOMAIN": [
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH",
+                    "MH"
+                ],
+                "USUBJID": [
+                    "CDISC001",
+                    "CDISC002",
+                    "CDISC003",
+                    "CDISC004",
+                    "CDISC005",
+                    "CDISC006",
+                    "CDISC007",
+                    "CDISC008",
+                    "CDISC009",
+                    "CDISC010",
+                    "CDISC011",
+                    "CDISC012"
+                ],
+                "MHSEQ": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "MHCAT": [
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "DISEASE UNDER STUDY",
+                    "GENERAL",
+                    "GENERAL",
+                    "GENERAL"
+                ],
+                "MHTERM": [
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "ALZHEIMER'S DISEASE",
+                    "TERM A",
+                    "TERM B",
+                    "TERM C"
+                ],
+                "MHEVDTYP": [
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "SYMPTOM ONSET",
+                    "",
+                    "",
+                    ""
+                ],
+                "MHSTDTC": [
+                    "2004-05-28",
+                    "2010-03-19",
+                    "2007-02-09",
+                    "2010-11-05",
+                    "2006-08-20",
+                    "2008-06-17",
+                    "2008-05-21",
+                    "2012-11-11",
+                    "2008-09-02",
+                    "",
+                    "",
+                    ""
+                ],
+                "MHSTDY": [
+                    -3108,
+                    -972,
+                    -2393,
+                    -1068,
+                    -2360,
+                    -1736,
+                    -1690,
+                    -546,
+                    -1511,
+                    null,
+                    null,
+                    null
+                ]
+            }
+        }
+    ],
+    "standard": {
+        "product": "sdtmig",
+        "version": "3-3"
+    },
+    "codelists": []
+}
