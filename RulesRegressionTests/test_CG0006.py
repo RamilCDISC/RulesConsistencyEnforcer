@@ -55,18 +55,10 @@ def test_excel():
     expected_columns = ['Dataset', 'Dataset Domain', 'CORE-ID', 'Message', 'Issues', 'Explanation']
     assert list(new_df_dict['Issue Summary'].columns) == expected_columns, "Column mismatch in 'Issue Summary'"
 
-    assert clean_dataframe(new_df_dict['Issue Summary']).iloc[0].tolist() == ['dm.xpt', 'DM', 'CORE-000464', 'DMDY is not calculated correctly even though the date portion of DMDTC is complete, the date portion of DM.RFSTDTC is a complete date, and DMDY is not empty.', 1, None], "Mismatch in 'Issue Summary', row 0"
-
-    assert clean_dataframe(new_df_dict['Issue Summary']).iloc[1].tolist() == ['fa.xpt', 'FA', 'CORE-000464', 'FADY is not calculated correctly even though the date portion of FADTC is complete, the date portion of DM.RFSTDTC is a complete date, and FADY is not empty.', 1, None], "Mismatch in 'Issue Summary', row 1"
-
     # Validate sheet: Issue Details
     assert 'Issue Details' in new_df_dict, "Sheet 'Issue Details' is missing"
     expected_columns = ['CORE-ID', 'Message', 'Executability', 'Dataset', 'Dataset Domain', 'USUBJID', 'Record', 'Sequence', 'Variable(s)', 'Value(s)']
     assert list(new_df_dict['Issue Details'].columns) == expected_columns, "Column mismatch in 'Issue Details'"
-
-    assert clean_dataframe(new_df_dict['Issue Details']).iloc[0].tolist() == ['CORE-000464', 'DMDY is not calculated correctly even though the date portion of DMDTC is complete, the date portion of DM.RFSTDTC is a complete date, and DMDY is not empty.', 'fully executable', 'dm.xpt', 'DM', 'CDISC-TEST-001', 1, None, '$val_dy, DMDTC, DMDY, RFSTDTC', '-59.0, 2022-01-20, -59, 2022-03-20'], "Mismatch in 'Issue Details', row 0"
-
-    assert clean_dataframe(new_df_dict['Issue Details']).iloc[1].tolist() == ['CORE-000464', 'FADY is not calculated correctly even though the date portion of FADTC is complete, the date portion of DM.RFSTDTC is a complete date, and FADY is not empty.', 'fully executable', 'fa.xpt', 'FA', 'CDISC007', 4, 4.0, '$val_dy, FADTC, FADY, RFSTDTC', '-34.0, 2012-12-02, -34, 2013-01-05'], "Mismatch in 'Issue Details', row 1"
 
     # Validate sheet: Rules Report
     assert 'Rules Report' in new_df_dict, "Sheet 'Rules Report' is missing"

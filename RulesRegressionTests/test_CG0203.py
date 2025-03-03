@@ -4,8 +4,8 @@ import pandas as pd
 import os
 import numpy as np
 
-RULE_JSON_FILE = "published_rules/CG0035/CG0035.json"
-DATASET_PATH = "json_datasets/CG0035/converted_dataset.json"
+RULE_JSON_FILE = "published_rules/CG0203/CG0203.json"
+DATASET_PATH = "json_datasets/CG0203/converted_dataset.json"
 COMMAND = "python core.py test -s sdtmig -v 3.4 -r " + RULE_JSON_FILE + " -dp " + DATASET_PATH + ""
 
 def run_command():
@@ -42,9 +42,7 @@ def test_excel():
     expected_columns = ['Dataset', 'Label', 'Location', 'Modified Time Stamp', 'Size (kb)', 'Number of Records']
     assert list(new_df_dict['Dataset Details'].columns) == expected_columns, "Column mismatch in 'Dataset Details'"
 
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[0].tolist() == ['sv.xpt', 'Subject Visits', '.', 'IGNORE_TIMESTAMP', 0, 58], "Mismatch in 'Dataset Details', row 0"
-
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[1].tolist() == ['tv.xpt', 'Trial Visits ', '.', 'IGNORE_TIMESTAMP', 0, 29], "Mismatch in 'Dataset Details', row 1"
+    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[0].tolist() == ['suppae.xpt', 'Supplemental Qualifiers for AE', '.', 'IGNORE_TIMESTAMP', 0, 10], "Mismatch in 'Dataset Details', row 0"
 
     # Validate sheet: Issue Summary
     assert 'Issue Summary' in new_df_dict, "Sheet 'Issue Summary' is missing"
@@ -61,7 +59,7 @@ def test_excel():
     expected_columns = ['CORE-ID', 'Version', 'CDISC RuleID', 'FDA RuleID', 'Message', 'Status']
     assert list(new_df_dict['Rules Report'].columns) == expected_columns, "Column mismatch in 'Rules Report'"
 
-    assert clean_dataframe(new_df_dict['Rules Report']).iloc[0].tolist() == ['CORE-000361', 1, 'CG0035', 'FB0919', 'VISIT and VISITNUM do not have a one-to-one relationship', 'SUCCESS'], "Mismatch in 'Rules Report', row 0"
+    assert clean_dataframe(new_df_dict['Rules Report']).iloc[0].tolist() == ['CORE-000134', 1, 'CG0203, TIG0423', None, "RDOMAIN is not 'DM' but IDVAR is empty.", 'SUCCESS'], "Mismatch in 'Rules Report', row 0"
 
 
 if __name__ == "__main__":

@@ -4,8 +4,8 @@ import pandas as pd
 import os
 import numpy as np
 
-RULE_JSON_FILE = "published_rules/CG0035/CG0035.json"
-DATASET_PATH = "json_datasets/CG0035/converted_dataset.json"
+RULE_JSON_FILE = "published_rules/CG0299/CG0299.json"
+DATASET_PATH = "json_datasets/CG0299/converted_dataset.json"
 COMMAND = "python core.py test -s sdtmig -v 3.4 -r " + RULE_JSON_FILE + " -dp " + DATASET_PATH + ""
 
 def run_command():
@@ -42,26 +42,28 @@ def test_excel():
     expected_columns = ['Dataset', 'Label', 'Location', 'Modified Time Stamp', 'Size (kb)', 'Number of Records']
     assert list(new_df_dict['Dataset Details'].columns) == expected_columns, "Column mismatch in 'Dataset Details'"
 
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[0].tolist() == ['sv.xpt', 'Subject Visits', '.', 'IGNORE_TIMESTAMP', 0, 58], "Mismatch in 'Dataset Details', row 0"
-
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[1].tolist() == ['tv.xpt', 'Trial Visits ', '.', 'IGNORE_TIMESTAMP', 0, 29], "Mismatch in 'Dataset Details', row 1"
+    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[0].tolist() == ['tr.xpt', 'Tumor/Lesion Results', '.', 'IGNORE_TIMESTAMP', 0, 27], "Mismatch in 'Dataset Details', row 0"
 
     # Validate sheet: Issue Summary
     assert 'Issue Summary' in new_df_dict, "Sheet 'Issue Summary' is missing"
     expected_columns = ['Dataset', 'Dataset Domain', 'CORE-ID', 'Message', 'Issues', 'Explanation']
     assert list(new_df_dict['Issue Summary'].columns) == expected_columns, "Column mismatch in 'Issue Summary'"
 
+    assert clean_dataframe(new_df_dict['Issue Summary']).iloc[0].tolist() == ['tr.xpt', 'TR', 'CORE-000003', 'TRLOC is present when TRLOC is not included in the TR domain.', 1, None], "Mismatch in 'Issue Summary', row 0"
+
     # Validate sheet: Issue Details
     assert 'Issue Details' in new_df_dict, "Sheet 'Issue Details' is missing"
     expected_columns = ['CORE-ID', 'Message', 'Executability', 'Dataset', 'Dataset Domain', 'USUBJID', 'Record', 'Sequence', 'Variable(s)', 'Value(s)']
     assert list(new_df_dict['Issue Details'].columns) == expected_columns, "Column mismatch in 'Issue Details'"
+
+    assert clean_dataframe(new_df_dict['Issue Details']).iloc[0].tolist() == ['CORE-000003', 'TRLOC is present when TRLOC is not included in the TR domain.', 'fully executable', 'tr.xpt', 'TR', None, None, None, 'TRLOC', None], "Mismatch in 'Issue Details', row 0"
 
     # Validate sheet: Rules Report
     assert 'Rules Report' in new_df_dict, "Sheet 'Rules Report' is missing"
     expected_columns = ['CORE-ID', 'Version', 'CDISC RuleID', 'FDA RuleID', 'Message', 'Status']
     assert list(new_df_dict['Rules Report'].columns) == expected_columns, "Column mismatch in 'Rules Report'"
 
-    assert clean_dataframe(new_df_dict['Rules Report']).iloc[0].tolist() == ['CORE-000361', 1, 'CG0035', 'FB0919', 'VISIT and VISITNUM do not have a one-to-one relationship', 'SUCCESS'], "Mismatch in 'Rules Report', row 0"
+    assert clean_dataframe(new_df_dict['Rules Report']).iloc[0].tolist() == ['CORE-000003', 1, 'CG0299', None, 'TRLOC is present when TRLOC is not included in the TR domain.', 'SUCCESS'], "Mismatch in 'Rules Report', row 0"
 
 
 if __name__ == "__main__":
