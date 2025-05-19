@@ -4,8 +4,8 @@ import pandas as pd
 import os
 import numpy as np
 
-RULE_JSON_FILE = "published_rules/CG0007/CG0007.json"
-DATASET_PATH = "json_datasets/CG0007/converted_dataset.json"
+RULE_JSON_FILE = "published_rules/CG0549/CG0549.json"
+DATASET_PATH = "json_datasets/CG0549/converted_dataset.json"
 COMMAND = "python core.py test -s sdtmig -v 3.4 -r " + RULE_JSON_FILE + " -dp " + DATASET_PATH + ""
 
 def run_command():
@@ -42,13 +42,7 @@ def test_excel():
     expected_columns = ['Dataset', 'Label', 'Location', 'Modified Time Stamp', 'Size (kb)', 'Number of Records']
     assert list(new_df_dict['Dataset Details'].columns) == expected_columns, "Column mismatch in 'Dataset Details'"
 
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[0].tolist() == ['ae.xpt', 'Adverse Events', '.', 'IGNORE_TIMESTAMP', 0, 4], "Mismatch in 'Dataset Details', row 0"
-
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[1].tolist() == ['dm.xpt', 'Demographics', '.', 'IGNORE_TIMESTAMP', 0, 5], "Mismatch in 'Dataset Details', row 1"
-
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[2].tolist() == ['ex.xpt', 'Exposure', '.', 'IGNORE_TIMESTAMP', 0, 55], "Mismatch in 'Dataset Details', row 2"
-
-    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[3].tolist() == ['lb.xpt', 'Laboratory Test Results', '.', 'IGNORE_TIMESTAMP', 0, 46], "Mismatch in 'Dataset Details', row 3"
+    assert clean_dataframe(new_df_dict['Dataset Details']).iloc[0].tolist() == ['gf.xpt', 'Genomics Findings', '.', 'IGNORE_TIMESTAMP', 0, 4], "Mismatch in 'Dataset Details', row 0"
 
     # Validate sheet: Issue Summary
     assert 'Issue Summary' in new_df_dict, "Sheet 'Issue Summary' is missing"
@@ -65,7 +59,7 @@ def test_excel():
     expected_columns = ['CORE-ID', 'Version', 'CDISC RuleID', 'FDA RuleID', 'Message', 'Status']
     assert list(new_df_dict['Rules Report'].columns) == expected_columns, "Column mismatch in 'Rules Report'"
 
-    assert clean_dataframe(new_df_dict['Rules Report']).iloc[0].tolist() == ['CORE-000354', 1, 'CG0007, TIG0292', None, 'The date portion of --DTC is not complete date or the date portion of DM.RFSTDTC is not complete date, but --DY is not empty', 'SUCCESS'], "Mismatch in 'Rules Report', row 0"
+    assert clean_dataframe(new_df_dict['Rules Report']).iloc[0].tolist() == ['CORE-000110', 1, 'CG0549, TIG0637', None, "--STREFC is null when --ORREF is non-empty or --DRVFL is equal to 'Y'", 'SUCCESS'], "Mismatch in 'Rules Report', row 0"
 
 
 if __name__ == "__main__":
